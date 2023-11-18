@@ -19,7 +19,7 @@ Make a current backup!
 ### Windows Image Backup
 
 - **Image_Backup.bat**  
-      Copy this file to the external backup drive, then right-click and select \*\*Run As Administrator\*\*.  Will not work on a flash drive.  This creates a full Windows Image Backup on the drive.
+      Copy this file to the external backup drive, then right-click and select \*\*Run As Administrator\*\*.  Will not work on a flash drive.  This creates a full Windows Image Backup on the drive.  Usage is discussed [HERE](https://pspowell.github.io/tech/2023/11/15/Backup-your-system-with-Image-Backup.html)
 - **Image Backup to flash.bat**  
       Same as above, but this defeats the windows limitation of not working on a flash drive by mapping the drive as a network drive first.  Expect 8-10 hours or
       overnight for the backup to complete.
