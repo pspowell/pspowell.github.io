@@ -28,7 +28,7 @@ Recovery in Windows 10:
 >**_NOTE:_** You should use an external hard drive or SSD and not use a "flash" drive for these instructions.  "Flash" drives require a different set of instructions.
 
 2. Click on the \*\*Start\*\* menu, then search for "file history", **File History** should show up as a search result, so click on that.
->**Alternate Method:** Type `<Windows Key> + R, then type SDCLT <Enter>`
+>**Alternate Method:** Type `<Windows Key> + R`, then type `SDCLT <Enter>`
 3. The program _**Backup and Restore (Windows 7)**_ will load.  Click on _**Create a System Image**_ in the top-left of the window.
 4. Select _**On a Hard Drive**_, and pick the external drive that you plugged in.
 5. Click on _**Start Backup**_
