@@ -24,11 +24,9 @@ Here are the steps to create a Windows Image Backup using Settings
 Recovery in Windows 10:
 
 1. Plug in an external drive large enough to hold your backup.  If buying, search for ["256gb USB SSD"](https://www.amazon.com/s?k=256gb+usb+ssd&crid=2MDAQRDJ1YFE9&sprefix=256gb+usb+ssd%2Caps%2C274&ref=nb_sb_noss_1), then adjust the size as needed.  
-
 >**_NOTE:_** You should use an external hard drive or SSD and not use a "flash" drive for these instructions.  "Flash" drives require a different set of instructions.
-
 2. Click on the \*\*Start\*\* menu, then search for "file history", **File History** should show up as a search result, so click on that.
->**Alternate Method:** Type `<Windows Key> + R, then type SDCLT <Enter>`
+>**Alternate Method:** Type `<Windows Key> + R`, then type `SDCLT <Enter>`
 3. The program _**Backup and Restore (Windows 7)**_ will load.  Click on _**Create a System Image**_ in the top-left of the window.
 4. Select _**On a Hard Drive**_, and pick the external drive that you plugged in.
 5. Click on _**Start Backup**_
