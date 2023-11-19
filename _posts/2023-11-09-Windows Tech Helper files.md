@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Windows Tech Helper files"
+title:  "**Windows Tech Helper files**"
 date:   2023-11-08
 categories: tech
 ---
@@ -27,7 +27,10 @@ Make a current backup!
       **Image Backup to VHDX.ps1**  
       If you have less than half of the C drive used, either of these will:
        1. Create a virtual hard disk on the C drive.
-       2. Mount the VHD and perform the backup to it, then dismount.  The VHD can then be copied to OneDrive, flash drive, etc.  Useful as another way of taking a snapshot of the system before making risky changes when you don't have external storage available, but if the hard disk fails, the VHD will be lost as well.
+       2. Mount the VHD and perform the backup to it, then dismount. 
+             - The VHD can then be copied to OneDrive, flash drive, etc.  
+             - Useful as another way of taking a snapshot of the system before making risky changes when you don't have external storage available
+             - Since the virtual drive is located on the system disk, it will be lost as well if the system disk fails.  The `C:\backup.vhdx` should be copied to external storage so you'll still have a backup in the event of a catatrophic failure.
 
 ### Registry Tweaks
 
