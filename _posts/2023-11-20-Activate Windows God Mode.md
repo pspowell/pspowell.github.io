@@ -7,7 +7,9 @@ categories: tech
 
 ## Activate Windows God Mode
 
-1. Right-click on a free space on the desktop, in your /users/_username_ directory,  or wherever you want the "God Mode" folder to be located. 
-2. Click on “New” and “Folder”.
-3. Enter the folder name **`GodMode. {ED7BA470-8E54-465E-825C-99712043E01C}`**. You can just copy with Ctrl-C and use Ctrl-V to paste the file name
-4. The God Mode folder will now appear on the desktop with all the control panel functions.
+1. You will need to name a folder with the exact text **`GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}`** so highlight and copy the bolded text with Ctrl-C
+2. Right-click on a free space on the desktop, in your /users/_username_ directory,  or wherever you want the "God Mode" folder to be located. 
+3. Click on “New” and “Folder”.
+4. Enter the folder name **`GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}`** by pasting the text you copied by typing Ctrl-V.
+
+That's it!  Check out all the functions and tools located in one place.
