@@ -9,7 +9,10 @@ categories: tech
 
 I've put an archive of helpful files on my GitHub which simplify tasks or add features such as creating a Windows Image backup under special conditions and adding new options to the right-click menu.
 
-You can download the zip file from [HERE](https://github.com/pspowell/Windows-tech-helper-files/archive/refs/heads/main.zip) then right-click and select \*\*Extract All\*\* 
+### Setup
+1. download the zip file from [HERE](https://github.com/pspowell/Windows-tech-helper-files/archive/refs/heads/main.zip). 
+1. Once downloaded, go to your download directory then right-click and select Properties, select the Unblock checkbox and click OK. (This indicates to Windows that the batch files are OK to run on your system.)
+1. Right-click the zip file again and select  \*\*Extract All\*\* 
 
 I'll maintain a list of all files here along with a brief description.  Further information will be referenced where available.
 
