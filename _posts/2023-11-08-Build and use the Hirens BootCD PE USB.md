@@ -10,7 +10,7 @@ categories: tech
 ### Build the USB
 
 1. Download the [Hirens BootCD PE](https://www.hirensbootcd.org/) BootPE image [link](https://www.hirensbootcd.org/files/HBCD_PE_x64.iso)  
-2. Download ISO2USB to your computer [link](https://www.hirensbootcd.org/files/ISO2USB.exe)  
+2. Download Rufus to your computer [link]([https://www.hirensbootcd.org/files/ISO2USB.exe](https://rufus.ie/en/)) 
 3. Follow the instructions on the [Hiren's BootCD PE website](https://www.hirensbootcd.org/usb-booting/)  
 
 ### Enroll Key from Disk
