@@ -15,8 +15,7 @@ This post shows two supported ways to use my **Imperial** VBA module in Microsof
 Both approaches give you the same user-defined functions (UDFs) for formatting, parsing, snapping, and converting imperial/metric lengths (feet-inches-fractions). A concise function summary and installation tips are included below.
 
 **Download the module:**  
-- [`Imperial.bas`](https://github.com/pspowell/Windows-tech-helper-files/blob/main/Other/Imperial.bas)  
-
+- [`Imperial.bas`](https://github.com/pspowell/Windows-tech-helper-files/raw/refs/heads/main/Other/Imperial.bas)
 ---
 
 ## What the Module Provides (quick tour)
