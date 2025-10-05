@@ -195,4 +195,4 @@ If you manage change logs, add a `CHANGELOG.md` to track function updates and bu
 
 ## Credits & License
 
-Module and documentation by **Preston S. Powell**. Function set adapted from my **Imperial/ImperialPlusPlus** tooling for carpentry and fabrication workflows. (Add your preferred license here.)
+Module and documentation by **Preston S. Powell**. 
