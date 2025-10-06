@@ -17,6 +17,7 @@ Here’s how **DISM**, **SDCLT**, and **Disk2VHD** compare.
 **Purpose:** Create a **WIM (Windows Imaging Format)** file by capturing a partition at the *file level*.  
 
 ### Characteristics
+
 | Property | Description |
 |-----------|--------------|
 | **Granularity** | File-based; copies files, ACLs, reparse points, and optional `/ea` metadata |
@@ -44,6 +45,7 @@ Here’s how **DISM**, **SDCLT**, and **Disk2VHD** compare.
 (`sdclt.exe /BLBBACKUPWIZARD` launches the GUI.)
 
 ### Characteristics
+
 | Property | Description |
 |-----------|--------------|
 | **Granularity** | Sector-level clone |
@@ -68,6 +70,7 @@ Here’s how **DISM**, **SDCLT**, and **Disk2VHD** compare.
 **Purpose:** Clone a live system into a bootable **VHD/VHDX** for Hyper-V or other virtualization.
 
 ### Characteristics
+
 | Property | Description |
 |-----------|--------------|
 | **Granularity** | Sector-level (via Volume Shadow Copy) |
@@ -117,3 +120,4 @@ Here’s how **DISM**, **SDCLT**, and **Disk2VHD** compare.
 ---
 
 *Prepared October 6 2025*
+
