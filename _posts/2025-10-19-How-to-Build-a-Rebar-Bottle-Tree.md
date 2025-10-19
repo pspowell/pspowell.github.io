@@ -94,12 +94,7 @@ This yields **12 total branches**.
 
 ## 📐 Diagram
 
-![Diagram](hhttps://github.com/pspowell/pspowell.github.io/blob/main/assets/images/bottle%20tree%20diagram.png)
-
-<p align="center">
-  <img src="/assets/images/https://github.com/pspowell/pspowell.github.io/blob/main/assets/images/bottle%20tree%20diagram.jpg" alt="Bottle Tree Diagram" width="450">
-</p>
-
+![Diagram](https://github.com/pspowell/pspowell.github.io/raw/main/assets/images/bottle%20tree%20diagram.jpg)
 ---
 
 **Enjoy your handcrafted bottle tree — a timeless symbol of good luck and creativity!**
