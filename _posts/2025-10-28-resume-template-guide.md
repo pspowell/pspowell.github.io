@@ -5,14 +5,11 @@ date: 2025-10-28
 tags: [career, resume, professional, template]
 ---
 
-A senior recruiter once told me about the **only three things he really looks for in any CV**.
+There are **only three things that a recruiter really looks for in any CV**.
 
-I was talking to a recruiter named **Mark**, who’s been in the market for about 15 years, hiring across finance, engineering, healthcare, and senior executive roles. I asked him, *“What are the top 3 things in a CV that get it through and earn a callback?”*
-
-His answer was simple:  
 > **Simple. Relevant. Scannable.**
 
-At first, that surprised me — but he assured me that’s exactly how most recruiters think. They’re trying to understand your story quickly: **what you achieved, how you did it, and what the final result was.** Your CV has seconds to make that clear.
+Recruiters are trying to understand your story quickly: **what you achieved, how you did it, and what the final result was.** Your CV has seconds to make that clear.
 
 ---
 
@@ -52,3 +49,4 @@ It uses **Times New Roman 12 pt**, simple formatting, and built-in guidance prom
 
 **Remember:** The most effective resumes aren’t flashy.  
 They’re just very clear. In a few seconds, you should know exactly **who this person is** and **what value they can add**.
+
