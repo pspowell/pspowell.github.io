@@ -158,4 +158,3 @@ Info "Repairing ACLs..."
 Write-Host ""
 Write-Host "Success! Reboot the PC, then sign into the renamed account to verify."
 Write-Host "Check with: `$env:USERPROFILE` (should be $newPath)"
-
