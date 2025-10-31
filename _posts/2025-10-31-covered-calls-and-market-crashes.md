@@ -88,5 +88,3 @@ If the stock rebounds sharply, you could be forced to buy back shares at much hi
 | Stock rallies | Call gains value | May be exercised | Opportunity cost on upside |
 
 ---
-
-Would you like to see a **numerical example** (e.g., selling a $100 strike call and the stock dropping to $70) showing the profit/loss math and how to unwind it step by step?
