@@ -65,9 +65,9 @@ if ($response -match '^[Yy]') {
 
 You can download the ready-to-run PowerShell file here:
 
-👉 [Toggle-Start-FullScreen.ps1](../../assets/scripts/Toggle-Start-FullScreen.ps1)
+👉 [Toggle-Start-FullScreen.ps1](../assets/scripts/Toggle-Start-FullScreen.ps1)
 
-> 💡 Place this file under your site’s `/assets/scripts/` directory, or [download it directly](sandbox:/mnt/data/Toggle-Start-FullScreen.ps1) for local use.
+
 
 ---
 
