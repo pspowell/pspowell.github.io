@@ -25,7 +25,7 @@ title: Sous Vide Chuck Roast That Tastes Like Prime Rib
 ### 🧂 Ingredients
 
   Ingredient                Amount     Notes
-  ------------------------- ---------- -------------------------
+  :-----------------------: :--------: :-----------------------:
   Chuck roast               2--3 lbs   Boneless, well-marbled
   Kosher salt               2 tsp      Adjust to taste
   Black pepper              1 tsp      Freshly ground
