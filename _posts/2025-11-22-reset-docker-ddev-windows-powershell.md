@@ -48,58 +48,6 @@ All commands below are **PowerShell-friendly**.
 
 ### 1. Stop all running containers
 
-```powershell
-docker ps -q | ForEach-Object { docker stop $_ }
----
-layout: post
-title: "How to Safely Reset Docker and DDEV on Windows (PowerShell-Friendly)"
-date: 2025-11-22
-tags: [docker, ddev, windows, powershell, webdev]
----
-
-When you’re first learning Docker and DDEV, it’s really common to get into a weird state and think, *“I wish I could just start over without breaking anything.”*  
-
-This guide shows you how to safely “reset”:
-
-- Docker Desktop  
-- DDEV (per project and globally)
-
-…using **Windows PowerShell–friendly commands**, plus how to use Docker Desktop’s **Troubleshoot / Reset** options.
-
-The goal: a clean slate **without** damaging your Windows system or “core” Docker/DDEV install.
-
----
-
-## Mental Model: What We’re Resetting (and Not Touching)
-
-**Docker Desktop** manages:
-
-- Containers (running apps)
-- Images (templates for containers)
-- Volumes (persistent data: databases, caches, etc.)
-- Networks (how containers talk to each other)
-
-**DDEV** is a wrapper around Docker that:
-
-- Lives in your project folder (mainly `.ddev/`)
-- Spins up and tears down Docker containers for you
-- Never needs registry hacks or manual OS-level cleanup
-
-In this guide we reset **data and configs**, not **system binaries**:
-
-- ✅ Safe to delete: containers, images, volumes, networks, `.ddev` folders  
-- 🚫 Do **not** randomly delete: `C:\ProgramData\Docker`, WSL distros, or registry entries
-
----
-
-## Part 1 – Soft-Reset Docker with PowerShell (Recommended)
-
-This clears out **everything Docker has created** (containers / images / volumes / networks), but **does not uninstall Docker Desktop**.
-
-All commands below are **PowerShell-friendly**.
-
-### 1. Stop all running containers
-
     docker ps -q | ForEach-Object { docker stop $_ }
 
 - **What:** Lists all running container IDs and stops each one.  
