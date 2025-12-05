@@ -1,4 +1,4 @@
-###---
+---
 layout: post
 title: "Types of Traders and Trading Strategies"
 date: 2025-12-05
