@@ -7,7 +7,7 @@ tags:
   - core-dump
   - self-audit
   - metadata
-published: false
+published: true
 ---
 
 ## **Purpose **  
