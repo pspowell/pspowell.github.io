@@ -201,6 +201,97 @@ An error means the document is incorrect or incomplete. The correct response is 
 
 This is intentional. CIF favors correctness over progress.
 
+## Intent contracts and loyalty rules {#intent-contracts-and-loyalty-rules}
+
+CIF allows a client to define **intent contracts**: explicit, binding rules that the executor MUST remain loyal to for the duration of execution.
+
+Intent contracts exist to prevent drift, reinterpretation, and silent goal substitution. They are not suggestions. They are invariants.
+
+### Intent blocks {#intent-blocks}
+
+Intent rules are declared inside a dedicated intent scope.
+
+```text
+!BEGIN INTENT
+!STRICT
+
+MUST: Execute instructions serially in document order.
+MUST: Ask for clarification if required input is missing.
+MUST NOT: Invent facts, sources, or outputs.
+MUST NOT: Modify the client’s wording unless instructed.
+MUST: Preserve formatting exactly as specified.
+
+!END INTENT
+```
+
+Rules inside an intent block apply globally to the document and all nested scopes unless explicitly overridden.
+
+### Locking intent {#locking-intent}
+
+Once intent rules are established, they may be locked.
+
+```text
+!LOCK INTENT
+```
+
+When intent is locked:
+- No additional intent rules may be added
+- Existing intent rules may not be modified
+- Overrides are forbidden unless explicitly unlocked
+
+Locking intent is the default best practice for CIF.
+
+### Intent enforcement {#intent-enforcement}
+
+CIF defines explicit behavior for intent violations.
+
+```text
+!ON_INTENT_VIOLATION STOP
+```
+
+or
+
+```text
+!ON_INTENT_VIOLATION REPORT_AND_STOP
+```
+
+Intent violations are errors, not warnings. Execution must not continue silently after a violation.
+
+### Assertions and requirements {#assertions-and-requirements}
+
+CIF provides enforcement primitives to make intent testable.
+
+- `!REQUIRE` declares a condition that must be true before execution proceeds.
+- `!ASSERT` validates that execution has remained within intent boundaries.
+
+```text
+!REQUIRE "All required inputs are present"
+!ASSERT "No assumptions were introduced"
+```
+
+### Overriding intent {#overriding-intent}
+
+By default, intent contracts are non-overridable.
+
+If overrides are permitted, they must require explicit authorization.
+
+```text
+!UNLOCK INTENT "Reason required"
+```
+
+This command SHOULD be rare and auditable. CIF favors immutability of intent.
+
+### Intent as loyalty {#intent-as-loyalty}
+
+In CIF, loyalty is not behavioral or emotional. It is contractual.
+
+An executor is loyal if and only if:
+- It obeys all active intent rules
+- It halts or reports when violation occurs
+- It refuses to proceed under ambiguity
+
+Intent contracts transform trust from expectation into structure.
+
 ## What CIF explicitly refuses to do {#what-cif-explicitly-refuses-to-do}
 
 CIF refuses:
