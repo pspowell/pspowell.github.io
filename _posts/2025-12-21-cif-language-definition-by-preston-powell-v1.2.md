@@ -134,11 +134,7 @@ CIF defines a baseline command set.
 
 ### Interpretation control {#interpretation-control}
 
-- `!STRICT`  
-  Disables inference, assumption, and optimization.
-
-- `!LITERAL`  
-  Requires exact interpretation of content as written.
+- `!SORRY_REPLACED`
 
 ### Error handling {#error-handling}
 
@@ -340,6 +336,84 @@ CIF is intentionally severe.
 
 It assumes an intelligent author. It demands precision. It offers determinism in exchange for restraint.
 
-This is not a language for every task. It is a language for tasks where correctness, authority, and reproducibility matter more than convenience.
+This is not a language for every task. It is a language for tasks where correctness matters more than comfort.
 
 CIF is not conversational by accident. It is non-conversational by design.
+
+## Appendix A: CIF document used to produce this result {#appendix-a-cif-document-used-to-produce-this-result}
+
+This appendix includes the CIF instruction document that, if provided at the start of a run, would direct an executor to generate this book post deterministically (including formatting requirements and file deliverables).
+
+```text
+!BEGIN
+!STRICT
+!ON_ERROR STOP
+
+!BEGIN INTENT
+MUST: Treat this as a document-driven instruction run, not a conversation.
+MUST: Process steps serially in the order provided.
+MUST: Ask for clarification only if required inputs are missing.
+MUST NOT: Add sections not requested.
+MUST NOT: remove or rename any headings once written, unless instructed.
+MUST: Output must be GitHub Pages / Jekyll compatible Markdown.
+MUST: Include YAML front matter with layout=post, title, date, tags.
+MUST: Include custom section IDs for EVERY heading.
+MUST: Provide both (1) an inline copy-paste Markdown block and (2) a downloadable .md file using a Jekyll-dated filename.
+!END INTENT
+
+!LOCK INTENT
+
+!BEGIN SCOPE "CIF Language Definition Book Build"
+Goal: Create a complete “book-as-a-post” defining the CIF language, titled “CIF Language Definition by Preston Powell,” suitable for publishing on a Jekyll site.
+Deliverable: One Jekyll post (.md) containing the complete text with logically ordered sections.
+!END SCOPE
+
+!BEGIN REQUIREMENTS
+1) Use the title exactly: "CIF Language Definition by Preston Powell"
+2) Use filename convention: YYYY-MM-DD-cif-language-definition-by-preston-powell-v1.1.md
+3) Use date: 2025-12-21 00:00:00 -0500
+4) Tags must include: CIF, Chat Instructional Format, language, specification
+5) All headings must have explicit {#...} IDs in kebab-case, unique, stable
+6) Include these major sections, in this order:
+   - CIF Language Definition
+   - Preface
+   - The problem CIF addresses
+   - The CIF mental model
+   - Roles and responsibility
+   - The CIF instruction document
+   - Control vs content
+   - Control prefix
+   - Core control commands
+   - Serial execution semantics
+   - Nesting and scope
+   - Scope rules
+   - Error philosophy
+   - Intent contracts and loyalty rules (with subsections)
+   - What CIF explicitly refuses to do
+   - The smallest complete CIF example
+   - CIF as infrastructure
+   - Closing remarks
+7) “Intent contracts and loyalty rules” section MUST include:
+   - Intent blocks
+   - Locking intent
+   - Intent enforcement
+   - Assertions and requirements
+   - Overriding intent
+   - Intent as loyalty
+8) Include code fences for CIF examples using ```text
+!END REQUIREMENTS
+
+!BEGIN OUTPUT_FORMAT
+- First: Provide a download link to the generated .md file.
+- Then: Provide the full Jekyll Markdown content in a single copy-pasteable Markdown code block.
+!END OUTPUT_FORMAT
+
+!BEGIN EXECUTE
+Step 1: Draft the full book content as one Jekyll post with YAML front matter.
+Step 2: Ensure all headings include custom IDs and match the required section order.
+Step 3: Save the post as: 2025-12-21-cif-language-definition-by-preston-powell-v1.1.md
+Step 4: Output the download link and then the full Markdown in one block.
+!END EXECUTE
+
+!END
+```
