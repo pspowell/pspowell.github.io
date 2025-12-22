@@ -134,7 +134,11 @@ CIF defines a baseline command set.
 
 ### Interpretation control {#interpretation-control}
 
-- `!SORRY_REPLACED`
+- `!STRICT`  
+  Disables inference, assumption, and optimization.
+
+- `!LITERAL`  
+  Requires exact interpretation of content as written.
 
 ### Error handling {#error-handling}
 
@@ -342,8 +346,6 @@ CIF is not conversational by accident. It is non-conversational by design.
 
 ## Appendix A: CIF document used to produce this result {#appendix-a-cif-document-used-to-produce-this-result}
 
-This appendix includes the CIF instruction document that, if provided at the start of a run, would direct an executor to generate this book post deterministically (including formatting requirements and file deliverables).
-
 ```text
 !BEGIN
 !STRICT
@@ -370,7 +372,7 @@ Deliverable: One Jekyll post (.md) containing the complete text with logically o
 
 !BEGIN REQUIREMENTS
 1) Use the title exactly: "CIF Language Definition by Preston Powell"
-2) Use filename convention: YYYY-MM-DD-cif-language-definition-by-preston-powell-v1.1.md
+2) Use filename convention: YYYY-MM-DD-cif-language-definition-by-preston-powell-v1.3.md
 3) Use date: 2025-12-21 00:00:00 -0500
 4) Tags must include: CIF, Chat Instructional Format, language, specification
 5) All headings must have explicit {#...} IDs in kebab-case, unique, stable
@@ -393,27 +395,7 @@ Deliverable: One Jekyll post (.md) containing the complete text with logically o
    - The smallest complete CIF example
    - CIF as infrastructure
    - Closing remarks
-7) “Intent contracts and loyalty rules” section MUST include:
-   - Intent blocks
-   - Locking intent
-   - Intent enforcement
-   - Assertions and requirements
-   - Overriding intent
-   - Intent as loyalty
-8) Include code fences for CIF examples using ```text
 !END REQUIREMENTS
-
-!BEGIN OUTPUT_FORMAT
-- First: Provide a download link to the generated .md file.
-- Then: Provide the full Jekyll Markdown content in a single copy-pasteable Markdown code block.
-!END OUTPUT_FORMAT
-
-!BEGIN EXECUTE
-Step 1: Draft the full book content as one Jekyll post with YAML front matter.
-Step 2: Ensure all headings include custom IDs and match the required section order.
-Step 3: Save the post as: 2025-12-21-cif-language-definition-by-preston-powell-v1.1.md
-Step 4: Output the download link and then the full Markdown in one block.
-!END EXECUTE
 
 !END
 ```
