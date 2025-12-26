@@ -8,7 +8,7 @@ permalink: /about/
 
 ![My Photo](/assets/me.png){:style="width:240px; border-radius:8px; margin-bottom:20px;"}
 
-I'm a computer technician, programmer, and community volunteer based in Westerville, Ohio.  
+I'm a retired executive, business owner/consultant, computer technician, programmer, and community volunteer based in Westerville, Ohio.  
 My work blends hands-on troubleshooting with building practical technical solutions — everything from Microsoft 365 automation, PowerShell scripting, Google Workspace integrations, Access/Excel tools, and C++/C#/Python development, to building websites and maintaining digital resources for local groups.
 
 I use this site to publish guides, scripts, and write-ups that I’ve created for clients, community members, and my own projects. Most content is practical, repeatable, and aimed at solving real problems: fixing data issues, automating workflows, building forms/spreadsheets, or helping local nonprofit organizations modernize their digital tools.
