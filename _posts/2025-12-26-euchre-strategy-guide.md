@@ -245,11 +245,3 @@ If you tell me your house rules, I can tailor this guide to your exact table.
 
 ---
 
-## Printable Add-On {#printable-add-on}
-
-If you want, I can also generate a **one-page strategy card** that pairs with your rules card (print-friendly, Unicode-safe PDF), with:
-
-- Ordering rules
-- Alone rules
-- Maker/defender lead priorities
-- Trump-count checklist
