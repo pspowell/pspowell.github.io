@@ -28,7 +28,7 @@ Copilot+ PCs excel at **fast, private, repeatable AI tasks** that benefit from r
 
 ### Diagram: On-Device AI on the NPU {#diagram-on-device-ai}
 
-![On-device AI running locally on an NPU](../assets/copilot-plus-npu-diagram.png)
+![On-device AI running locally on an NPU](/assets/copilot-plus-npu-diagram.png)
 
 ---
 
@@ -48,7 +48,7 @@ ChatGPT focuses on **thinking and judgment**, not raw speed.
 
 ### Diagram: Cloud AI at Scale {#diagram-cloud-ai}
 
-![Cloud-based AI reasoning and synthesis](../assets/chatgpt-cloud-diagram.png)
+![Cloud-based AI reasoning and synthesis](/assets/chatgpt-cloud-diagram.png)
 
 ---
 
@@ -74,7 +74,7 @@ The most powerful model combines **local execution** with **cloud intelligence**
 
 ### Diagram: Hybrid Workflow {#diagram-hybrid-workflow}
 
-![Hybrid AI flow between the NPU and the cloud](../assets/hybrid-ai-flow.png)
+![Hybrid AI flow between the NPU and the cloud](/assets/hybrid-ai-flow.png)
 
 In this model:
 
