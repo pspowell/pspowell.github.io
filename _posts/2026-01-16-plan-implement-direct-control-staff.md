@@ -7,6 +7,8 @@ tags: [management, leadership, operations]
 
 ## Introduction {#introduction}
 
+>**NOTE:** At age 25, I shadowed a fellow supervisor while he was completing his MBA, an experience that shaped my understanding of—and commitment to—the core tenets of effective management.
+
 Effective management is not a single skill but a **set of distinct responsibilities** that must work together. Confusion between these responsibilities is one of the most common causes of organizational failure, burnout, and poor succession outcomes.
 
 This article expands on five classic management responsibilities:
