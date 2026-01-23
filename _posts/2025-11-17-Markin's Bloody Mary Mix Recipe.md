@@ -15,11 +15,11 @@ A bold, tangy Bloody Mary built around dill stackers and Dano’s seasoning, fro
 
 - 2 oz vodka  
 - 4–6 oz Bloody Mary mix (Zing Zang, Mr & Mrs T, or homemade)  
-- 1–2 tsp Dano’s red-top
+- 1–2 tsp Dano’s red-top, or white-top for more spice
 - 1–2 dill stacker pickle slices (plus splash of the juice)  
-- 1–2 dashes Worcestershire sauce  
+- 1 dash lime juice (moisten rim of glass and garnish with Dan'Os)
+- 1–2 dashes Worcestershire sauce (optional) 
 - 1 dash hot sauce (optional)  
-- Black pepper (optional)  
 - Ice  
 
 ---
@@ -31,7 +31,7 @@ A bold, tangy Bloody Mary built around dill stackers and Dano’s seasoning, fro
 - Pickled green bean  
 - Lime wedge 
 
-Season rim of glass with Celery salt if desired
+Season rim of glass with lime juice and Danos
 
 ---
 
