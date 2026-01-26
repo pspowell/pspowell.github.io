@@ -9,11 +9,13 @@ If you’re about to reinstall Windows, move to new hardware, or build a WinPE r
 
 This post shows three reliable ways to export drivers:
 
-- **PowerShell (DISM module):** `Export-WindowsDriver` (best all-around) citeturn0search0turn1view0  
-- **DISM (command line):** `dism /online /export-driver` (same idea, different interface)
-- **PnPUtil:** `pnputil /export-driver` (exports from the driver store) citeturn0search5turn0search1
+- **PowerShell (DISM module):** `Export-WindowsDriver` (best all-around)  
+- **DISM (command line):** `dism /online /export-driver` (same idea, different interface)  
+- **PnPUtil:** `pnputil /export-driver` (exports from the driver store)
 
-> Note: `Export-WindowsDriver` exports **third-party drivers** from the image, not Microsoft in-box drivers. citeturn0search0
+> **Note:** `Export-WindowsDriver` exports **third-party drivers** from the image, not Microsoft in-box drivers.
+
+---
 
 ## What you’ll get (and what you won’t) {#what-youll-get}
 
@@ -28,9 +30,11 @@ What you generally **won’t** get:
 - Drivers that only ship as **vendor installers** (`.exe` / `.msi`) without a standard INF-based package
 - Full OEM utilities/control panels that come with some device bundles
 
+---
+
 ## Method 1: Export drivers from the running Windows install (recommended) {#method-1-online-export}
 
-This is the straightforward “backup my current machine” approach using `Export-WindowsDriver -Online`. The Windows Club demonstrates the basic command exactly like this: citeturn1view0
+This is the simplest and most reliable approach for backing up drivers from your current system:
 
 ```powershell
 # Pick a destination folder (external drive recommended)
@@ -52,9 +56,11 @@ Get-ChildItem -Path $Dest -Recurse -Filter *.inf |
 
 If you see many `.inf` files, your export worked.
 
+---
+
 ## Method 2: Export drivers from an offline Windows image (WinPE-friendly) {#method-2-offline-export}
 
-If you’re booted into **WinPE/WinRE**, or you’ve mounted an offline Windows image, you can export drivers from that offline path. The Windows Club shows this pattern for an offline image mounted at `c:\offline-image`: citeturn1view0
+If you’re booted into **WinPE/WinRE**, or you’ve mounted an offline Windows image, you can export drivers from that offline path:
 
 ```powershell
 $OfflinePath = "C:\offline-image"   # path where the offline Windows is mounted
@@ -64,11 +70,13 @@ New-Item -ItemType Directory -Path $Dest -Force | Out-Null
 Export-WindowsDriver -Path $OfflinePath -Destination $Dest
 ```
 
-If you’re working with a Windows folder on another drive (for example, the offline OS is on `E:`), you can point at the image root you mounted or captured. This is especially useful when you’re building your “Integrate with PE boot disk” workflow and need drivers available before Windows boots.
+This is ideal for recovery disks, offline servicing, and WinPE automation workflows.
+
+---
 
 ## Method 3: Export drivers from the Driver Store with PnPUtil {#method-3-pnputil}
 
-Windows also includes **PnPUtil**, which can export driver packages from the driver store:
+Windows also includes **PnPUtil**, which can export driver packages directly from the driver store:
 
 ```powershell
 $Dest = "D:\DriverBackup"
@@ -77,43 +85,48 @@ New-Item -ItemType Directory -Path $Dest -Force | Out-Null
 pnputil /export-driver * $Dest
 ```
 
-PnPUtil’s `/export-driver` supports exporting a specific `oem#.inf` or `*` for all packages. citeturn0search5turn0search1
-
-To list what’s in the driver store (useful if you want *specific* packages):
+To list what’s currently in the driver store:
 
 ```powershell
 pnputil /enum-drivers
 ```
 
-## Restoring drivers after reinstall (two practical options) {#restoring-drivers}
+---
 
-### Option A: Install all exported INF drivers recursively with PnPUtil {#restore-pnputil-add-driver}
+## Restoring drivers after reinstall {#restoring-drivers}
 
-After a clean install, copy your exported folder back to the machine, then run:
+### Option A: Install all exported drivers automatically {#restore-pnputil}
 
 ```powershell
 pnputil /add-driver "D:\DriverBackup\*.inf" /subdirs /install
 ```
 
-This searches subfolders for INF files and installs what applies.
-
-### Option B: Point Device Manager at the folder {#restore-device-manager}
-
-For one-off devices:
+### Option B: Manual install via Device Manager {#restore-device-manager}
 
 1. Open **Device Manager**
 2. Right-click the device → **Update driver**
-3. Choose **Browse my computer** and select your backup folder
+3. Select **Browse my computer for drivers**
+4. Point it at your driver backup folder
+
+---
 
 ## Tips and gotchas {#tips-and-gotchas}
 
-- **Run elevated when in doubt.** Many driver-management tasks require Administrator rights; the Windows Club explicitly uses an elevated PowerShell prompt for export. citeturn1view0
-- **Use an external drive** (or a separate partition) so your driver backup survives a wipe.
-- **Keep the folder name stable** if you’re scripting WinPE restore flows.
-- **Third-party only:** If you’re troubleshooting a missing in-box driver, exporting won’t help—Windows will provide those via the OS image/Windows Update. citeturn0search0
+- Always run PowerShell **as Administrator**
+- Store backups on an **external drive or separate partition**
+- Keep a **consistent folder path** for automation scripts
+- Exports include **third-party drivers only**
+- Vendor installer-only drivers (`.exe` / `.msi`) will not export
+
+---
 
 ## References {#references}
 
-- The Windows Club: “Export and Backup Device Drivers using PowerShell in Windows 11/10” citeturn1view0  
-- Microsoft: `Export-WindowsDriver` (DISM PowerShell module) citeturn0search0  
-- Microsoft: PnPUtil command syntax/examples citeturn0search5turn0search1  
+- Microsoft Docs – Export-WindowsDriver (DISM PowerShell Module)  
+  https://learn.microsoft.com/en-us/powershell/module/dism/export-windowsdriver
+
+- Microsoft Docs – PnPUtil Command Syntax  
+  https://learn.microsoft.com/en-us/windows-hardware/drivers/devtest/pnputil-command-syntax
+
+- The Windows Club – Export and Backup Device Drivers using PowerShell  
+  https://www.thewindowsclub.com/export-and-backup-device-drivers-in-windows-10-using-powershell
