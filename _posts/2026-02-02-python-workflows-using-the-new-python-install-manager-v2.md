@@ -27,7 +27,7 @@ I provide a PowerShell script that **completely removes legacy Python installati
 - Leftover registry entries
 - Stale PATH references
 
-[/assets/Nuke Python.ps1](/assets/Nuke Python.ps1)
+[Nuke Python.ps1](/assets/Nuke Python.ps1)
 
 Run it from an elevated PowerShell session, reboot, then install Python fresh from python.org.
 
