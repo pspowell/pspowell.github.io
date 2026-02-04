@@ -115,6 +115,8 @@ These were mentioned in community discussion but could not be independently veri
 **Website:** [delawaremeats.ohag4u.com](http://delawaremeats.ohag4u.com/)  
 **About:** Delaware Meats is a locally operated meat shop and butcher in Delaware, Ohio, known for beef and other cuts processed on site. They offer custom meat services and have been serving the region with quality meat products. 
 
+---
+
 ### Winner’s Meats {#winners-meats}
 
 - **Location:** Logan County, OH  
