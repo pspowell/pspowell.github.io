@@ -4,8 +4,16 @@ title: "Local Beef Producers in Champaign County, Ohio"
 date: 2026-02-04
 tags: [local-food, beef, farms, champaign-county]
 ---
+## Scope {#scope}
 
-## Verified Champaign County Beef Producers {#verified-producers}
+This is a work in process list of **local and regional beef producers** and **custom meat processors** serving the **Champaign County, Ohio area**  
+(Urbana, Mechanicsburg, St. Paris, North Lewisburg, West Liberty, and nearby counties).
+
+Send comments/updates to pspowell@gmail.com
+
+Listings are based on **publicly available information** (websites, Facebook pages, extension/fair directories, feed dealer listings).  
+This is *not* an endorsement list — it’s meant for **identification, sourcing, and due diligence**.
+## Champaign County Beef Producers {#verified-producers}
 
 ### Woodruff / The Woodruff Farm {#woodruff-farm}
 - **Location:** Urbana, Champaign County, OH
@@ -67,6 +75,17 @@ These were mentioned in community discussion but could not be independently veri
 *This list distinguishes between verified Champaign County beef producers and community-referenced farms. Inclusion does not imply endorsement; details reflect publicly available information as of publication date.*
 ## Beef Processors & Butcher Shops {#processors}
 
+### J&L Butcher Shop — Medway, OH
+
+**Type:** Butcher / Meat Shop  
+**Address:** 2342 Union Rd, Medway, OH 45341  
+**Phone:** (937) 475-4584 
+**About:** J&L Butcher Shop offers fresh beef, pork, custom cuts, vacuum sealing, and processing services. They are known locally for quality meats and personalized service. 
+**Website / Social:**  
+- Website: http://jandlfarmbutchershop.ohag4u.com/ :contentReference[oaicite:5]{index=5}  
+- Facebook: Search “J & L Farm Butcher Shop – Medway, OH” on Facebook :contentReference[oaicite:6]{index=6}
+
+
 ### D & D Meats {#d-and-d-meats}
 
 - **Location:** Urbana, OH  
@@ -87,6 +106,14 @@ These were mentioned in community discussion but could not be independently veri
 - **Notes:** Long-established regional processor
 
 ---
+
+### Delaware Meats — Delaware, OH
+
+**Type:** Local butcher / meat shop  
+**Address:** 1175 London Rd, Delaware, OH 43015  
+**Phone:** (740) 363-6561  
+**Website:** [delawaremeats.ohag4u.com](http://delawaremeats.ohag4u.com/)  
+**About:** Delaware Meats is a locally operated meat shop and butcher in Delaware, Ohio, known for beef and other cuts processed on site. They offer custom meat services and have been serving the region with quality meat products. 
 
 ### Winner’s Meats {#winners-meats}
 
