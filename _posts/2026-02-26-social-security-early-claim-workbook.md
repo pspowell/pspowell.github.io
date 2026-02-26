@@ -8,8 +8,6 @@ This page documents the Excel workbook used to analyze whether to **claim Social
 
 **Download:** [Social Security Early-Claim Workbook (Excel)](/assets/social-security-early-claim-workbook.xlsx)
 
-> Place the workbook file at: `assets/social-security-early-claim-workbook.xlsx` in your Jekyll site so the link above works.
-
 ## Why this workbook exists (the rationale) {#rationale}
 
 Deciding when to claim is a tradeoff between:
