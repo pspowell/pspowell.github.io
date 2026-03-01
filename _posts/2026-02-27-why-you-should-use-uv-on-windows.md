@@ -36,6 +36,11 @@ The diagram above shows how `uv` simplifies everything:
 -   Automation-friendly execution
 
 ------------------------------------------------------------------------
+## Helpful links
+
+- [a good YouTube Video](https://www.youtube.com/watch?v=AMdG7IjgSPM&t=94s)
+- [The UV HomePage](https://docs.astral.sh/uv/)
+
 
 ## 🪟 Installing uv on Windows 11 {#installing-uv-windows}
 
