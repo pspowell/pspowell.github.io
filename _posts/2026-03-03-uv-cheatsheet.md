@@ -9,7 +9,6 @@ tags: [python, uv, virtualenv, packaging, windows]
 
 - **Printable one-sheet (double-sided) PDF:** **[Download UV Cheatsheet PDF](/assets/2026-03-03-uv-cheatsheet.pdf)**
 
-> Place the PDF at: `\assets\2026-03-03-uv-cheatsheet.pdf` in your Jekyll site (URL path: `/assets/2026-03-03-uv-cheatsheet.pdf`).
 
 ---
 
