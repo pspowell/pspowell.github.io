@@ -578,41 +578,51 @@ Jekyll lets you use Liquid templating in Markdown documents.
 
 ### Output a variable
 
+{% raw %}
 ```liquid
 {{ page.title }}
 ```
+{% endraw %}
 
 ### Use a filter
 
+{% raw %}
 ```liquid
 {{ "/assets/files/example.pdf" | relative_url }}
 ```
+{% endraw %}
 
 ### Conditional example
 
+{% raw %}
 ```liquid
 {% if page.title %}
 # {{ page.title }}
 {% endif %}
 ```
+{% endraw %}
 
 ### Loop example
 
+{% raw %}
 ```liquid
 {% for post in site.posts limit:5 %}
 - [{{ post.title }}]({{ post.url }})
 {% endfor %}
 ```
+{% endraw %}
 
 ### Warning about Liquid and code examples
 
 If you want to show Liquid syntax literally, wrap it so Jekyll does not execute it:
 
+{% raw %}
 ```liquid
 {% raw %}
 {{ page.title }}
 {% endraw %}
 ```
+{% endraw %}
 
 ---
 
@@ -626,11 +636,13 @@ If you want to show Liquid syntax literally, wrap it so Jekyll does not execute 
 
 ### Liquid comment
 
+{% raw %}
 ```liquid
 {% comment %}
 This will not be rendered.
 {% endcomment %}
 ```
+{% endraw %}
 
 ---
 
