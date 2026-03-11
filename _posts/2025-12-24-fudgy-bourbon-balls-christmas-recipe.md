@@ -1,5 +1,5 @@
 ---
-layout: recipe-print
+layout: post
 title: "Fudgy Bourbon Balls (Classic Christmas)"
 date: 2025-12-24 09:00:00 -0500
 tags: [recipe, dessert, christmas, holiday, bourbon]
