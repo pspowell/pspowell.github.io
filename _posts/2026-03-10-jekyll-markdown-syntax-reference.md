@@ -759,10 +759,12 @@ These are not normal Markdown content; they mark the YAML front matter block.
 
 ### Liquid delimiters
 
+{% raw %}
 ```liquid
 {{ variable }}
 {% tag %}
 ```
+{% endraw %}
 
 These belong to Liquid, not Markdown, but they are commonly used inside Jekyll Markdown files.
 
