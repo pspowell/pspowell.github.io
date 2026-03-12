@@ -257,7 +257,7 @@ Often available with GFM-style input.
 ```md
 [OpenAI][openai]
 
-[openai]: https://openai.com
+[openai]: [https://openai.com](https://openai.com)
 ```
 
 ### Link to local page or file
@@ -618,9 +618,7 @@ If you want to show Liquid syntax literally, wrap it so Jekyll does not execute 
 
 {% raw %}
 ```liquid
-{% raw %}
 {{ page.title }}
-{% endraw %}
 ```
 {% endraw %}
 
@@ -631,7 +629,6 @@ If you want to show Liquid syntax literally, wrap it so Jekyll does not execute 
 ### HTML comment
 
 ```md
-<!-- This is an HTML comment -->
 ```
 
 ### Liquid comment
@@ -653,7 +650,7 @@ Do not assume a plain bare URL will always render as a clickable link in every J
 Safer form:
 
 ```md
-<https://example.com>
+[https://example.com](https://example.com)
 ```
 
 Or the standard link form:
@@ -878,9 +875,9 @@ This behavior depends on configuration.[^config]
 | Header ID | `## Title {#id}` |
 | Block attributes | `{: .class #id }` |
 | HTML | `<div>...</div>` |
-| Liquid output | `{{ page.title }}` |
-| Liquid tag | `{% if %}...{% endif %}` |
-| Raw Liquid escape | `{% raw %}...{% endraw %}` |
+| Liquid output | `{{ "{{" }} page.title }}` |
+| Liquid tag | `{% "{%" %} if %}...{% "{%" %} endif %}` |
+| Raw Liquid escape | `{% "{%" %} raw %}...{% "{%" %} endraw %}` |
 
 ---
 

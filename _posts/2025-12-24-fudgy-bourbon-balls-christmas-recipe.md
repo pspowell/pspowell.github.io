@@ -21,7 +21,7 @@ recipe:
 **Yield:** {{ page.recipe.yield }}  
 **Best after:** {{ page.recipe.best_after }}  
 **Storage:** {{ page.recipe.storage }}  
-**Note:** Contains {{ page.recipe.contains }}
+**Note:** Contains {{ page.recipe['contains'] }}
 
 ---
 
@@ -60,7 +60,6 @@ recipe:
 
 Copy/paste onto a small tag:
 
-> **Fudgy Bourbon Balls**  
-> Homemade for the holidays 🎄  
+> **Fudgy Bourbon Balls** > Homemade for the holidays 🎄  
 > Best after 3–4 days • Contains bourbon & pecans  
 > Made by: ____________
