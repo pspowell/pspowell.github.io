@@ -832,7 +832,7 @@ Front matter
 ```md
 This behavior depends on configuration.[^config]
 
-[^config]: Check `_config.yml` and theme docs.
+[^config]: Check `_config.yml` and theme docs. 
 ```
 
 ---
@@ -843,7 +843,7 @@ This behavior depends on configuration.[^config]
 2. Prefer normal Markdown first; use HTML only when needed.
 3. Use fenced code blocks with a language whenever possible.
 4. Use absolute asset paths like `/assets/...` for site files.
-5. Be careful when showing Liquid examples; use `{% raw %}` when needed.
+5. Be careful when showing Liquid examples; use `{% raw %} {% endraw %}` when needed.
 6. Verify parser-dependent features such as task lists, math, emoji, and strikethrough.
 
 ---
