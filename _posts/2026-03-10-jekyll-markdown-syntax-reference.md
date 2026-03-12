@@ -832,7 +832,7 @@ Front matter
 ```md
 This behavior depends on configuration.[^config]
 
-[^config]: Check `_config.yml` and theme docs.
+[^config]: Check `_config.yml` and theme docs. 
 ```
 
 ---
