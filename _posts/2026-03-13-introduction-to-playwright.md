@@ -17,23 +17,23 @@ Below is a curated **jump list of resources and examples** to explore Playwright
 
 ## Official Playwright Documentation and Examples
 
-- https://playwright.dev/docs/examples  
+- [https://playwright.dev/docs/examples](https://playwright.dev/docs/examples)  
   Official Playwright examples covering login automation, screenshots, form automation, downloads, and multi-tab workflows.
 
-- https://playwright.dev/showcase  
+- <https://playwright.dev/showcase>  
   A showcase of companies and projects using Playwright in production.
 
 ---
 
 ## Playwright GitHub Repositories
 
-- https://github.com/microsoft/playwright  
+- <https://github.com/microsoft/playwright>  
   The main Playwright source repository.
 
-- https://github.com/microsoft/playwright/tree/main/examples  
+- <https://github.com/microsoft/playwright/tree/main/examples>  
   Example test suites demonstrating real Playwright workflows.
 
-- https://github.com/microsoft/playwright-python/tree/main/examples  
+- <https://github.com/microsoft/playwright-python/tree/main/examples>  
   Python-specific examples for browser automation and testing.
 
 ---
