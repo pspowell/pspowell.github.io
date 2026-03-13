@@ -54,17 +54,17 @@ This opens a browser, records your interactions, and generates automation code a
 
 ## Community Example Repositories
 
-- https://github.com/checkly/playwright-examples  
+- <https://github.com/checkly/playwright-examples>  
   A collection of practical Playwright automation examples.
 
-- https://github.com/scrapy-plugins/scrapy-playwright  
+- <https://github.com/scrapy-plugins/scrapy-playwright>  
   Demonstrates using Playwright with Scrapy for dynamic web scraping.
 
 ---
 
 ## Curated Playwright Resource Lists
 
-- https://github.com/mxschmitt/awesome-playwright  
+- <https://github.com/mxschmitt/awesome-playwright>  
   A curated list of Playwright tutorials, tools, examples, and integrations.
 
 ---
