@@ -883,8 +883,15 @@ This behavior depends on configuration.[^config]
 - Liquid tag: `{% if page.title %}...{% endif %}`
 {% endraw %}
 
-- Raw Liquid escape: write `&#123;% raw %&#125;` and `&#123;% endraw %&#125;` in documentation.
+### Raw Liquid escape
 
+Use a raw block when you want Jekyll to display Liquid literally:
+
+```text
+{% raw %}
+{{ page.title }}
+{% endraw %}
+```
 ## 31. Final note {#final-note}
 
 If something in this file does not render the way you expect, the first places to check are:
