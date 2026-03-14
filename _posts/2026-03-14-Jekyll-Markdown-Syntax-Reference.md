@@ -1,4 +1,3 @@
-@ -1,893 +0,0 @@
 ---
 layout: post
 title: "Jekyll Markdown Syntax Reference"
@@ -866,9 +865,9 @@ This behavior depends on configuration.[^config]
 | Link | `[text](url)` |
 | Image | `![alt](url)` |
 | Inline code | `` `code` `` |
-| Fenced code | <code>```lang</code> |
+| Fenced code | <code>\`\`\`lang</code> |
 | Horizontal rule | `---` |
-| Table | `| a | b |` |
+| Table | `\| a \| b \|` |
 | Footnote ref | `[^1]` |
 | Footnote def | `[^1]: note` |
 | Definition list | `Term` then `: Definition` |
@@ -876,10 +875,10 @@ This behavior depends on configuration.[^config]
 | Header ID | `## Title {#id}` |
 | Block attributes | `{: .class #id }` |
 | HTML | `<div>...</div>` |
-| Liquid output     | <code>{{ page.title }}</code>                |
-| Liquid tag        | <code> {% raw %} {% if %}...{% endif %} {% endraw %} </code>          |
-| Raw Liquid escape | <code>{% raw %}...{% endraw %}</code>        |
----
+| Liquid output | <code>{% raw %}{{ page.title }}{% endraw %}</code> |
+| Liquid tag | <code>{% raw %}{% if %}...{% endif %}{% endraw %}</code> |
+| Raw Liquid escape | <code>{% raw %}{% raw %}...{% endraw %}{% endraw %}</code> |
+
 
 ## 31. Final note {#final-note}
 
