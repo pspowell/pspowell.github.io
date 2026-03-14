@@ -885,13 +885,8 @@ This behavior depends on configuration.[^config]
 
 ### Raw Liquid escape
 
-Use a raw block when you want Jekyll to display Liquid literally:
+Use a raw/endraw block to prevent Liquid from executing:
 
-```text
-{% raw %}
-{{ page.title }}
-{% endraw %}
-```
 ## 31. Final note {#final-note}
 
 If something in this file does not render the way you expect, the first places to check are:
