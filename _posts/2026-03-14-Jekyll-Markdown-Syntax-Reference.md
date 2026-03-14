@@ -875,10 +875,14 @@ This behavior depends on configuration.[^config]
 | Header ID | `## Title {#id}` |
 | Block attributes | `{: .class #id }` |
 | HTML | `<div>...</div>` |
-| Liquid output | <code>{% raw %}{{ page.title }}{% endraw %}</code> |
-| Liquid tag | <code>{% raw %}{% if %}...{% endif %}{% endraw %}</code> |
-| Raw Liquid escape | <code>{% raw %}{% raw %}...{% endraw %}{% endraw %}</code> |
 
+## Liquid examples
+
+{% raw %}
+- Liquid output: `<code>{{ page.title }}</code>`
+- Liquid tag: `<code>{% if page.title %}...{% endif %}</code>`
+- Raw Liquid escape: `<code>{% raw %}...{% endraw %}</code>`
+{% endraw %}
 
 ## 31. Final note {#final-note}
 
