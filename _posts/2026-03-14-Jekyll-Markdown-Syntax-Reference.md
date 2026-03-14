@@ -883,7 +883,7 @@ This behavior depends on configuration.[^config]
 - Liquid tag: `{% if page.title %}...{% endif %}`
 {% endraw %}
 
-- Raw Liquid escape: write `{% raw %}` and `{% endraw %}` as plain text in documentation, or explain them outside a raw block.
+- Raw Liquid escape: write `&#123;% raw %&#125;` and `&#123;% endraw %&#125;` in documentation.
 
 ## 31. Final note {#final-note}
 
