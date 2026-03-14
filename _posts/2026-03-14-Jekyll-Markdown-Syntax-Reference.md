@@ -879,10 +879,11 @@ This behavior depends on configuration.[^config]
 ## Liquid examples
 
 {% raw %}
-- Liquid output: `<code>{{ page.title }}</code>`
-- Liquid tag: `<code>{% if page.title %}...{% endif %}</code>`
-- Raw Liquid escape: `<code>{% raw %}...{% endraw %}</code>`
+- Liquid output: `{{ page.title }}`
+- Liquid tag: `{% if page.title %}...{% endif %}`
 {% endraw %}
+
+- Raw Liquid escape: write `{% raw %}` and `{% endraw %}` as plain text in documentation, or explain them outside a raw block.
 
 ## 31. Final note {#final-note}
 
