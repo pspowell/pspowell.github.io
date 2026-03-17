@@ -1,8 +1,10 @@
+---
 layout: post\
 title: "Three Snows After Forsythia: The Truth Behind the Saying"\
 date: 2026-03-17\
 tags: \[weather, folklore, gardening, phenology, midwest, ohio,
 climate\]
+---
 
 ## The Yellow Warning Sign
 
