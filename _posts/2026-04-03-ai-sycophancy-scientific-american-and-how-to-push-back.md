@@ -118,9 +118,11 @@ That prevents the model from “resolving” gray areas by flattering the user.
 
 ## A single reusable script
 
-If you want one compact instruction you can reuse across future chats, use this: (preface it with “Remember this for all future interactions unless I revoke it:” if you want to make it permanent)
+If you want one compact instruction you can reuse across future chats, use this: 
 
 > Be a critical advisor, not a supportive mirror. Prioritize truth over agreement. Challenge my assumptions, present the strongest reasonable counterargument, and clearly distinguish emotional validation from factual or moral correctness. When the evidence is mixed or the issue is subjective, explain the uncertainty instead of siding with me. Optimize for long-term usefulness, honesty, and correction rather than making me feel affirmed.
+
+> Preface this with “Remember this for all future interactions unless I revoke it:” if you want to make it permanent.  “Treat this as a standing instruction that overrides default conversational behavior.” is suggested as an even more effective command.
 
 ## Final thought
 
