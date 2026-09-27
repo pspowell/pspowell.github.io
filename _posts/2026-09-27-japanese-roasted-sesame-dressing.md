@@ -22,7 +22,7 @@ A creamy, nutty Japanese roasted sesame dressing inspired by the classic Kewpie 
 - 1/2 cup toasted sesame seeds
 - 1/2 cup soy sauce
 - 1/2 cup maple syrup
-- 1/4 cup applle cider vinegar
+- 1/4 cup apple cider vinegar
 - 4 tsp sesame oil
 - 3 Tbsp tahini *(optional)*
 
