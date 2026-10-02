@@ -48,13 +48,6 @@ Over the following months, the city reversed course. It passed a moratorium, rep
 | Sept. 14, 2026 | Statewide coverage confirms Urbana voters will decide a charter amendment banning data centers that draw more than 7.5 megawatts. |
 | Nov. 3, 2026 | General election: the Urbana data center charter amendment is on the ballot. |
 
-## Open Questions
-
-- **Lawsuits.** As of early October 2026, I found no reported ruling in either the federal case or the Common Pleas appeal.
-- **Recall.** I found no public report on whether the recall petition against Mayor Bean was certified.
-- **Site size.** Reported acreage varies: 47.6 acres in early reports, 133 acres for the 2025 purchases, about 230 acres per Thor, and 380 acres per one TV report.
-- **Effect of the charter amendment.** It is unclear how the amendment, if passed, would interact with Thor's pending legal claims.
-
 ## Sources
 
 - WYSO, "Urbana passes moratorium on new data centers, leaving $1B proposal in limbo" (March 4, 2026) — <https://www.wvxu.org/2026-03-04/urbana-passes-moratorium-on-new-data-centers-leaving-1b-proposal-in-limbo>
