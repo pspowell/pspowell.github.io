@@ -7,7 +7,7 @@ tags: [welding, fabrication, welding-cart, square-tube, cut-list]
 
 A three-shelf welding cart built from 1.5" square tube (11 ga, 0.120" wall), with 3/4" plywood on every shelf, 16" of clear height above each shelf, and an 8" extension on the bottom shelf for the gas tanks. All joints are butt joints. The columns run flush to the top of the top rails, and the open column tops are covered by the top plywood.
 
-![Welding cart, oblique view with dimensions](./assets/welding-cart-drawing.png)
+![Welding cart, oblique view with dimensions](/assets/welding-cart-drawing.png)
 
 ## Overall dimensions
 
