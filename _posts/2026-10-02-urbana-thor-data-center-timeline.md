@@ -2,11 +2,11 @@
 layout: post
 title: "The Thor Equities Data Center in Urbana, Ohio: Background and Timeline"
 date: 2026-10-02
-last_modified_at: 2026-10-11
-tags: [urbana, champaign-county, data-centers, thor-equities, cedar-bog, zoning, local-government]
+last_modified_at: 2026-10-22
+tags: [urbana, champaign-county, data-centers, thor-equities, cedar-bog, zoning, local-government, maps]
 ---
 
-*Updated October 11, 2026, with the proposed settlement, the October 6 council meeting, and earlier events reported by the Urbana Daily Citizen.*
+*Updated October 22, 2026, with a parcel map of Thor's land from county records. Earlier update (October 11) added the proposed settlement, the October 6 council meeting, and earlier events reported by the Urbana Daily Citizen.*
 
 ## Introduction
 
@@ -23,6 +23,25 @@ Opposition organized quickly around three concerns:
 Thor and city officials argued the project would bring about $3 million a year in city tax revenue and about $2.8 million a year for Urbana City Schools, and that it would use closed-loop cooling and not raise local utility rates.
 
 Over the following months the city reversed course. It passed a moratorium, repealed the zoning that permitted data centers, and drew a federal lawsuit from Thor. The dispute spread into a November ballot measure to ban data centers and a recall election against the mayor. In late September, court-ordered mediation produced a proposed settlement. Its terms, made public in early October, would allow up to **2 million square feet** of data center space, more than four times the original proposal, in exchange for up to $50 million in payments to the city. Council is scheduled to consider it on October 20.
+
+## Site Map
+
+![Parcel map of Thor Equities land in south Urbana, south of SR 55 and west of US 68](/assets/images/urbana-thor-parcels-map.png)
+
+The Champaign County Auditor's parcel records show three parcels, 144.7 acres in all, held by two Thor Equities LLCs. All three are mailed to Thor Equities at 25 W 39th St, New York. Together they run from SR 55 south and east to US 68, beside the Urbana City Schools parcel at 1673 S US 68.
+
+| Parcel | Owner of record | Acres | Recorded sale | Price |
+|--------|-----------------|------:|---------------|------:|
+| K48-25-11-01-30-001-00 | Urbana Owner I LLC (taxpayer: Thor Equities LLC) | 47.637 | Aug. 22, 2025 | $2,143,665 |
+| K48-25-11-01-30-006-00 | Urbana Owner II LLC (c/o Thor Equities) | 90.000 | June 12, 2026 | $3,398,150 (one sale, both parcels) |
+| K48-25-11-01-30-005-00 | Urbana Owner II LLC (c/o Thor Equities) | 7.090 | June 12, 2026 | |
+| **Total** | | **144.727** | | **$5,541,815** |
+
+The two Owner II parcels match the "nearly 100 acres of Organ Farms land (about $3.4 million)" in the timeline below.
+
+The hatched parcel to the west is 85.6 acres owned by Highland55 Investments LLC of Columbus, sold in November 2025 for $3,210,713. The county record does not name Thor. Its size is the reason it is shown. It plus the 47.6-acre parcel make about 133 acres, the figure reported for Thor's 2025 purchases. All four parcels together total about 230 acres, the figure Thor gave in its federal lawsuit. Whether Highland55 is connected to Thor is not confirmed.
+
+Boundaries come from the county auditor's parcel layer as of Oct. 22, 2026. Lots under one acre are omitted from the drawing.
 
 ## Timeline
 
@@ -69,6 +88,7 @@ Over the following months the city reversed course. It passed a moratorium, repe
 
 ## Sources
 
+- Champaign County Auditor, parcel records for K48-25-11-01-30-001-00, -005-00, -006-00 and K48-25-11-01-32-005-00 (accessed Oct. 22, 2026) — <https://auditor.co.champaign.oh.us/Parcel?Parcel=K48-25-11-01-30-001-00>
 - Urbana Daily Citizen, "Feinstein steps down as city law director" (July 7, 2026) — <https://www.urbanacitizen.com/2026/07/07/feinstein-steps-down-as-city-law-director/>
 - Urbana Daily Citizen, "Mayoral recall, charter amendment on Nov. ballot" (July 20, 2026) — <https://www.urbanacitizen.com/2026/07/20/mayoral-recall-charter-amendment-on-nov-ballot/>
 - Urbana Daily Citizen, "Mayor Bean issues public statement" (July 27, 2026) — <https://www.urbanacitizen.com/2026/07/27/mayor-bean-issues-public-statement/>
