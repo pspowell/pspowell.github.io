@@ -2,11 +2,13 @@
 layout: post
 title: "Holes in the Proposed Thor Equities Settlement"
 date: 2026-10-07
-last_modified_at: 2026-10-11
+last_modified_at: 2026-10-22
 tags: [urbana, champaign-county, data-centers, thor-equities, settlement, cedar-bog, local-government]
 ---
 
-In late September 2026, court-ordered mediation produced a proposed settlement of Thor Equities' federal lawsuit against the City of Urbana over its data center moratorium and zoning repeal. The terms are in a Memorandum of Understanding (MOU). Mayor Bill Bean summarized it in an Oct. 4 open letter and called it "a good deal." After council received the MOU in executive session on Oct. 6 and declined to vote, opponents obtained the text, and the Urbana Daily Citizen reported its key terms, including one the Mayor's letter left out: the project could grow to **2 million square feet**, more than four times the original proposal. Council is scheduled to consider the settlement on Oct. 20.
+In late September 2026, court-ordered mediation produced a proposed settlement of Thor Equities' federal lawsuit against the City of Urbana over its data center moratorium and zoning repeal. The terms are in a Memorandum of Understanding (MOU). Mayor Bill Bean summarized it in an Oct. 4 open letter and called it "a good deal." After council received the MOU in executive session on Oct. 6 and declined to vote, opponents obtained the text, and the Urbana Daily Citizen reported its key terms, including one the Mayor's letter left out: the project could grow to **2 million square feet**, more than four times the original proposal. On Oct. 20, council voted 4–3 to table the settlement. It can return at council's Nov. 3 meeting, which falls on Election Day.
+
+*Updated Oct. 22, 2026, after the Oct. 20 vote to table.*
 
 This post looks at what the deal leaves out or leaves open: 23 gaps, each with the question residents should put to council before any vote. For background, see the [timeline of the Thor data center dispute]({% post_url 2026-10-02-urbana-thor-data-center-timeline %}).
 
@@ -194,9 +196,9 @@ This post looks at what the deal leaves out or leaves open: 23 gaps, each with t
 
 ### 22. A rushed timeline that skips the city’s own process
 
-**What we’ve been told:** The MOU called for council approval on or before Oct. 7, the day after council first saw it. Council did not vote and is now scheduled to consider it on Oct. 20.
+**What we’ve been told:** The MOU called for council approval on or before Oct. 7, the day after council first saw it. Council did not vote then. On Oct. 20 it voted 4–3 to table the settlement, and it can bring the settlement back at its Nov. 3 meeting.
 
-**The hole:** The Oct. 7 deadline gave council one day. Oct. 20 is two weeks before voters decide the data center ban and the mayoral recall. Council’s own Data Center Moratorium Committee says its study is not finished and expects to deliver written recommendations in early 2027, before the moratorium ends in March 2027. Its co-chairs warn that a settlement would effectively approve what the moratorium put on hold and settle land-use questions still pending in Common Pleas Court. No public hearing or Planning Commission review has been scheduled.
+**The hole:** The Oct. 7 deadline gave council one day. The Nov. 3 meeting falls on Election Day, and council could act before voters' decisions on the data center ban and the mayoral recall are known. The Oct. 20 vote to table passed by a single vote. Council’s own Data Center Moratorium Committee says its study is not finished and expects to deliver written recommendations in early 2027, before the moratorium ends in March 2027. Its co-chairs warn that a settlement would effectively approve what the moratorium put on hold and settle land-use questions still pending in Common Pleas Court. No public hearing or Planning Commission review has been scheduled.
 
 **Ask:** Why must council decide before the election and before its own committee reports? Will council hold a dedicated public hearing and Planning Commission review? Will any vote use full readings rather than suspending the rules?
 
