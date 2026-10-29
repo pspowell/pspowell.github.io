@@ -382,7 +382,7 @@ If you don't pass `-DevRoot` and the PC has more than one fixed drive, the scrip
 
 The default is the drive that already has a `\Dev` folder, or `C:` if none does. With one fixed drive, it uses `C:\Dev` without asking. Everything in this article that says `C:\Dev` then means `<drive>:\Dev`. The script sets `UV_PYTHON_INSTALL_DIR` and `UV_CACHE_DIR` to match, and you use the same drive for `UV_PROJECT_ENVIRONMENT` and the `uvenv` helper.
 
-If you move to a different drive, the script removes the old uv Python install (wherever `UV_PYTHON_INSTALL_DIR` pointed). It doesn't move anything else from the old `Dev` folder, such as projects or old venvs. Move or delete those yourself.
+If you move to a different drive, the script creates nothing on the old drive. It removes the old uv Python install and cache (wherever `UV_PYTHON_INSTALL_DIR` and `UV_CACHE_DIR` pointed) and empties the old `venvs` folder (unless you pass `-KeepVenvs`). It deletes the old `Dev` folder only if that leaves it empty. Projects and anything else there are kept; move those yourself.
 
 ### After it finishes {#after-reset}
 

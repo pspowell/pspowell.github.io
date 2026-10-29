@@ -170,10 +170,26 @@ $regInstalls = $regInstalls | Sort-Object Name -Unique
 $appx = @(Get-AppxPackage -ErrorAction SilentlyContinue |
           Where-Object { $_.Name -like 'PythonSoftwareFoundation.*' })
 
+# Where uv put things before this run (may be on a different drive than $DevRoot)
+$OldPyDir    = [Environment]::GetEnvironmentVariable("UV_PYTHON_INSTALL_DIR", "User")
+$OldCacheDir = [Environment]::GetEnvironmentVariable("UV_CACHE_DIR", "User")
+$OldDevRoot  = $null
+if ($OldPyDir -and ((Split-Path -Leaf $OldPyDir) -eq "uv-python")) {
+    $OldDevRoot = Split-Path -Parent $OldPyDir
+    if ($OldDevRoot.TrimEnd('\') -eq $DevRoot) { $OldDevRoot = $null }   # not moving
+}
+$OldVenvDir = $(if ($OldDevRoot) { Join-Path $OldDevRoot "venvs" } else { $null })
+
+# The uv install folder uv would look in right now. uv creates its install
+# folder and cache folder just by running, so only call uv if that folder
+# exists, and always with --no-cache, so no stray Dev folder appears on the
+# old drive (or on any drive during -DryRun).
+$CurPyDir = $(if ($env:UV_PYTHON_INSTALL_DIR) { $env:UV_PYTHON_INSTALL_DIR } else { Join-Path $env:APPDATA "uv\python" })
 $uvExe = Get-Command uv -ErrorAction SilentlyContinue
 $uvPythons = @()
-if ($uvExe) {
-    $uvPythons = @(& uv python list --only-installed 2>$null)
+$uvHasPythons = $uvExe -and (Test-Path -LiteralPath $CurPyDir)
+if ($uvHasPythons) {
+    $uvPythons = @(& uv --no-cache python list --only-installed 2>$null)
 }
 
 $shims = @()
@@ -188,8 +204,9 @@ $leftoverDirs = @(
     (Join-Path $env:LOCALAPPDATA "pip\cache"),
     (Join-Path $env:APPDATA "uv\python"),
     $UvPythonDir,
-    # wherever uv-managed Python was before, in case the Dev folder is moving drives
-    [Environment]::GetEnvironmentVariable("UV_PYTHON_INSTALL_DIR", "User")
+    # old uv Python and cache folders, in case the Dev folder is moving drives
+    $OldPyDir,
+    $(if ($OldCacheDir -and ($OldCacheDir.TrimEnd('\') -ne $UvCacheDir)) { $OldCacheDir } else { $null })
 ) | Where-Object { $_ -and (Test-Path -LiteralPath $_) } | Sort-Object -Unique
 
 $userPath = [Environment]::GetEnvironmentVariable("Path", "User")
@@ -209,6 +226,8 @@ if ($shims) { $shims | ForEach-Object { Write-Item $_.Name } } else { Write-Item
 Write-Host "   Folders to delete:"
 if ($leftoverDirs) { $leftoverDirs | ForEach-Object { Write-Item $_ } } else { Write-Item "(none)" }
 if (-not $KeepVenvs -and (Test-Path $VenvDir)) { Write-Item "$VenvDir\* (venvs)" }
+if (-not $KeepVenvs -and $OldVenvDir -and (Test-Path $OldVenvDir)) { Write-Item "$OldVenvDir\* (old venvs)" }
+if ($OldDevRoot) { Write-Item "$OldDevRoot itself, only if it ends up empty (projects there are kept)" }
 Write-Host "   PATH entries to remove:"
 @($userPathHits | ForEach-Object { "User:    $_" }) + @($machPathHits | ForEach-Object { "Machine: $_" }) |
     ForEach-Object { Write-Item $_ }
@@ -241,8 +260,8 @@ if (-not $Force) {
 # 2. Remove uv-managed Pythons
 # ---------------------------------------------------------------------------
 Write-Step "Removing uv-managed Pythons"
-if ($uvExe) {
-    & uv python uninstall --all 2>&1 | ForEach-Object { Write-Item $_ }
+if ($uvHasPythons) {
+    & uv --no-cache python uninstall --all 2>&1 | ForEach-Object { Write-Item $_ }
 }
 foreach ($s in $shims) { Remove-PathSafe $s.FullName }
 
@@ -286,8 +305,20 @@ foreach ($a in $appx) {
 # ---------------------------------------------------------------------------
 Write-Step "Deleting leftover folders"
 foreach ($d in $leftoverDirs) { Remove-PathSafe $d }
-if (-not $KeepVenvs -and (Test-Path $VenvDir)) {
-    Get-ChildItem -LiteralPath $VenvDir -Force | ForEach-Object { Remove-PathSafe $_.FullName }
+if (-not $KeepVenvs) {
+    foreach ($vd in @($VenvDir, $OldVenvDir)) {
+        if ($vd -and (Test-Path -LiteralPath $vd)) {
+            Get-ChildItem -LiteralPath $vd -Force | ForEach-Object { Remove-PathSafe $_.FullName }
+        }
+    }
+    if ($OldVenvDir) { Remove-PathSafe $OldVenvDir }
+}
+# Remove the old Dev folder only if nothing is left in it
+if ($OldDevRoot -and (Test-Path -LiteralPath $OldDevRoot) -and
+    -not (Get-ChildItem -LiteralPath $OldDevRoot -Force -ErrorAction SilentlyContinue)) {
+    Remove-PathSafe $OldDevRoot
+} elseif ($OldDevRoot -and (Test-Path -LiteralPath $OldDevRoot)) {
+    Write-Item "kept $OldDevRoot (it still has other files, e.g. projects)"
 }
 
 # ---------------------------------------------------------------------------
