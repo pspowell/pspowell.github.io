@@ -2,7 +2,7 @@
 layout: post
 title: "Holes in the Proposed Thor Equities Settlement"
 date: 2026-10-07
-last_modified_at: 2026-10-22
+last_modified_at: 2026-10-29
 tags: [urbana, champaign-county, data-centers, thor-equities, settlement, cedar-bog, local-government]
 ---
 
@@ -46,9 +46,9 @@ This post looks at what the deal leaves out or leaves open: 23 gaps, each with t
 
 **What we’ve been told:** Thor would release damages claims “estimated to exceed $115 million.”
 
-**The hole:** That is the plaintiff’s number, not an independent assessment of what the city would likely owe. The city had real defenses: the BZA rejected the site plan, council repealed the zoning, a citizen group has reportedly intervened in the state case, and residents argue Thor never had a vested site plan. Trading land-use control for the release of an inflated claim may be a poor bargain.
+**The hole:** That is the plaintiff’s number, not an independent assessment of what the city would likely owe. The city had real defenses: the BZA rejected the site plan, council repealed the zoning, a citizen group has reportedly intervened in the state case, and residents argue Thor never had a vested site plan. On Oct. 20, the Ohio Supreme Court ruled unanimously in a Lordstown case that a data center developer's rights did not vest when it submitted a site plan before a moratorium, because it had not yet completed site-plan review (*State ex rel. Bristolville 25 Developer LLC v. Lordstown*, 2026-Ohio-4073). The city found Thor's February application incomplete, so the ruling strengthens the city's hand on the state-law claim. Trading land-use control for the release of an inflated claim may be a poor bargain.
 
-**Ask:** Who estimated $115 million? What is the city’s own counsel’s assessment of the realistic exposure and the chance of winning? Is the city’s insurance carrier involved, and does it cover any of the exposure?
+**Ask:** Who estimated $115 million? What is the city’s own counsel’s assessment of the realistic exposure and the chance of winning, especially after the Lordstown ruling? Is the city’s insurance carrier involved, and does it cover any of the exposure?
 
 ### 5. School revenue is unquantified
 
@@ -218,3 +218,7 @@ This post looks at what the deal leaves out or leaves open: 23 gaps, each with t
 - Any damages analysis or litigation-risk assessment the city received (may be withheld as privileged; ask anyway).
 - Any correspondence with AES Ohio about power demand for the site.
 - The city’s Open Meetings Act notice rules and council rules on readings.
+
+## Sources
+
+- Court News Ohio, "Village Can Reject Data Center Construction Application After Moratorium Imposed" (Oct. 20, 2026), summarizing *State ex rel. Bristolville 25 Developer LLC v. Lordstown*, Slip Opinion No. 2026-Ohio-4073 — <https://www.courtnewsohio.gov/cases/2026/SCO/1020/251497.asp>
