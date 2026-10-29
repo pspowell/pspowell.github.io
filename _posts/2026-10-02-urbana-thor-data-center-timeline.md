@@ -2,11 +2,11 @@
 layout: post
 title: "The Thor Equities Data Center in Urbana, Ohio: Background and Timeline"
 date: 2026-10-02
-last_modified_at: 2026-10-22
+last_modified_at: 2026-10-29
 tags: [urbana, champaign-county, data-centers, thor-equities, cedar-bog, zoning, local-government, maps]
 ---
 
-*Updated October 22, 2026, with the October 20 council vote to table the settlement, a parcel map and deed dates from county records, and a correction to the site purchase date. Earlier update (October 11) added the proposed settlement, the October 6 council meeting, and earlier events reported by the Urbana Daily Citizen.*
+*Updated October 29, 2026, with Urbana Daily Citizen coverage through Oct. 28: the ballot-wording confusion over the charter amendment, the Rittal expansion next to the site, and details of the Nov. 3 council meeting. Earlier update (October 22) added the October 20 council vote to table the settlement, a parcel map and deed dates from county records, and a correction to the site purchase date. Earlier update (October 11) added the proposed settlement, the October 6 council meeting, and earlier events reported by the Urbana Daily Citizen.*
 
 ## Introduction
 
@@ -75,19 +75,22 @@ Boundaries come from the county auditor's parcel layer as of Oct. 22, 2026. Lots
 | Sept. 21 and 25, 2026 | Court-ordered mediation sessions are held between the city and Thor. |
 | Sept. 29, 2026 | The city announces that mediation produced a proposal from Thor for council to consider. No details are released. |
 | Oct. 4, 2026 | Mayor Bean issues an open letter summarizing the proposed settlement and calling it "a good deal." Terms include Thor releasing claims it values at over $115 million, payments to the city of up to $50 million, no CRA tax abatement, and a Thor-funded environmental study. |
-| Oct. 6, 2026 | Early voting begins. The Moratorium Committee co-chairs ask council to table any vote until their written findings are delivered in early 2027. Council receives the MOU in executive session but does not vote, though the MOU called for approval by Oct. 7. |
+| Oct. 6, 2026 | Early voting begins. The Moratorium Committee co-chairs ask council to table any vote until their written findings are delivered in early 2027. At a meeting of about four and a half hours, roughly 30 residents speak, most against the deal. Council receives the MOU in executive session for more than an hour but takes no action, though the MOU called for approval by Oct. 7. |
 | Oct. 7–8, 2026 | Opponents obtain the MOU text. It allows up to **2 million net interior square feet** in phases, with generators, substations, and cooling equipment excluded from that total. Payments would be $5 million at the Phase One building permit, then $20 million, $15 million, and $10 million at certificates of occupancy for Phases One through Three. |
 | Oct. 12, 2026 | The Urbana Daily Citizen reprints a Sidney Daily News story on Grid Growth Ventures' proposed 765-kilovolt transmission line, noting it is the same project proposed for Champaign County. Construction is planned to begin in 2027 on lines carrying power from Indiana to Ohio substations serving data centers, factories, and homes. |
 | Oct. 20, 2026 | After about 90 minutes in executive session, council votes 4–3 to table the settlement. Stephanie Truelove, Cledis Scott, Patrick Thackery, and Amy Jumper vote to table. Residents hold "No Deal" signs, and the Moratorium Committee again asks for time, saying its findings point to a substantial health burden from pollution. Thor global COO Melissa Gliatta tells council the company has invested about $19.6 million. WDTN headlines the vote as council choosing to fight the lawsuit. |
-| Nov. 3, 2026 | General election: the data center charter amendment and the mayoral recall are on the ballot. Council's regular meeting falls the same day, and the tabled settlement can come back then. Council can also table it again. |
+| Oct. 26, 2026 | The Urbana Daily Citizen reports that some voters may be voting against their own intent on the charter amendment. Because of the "No Data Center" yard signs and the "No Deal" campaign, many believe a "No" vote bans data centers. Petition organizer Nicole Nawman says a **"Yes"** vote is needed to approve the ban. |
+| Oct. 26, 2026 | The Ohio Tax Credit Authority approves a nine-year Job Creation Tax Credit for Rittal LLC on SR 55, directly north of the Thor site. Rittal, which makes IT infrastructure components for data centers, expects to add 182 full-time jobs and about $12 million in annual payroll in Urbana by the end of 2029. |
+| Nov. 3, 2026 | General election: the data center charter amendment and the mayoral recall are on the ballot. Council's regular meeting falls the same day, at 6 p.m. in the training room of the municipal building, 205 S. Main St., and the tabled settlement can come back then. Council can also table it again. |
 
 ## Open Questions
 
+- **Charter amendment wording.** A "Yes" vote bans data centers. Organizers worry the "No Data Center" signs are leading some supporters to vote "No."
 - **Settlement vote.** Council tabled the MOU on Oct. 20 by a single vote. Will it take the MOU up again on Nov. 3, before the election results are known and before the Moratorium Committee delivers its findings?
 - **Land ownership.** Thor says it assembled about 230 acres. County records show 144.7 acres in Thor-named LLCs. The 85.6-acre Highland55 Investments parcel would close the gap, but the county record does not tie it to Thor.
 - **Project size.** The MOU allows up to 2 million square feet, more than four times the 460,000 square feet originally described, with power, cooling, and generator equipment excluded from that limit.
 - **Charter amendment.** It is unclear how a ban approved by voters would interact with a federal consent decree entered before the election.
-- **Lawsuits.** As of Oct. 22, there is no reported ruling in the federal case or the Common Pleas appeal. Briefing in the Common Pleas appeal was scheduled to finish in late October. The citizen coalition's motion to intervene in the federal case is pending.
+- **Lawsuits.** As of Oct. 29, there is no reported ruling in the federal case or the Common Pleas appeal. Briefing in the Common Pleas appeal was scheduled to finish in late October. The citizen coalition's motion to intervene in the federal case is pending.
 - **Recall ballot.** August reports listed Eugene Fields Jr. and Nicole Nawman as replacement candidates; October coverage lists Fields as the sole candidate.
 
 ## Sources
@@ -110,6 +113,10 @@ Boundaries come from the county auditor's parcel layer as of Oct. 22, 2026. Lots
 - Dayton 24/7 Now, "Urbana council postpones decision on $1B data center settlement vs. legal fight" (Oct. 21, 2026) — <https://dayton247now.com/news/local/urbana-council-postpones-decision-on-1b-data-center-settlement-vs-legal-fight>
 - Springfield News-Sun, "Urbana council takes no action on proposed data center settlement" (Oct. 7, 2026) — <https://www.springfieldnewssun.com/local/urbana-council-takes-no-action-on-proposed-data-center-settlement/article_a7d516c4-7a31-5d7f-9127-cdd89c13d9bd.html>
 - WDTN, "Urbana City Council votes to fight data center lawsuit" (Oct. 21, 2026) — <https://www.wdtn.com/news/miami-valley-data-centers/urbana-city-council-votes-to-fight-data-center-lawsuit/>
+- Urbana Daily Citizen, "Anti-data center issue requires 'Yes' for passage" (Oct. 26, 2026) — <https://www.urbanacitizen.com/2026/10/26/anti-data-center-issue-requires-yes-for-passage/>
+- Urbana Daily Citizen, "Rittal set to expand in Urbana" (Oct. 26, 2026) — <https://www.urbanacitizen.com/2026/10/26/rittal-set-to-expand-in-urbana/>
+- Peak of Ohio, "“We cannot be bought”: Urbana residents challenge data center deal" (Oct. 7, 2026) — <https://www.peakofohio.com/local-news/we-cannot-be-bought-urbana-residents-challenge-data-center-deal/>
+- Springfield News-Sun, "Urbana council tables data center settlement proposal for second time" — <https://www.springfieldnewssun.com/local/urbana-council-tables-data-center-settlement-proposal-for-second-time/article_79d7634c-e12e-5aa4-9731-81436857bfd5.html>
 - WYSO, "Urbana passes moratorium on new data centers, leaving $1B proposal in limbo" (March 4, 2026) — <https://www.wvxu.org/2026-03-04/urbana-passes-moratorium-on-new-data-centers-leaving-1b-proposal-in-limbo>
 - WYSO, "Urbana begins walking back zoning changes that permitted data centers" (May 14, 2026) — <https://www.wyso.org/news/2026-05-14/urbana-begins-walking-back-zoning-changes-that-permitted-data-centers>
 - WYSO, "Urbana backed down from rules paving way for big data centers. Now a developer is suing" (June 23, 2026) — <https://www.wyso.org/environment-news/2026-06-23/urbana-backed-down-from-rules-paving-way-for-big-data-centers-now-a-developer-is-suing>
