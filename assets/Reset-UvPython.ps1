@@ -323,6 +323,24 @@ if ($pyExe) {
 }
 
 # ---------------------------------------------------------------------------
+# 7b. Check that Windows lets the uv launcher run
+#     (Smart App Control / App Control can block uv's unsigned python3.X.exe
+#      launcher in .local\bin even though the real python.exe runs fine)
+# ---------------------------------------------------------------------------
+$ShimBlocked = $false
+if ($Installed) {
+    $shim = Join-Path $LocalBin "python$Installed.exe"
+    if (Test-Path -LiteralPath $shim) {
+        try {
+            & $shim -c "pass" 2>$null
+            if ($LASTEXITCODE -ne 0) { $ShimBlocked = $true }
+        } catch {
+            $ShimBlocked = $true
+        }
+    }
+}
+
+# ---------------------------------------------------------------------------
 # 8. Report
 # ---------------------------------------------------------------------------
 Write-Step "Done"
@@ -340,3 +358,16 @@ Write-Host "     turn off 'python.exe' and 'python3.exe' (App Installer) so they
 Write-Host "     don't open the Microsoft Store."
 Write-Host "  4. In each project: set UV_PROJECT_ENVIRONMENT, then run uv sync."
 Write-Host "  5. If you use uv tools (uv tool list), rebuild them:  uv tool upgrade --all --reinstall"
+
+if ($ShimBlocked) {
+    $junction = Join-Path $UvPythonDir ("cpython-$Installed-windows-x86_64-none")
+    Write-Host ""
+    Write-Warn "Windows blocked the uv launcher python$Installed.exe (likely Smart App Control)."
+    Write-Host "   Python itself works. Use 'uv run python' in projects, and for a plain"
+    Write-Host "   'python' command put the real install folder on your User PATH:"
+    Write-Host ""
+    Write-Host "   `$dir = `"$junction`""
+    Write-Host "   [Environment]::SetEnvironmentVariable(`"Path`", `"`$dir;`" + [Environment]::GetEnvironmentVariable(`"Path`",`"User`"), `"User`")"
+    Write-Host ""
+    Write-Host "   See the article's Troubleshooting section for details."
+}

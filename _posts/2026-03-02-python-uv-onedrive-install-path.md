@@ -6,7 +6,7 @@ tags: [python, uv, onedrive, windows, dev-environment]
 last_modified_at: 2026-10-29
 ---
 
-> **Updated 2026-10-29** (checked against uv 0.12.x): commands now use the latest Python instead of a fixed 3.13; fixed the PowerShell `where` checks, clarified which shims uv installs, dropped a redundant `uv venv`, and added sections on workflows (quick script vs. maintained tool), upgrading, and a reset script.
+> **Updated 2026-10-29** (checked against uv 0.12.x): commands now use the latest Python instead of a fixed 3.13; fixed the PowerShell `where` checks, clarified which shims uv installs, dropped a redundant `uv venv`, and added sections on workflows (quick script vs. maintained tool), upgrading, a reset script, and Smart App Control blocking uv's launcher.
 
 ## Goals {#goals}
 
@@ -344,6 +344,8 @@ It removes every Python it can find, then sets up the layout from this article:
 2. **Remove:** runs each installer's own uninstaller, removes Store packages, runs `uv python uninstall --all`, deletes leftover folders (`%LOCALAPPDATA%\Programs\Python`, `%APPDATA%\Python`, the pip cache, uv's AppData Python folder), empties `C:\Dev\venvs`, and cleans PATH. It also clears `PYTHONHOME` and `PYTHONPATH` if they're set.
 3. **Install:** installs uv if needed, sets `UV_PYTHON_INSTALL_DIR` and `UV_CACHE_DIR`, then installs the latest stable Python (or the version you pass with `-Version`) and runs `uv python update-shell`.
 
+At the end it checks whether Windows blocks uv's `python3.<minor>.exe` launcher. If it does, the script prints the PATH fix from [Troubleshooting](#app-control-blocked).
+
 It does **not** touch your project folders, Anaconda/Miniconda (it only reports them), or Python that's bundled inside other apps.
 
 ### Run it {#run-reset}
@@ -416,6 +418,39 @@ Get-Command python3.*
 In PowerShell `where` is `Where-Object`, not the Windows `where` command. Use `where.exe` or `Get-Command`.
 
 ---
+
+### "An Application Control policy has blocked this file" (os error 4551) {#app-control-blocked}
+
+You may see this for `C:\Users\<you>\.local\bin\python3.<minor>.exe`, for example as a warning from `uv python list`, or when you run `python3.14`.
+
+**Why:** that file is a small launcher uv writes, which hands off to the real `python.exe` in `C:\Dev\uv-python`. The launcher is unsigned, and Windows 11 **Smart App Control** (or an App Control for Business policy) blocks unsigned programs it hasn't seen before. The real `python.exe` usually runs fine, so Python itself works and only the shortcut command is blocked. The reset script tests for this at the end and prints the fix below if it applies.
+
+**Confirm it:**
+
+```powershell
+# Smart App Control: 0 = off, 1 = on, 2 = evaluation
+(Get-ItemProperty HKLM:\SYSTEM\CurrentControlSet\Control\CI\Policy).VerifiedAndReputablePolicyState
+
+# What Windows blocked
+Get-WinEvent -LogName "Microsoft-Windows-CodeIntegrity/Operational" -MaxEvents 30 |
+  Where-Object Message -like "*python*" | Format-List TimeCreated, Id, Message
+```
+
+**Fix (recommended): skip the launcher.**
+
+- In projects and scripts, use `uv run python ...`. It never touches the launcher.
+- For a bare `python` at the prompt, put the real install folder (the minor-version junction) on your User PATH:
+
+```powershell
+$dir = "C:\Dev\uv-python\cpython-3.14-windows-x86_64-none"   # match your minor version
+[Environment]::SetEnvironmentVariable("Path", "$dir;" + [Environment]::GetEnvironmentVariable("Path","User"), "User")
+```
+
+Open a new PowerShell and run `python --version`. The junction always points to the newest patch of that minor version, so patch upgrades follow along. When you move to a new minor version, change the folder name in PATH. As a bonus, this gives you plain `python`, not just `python3.14`.
+
+**Also check:** commands installed with `uv tool install`, and tool commands in a venv's `Scripts` folder (e.g. `pytest.exe`), are the same kind of unsigned uv launcher and may be blocked too. If one is, call it as a module instead: `uv run python -m pytest`.
+
+**Alternative:** turn off Smart App Control in **Windows Security > App & browser control**. It can't make an exception for one file, and on many Windows builds it can't be turned back on without resetting Windows, so it isn't worth doing just for a launcher.
 
 ## References {#references}
 
