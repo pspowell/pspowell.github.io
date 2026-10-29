@@ -6,7 +6,7 @@ tags: [python, uv, onedrive, windows, dev-environment]
 last_modified_at: 2026-10-29
 ---
 
-> **Updated 2026-10-29** (checked against uv 0.12.x): fixed the PowerShell `where` checks, clarified which shims uv installs, dropped a redundant `uv venv`, and and added sections on workflows (quick script vs. maintained tool), upgrading, and a reset script.
+> **Updated 2026-10-29** (checked against uv 0.12.x): commands now use the latest Python instead of a fixed 3.13; fixed the PowerShell `where` checks, clarified which shims uv installs, dropped a redundant `uv venv`, and added sections on workflows (quick script vs. maintained tool), upgrading, and a reset script.
 
 ## Goals {#goals}
 
@@ -104,11 +104,15 @@ You should see:
 
 ## Step 3 — Install Python with uv (and verify the path) {#step-3-install-python-with-uv}
 
-Install (example):
+Install the latest stable Python:
 
 ```powershell
-uv python install 3.13
+uv python install
 ```
+
+With no version, uv installs the newest stable CPython it knows about, so this article doesn't go stale as new versions ship. To pin a specific version instead, name it: `uv python install 3.13`. You can install several side by side.
+
+> Run this outside any project folder. If the current folder has a `.python-version` file, uv installs that version instead.
 
 Verify it landed in `C:\Dev\uv-python`:
 
@@ -118,21 +122,21 @@ uv python list
 
 You should see a line with a path like:
 
-- `C:\Dev\uv-python\cpython-3.13.<patch>-windows-x86_64-none\python.exe`
+- `C:\Dev\uv-python\cpython-3.<minor>.<patch>-windows-x86_64-none\python.exe`
 
-You'll also see a `cpython-3.13-windows-x86_64-none` folder. That is a junction uv maintains that points at the newest installed 3.13 patch, so venvs built from it pick up patch upgrades automatically (see [Upgrading](#upgrading)).
+You'll also see a `cpython-3.<minor>-windows-x86_64-none` folder. That is a junction uv maintains that points at the newest installed patch of that minor version, so venvs built from it pick up patch upgrades automatically (see [Upgrading](#upgrading)).
 
 ---
 
 ## Step 4 — Update PATH so python shims work everywhere {#step-4-update-path}
 
-`uv python install` puts a **versioned** executable (e.g., `python3.13.exe`) into:
+`uv python install` puts a **versioned** executable (e.g., `python3.14.exe`) into:
 
 - `C:\Users\<you>\.local\bin`
 
 If that directory isn’t on PATH, uv will warn.
 
-Plain `python` / `python3` shims are only installed if you add the still-experimental `--default` flag (`uv python install 3.13 --default`). Without it, `python` resolves to whatever else is on PATH (often the Microsoft Store alias). Inside projects this doesn't matter — use `uv run python`.
+Plain `python` / `python3` shims are only installed if you add the still-experimental `--default` flag (`uv python install --default`). Without it, `python` resolves to whatever else is on PATH (often the Microsoft Store alias). Inside projects this doesn't matter — use `uv run python`.
 
 ### 4.1 Add uv shims to PATH automatically {#update-shell}
 
@@ -147,17 +151,19 @@ Then **close PowerShell and open a new one**.
 Verify (in PowerShell, plain `where` is an alias for `Where-Object`, so use `where.exe` or `Get-Command`):
 
 ```powershell
-where.exe python3.13
-python3.13 --version
-Get-Command python -All   # only uv's if you used --default
+uv python list --only-installed   # which versions you have
+Get-Command python3.*            # the versioned executables on PATH
+Get-Command python -All          # only uv's if you used --default
 ```
+
+Then run the versioned one it found, e.g. `python3.14 --version`.
 
 ### 4.2 If you get “Executable already exists … not managed by uv” {#force-replace-shim}
 
-If `C:\Users\<you>\.local\bin\python3.13.exe` already exists and uv refuses to overwrite it, force replace:
+If `C:\Users\<you>\.local\bin\python3.<minor>.exe` already exists and uv refuses to overwrite it, force replace:
 
 ```powershell
-uv python install 3.13 --force
+uv python install --force
 ```
 
 ---
@@ -201,7 +207,7 @@ For a single `.py` file there's no project and no venv to manage. uv stores the 
 ```powershell
 cd "C:\Users\<you>\OneDrive\Projects\scripts"
 
-uv init --script tidy_photos.py --python 3.13   # creates the file with a metadata header
+uv init --script tidy_photos.py                 # creates the file with a metadata header
 uv add --script tidy_photos.py pillow rich      # records dependencies in that header
 uv run tidy_photos.py                           # runs it (builds/reuses the cached env)
 ```
@@ -210,7 +216,7 @@ The top of the file now looks like this:
 
 ```python
 # /// script
-# requires-python = ">=3.13"
+# requires-python = ">=3.<minor>"   # the Python you had when you created it
 # dependencies = [
 #     "pillow>=<latest>",
 #     "rich>=<latest>",
@@ -234,7 +240,7 @@ For something you'll keep using and changing, make it a real package with a comm
 
 ```powershell
 cd "C:\Users\<you>\OneDrive\Projects"
-uv init --package mytool --python 3.13   # src\mytool\ layout + [project.scripts] entry point
+uv init --package mytool   # src\mytool\ layout + [project.scripts] entry point
 cd mytool
 
 $env:UV_PROJECT_ENVIRONMENT = "C:\Dev\venvs\mytool"   # or run the uvenv helper below
@@ -244,7 +250,7 @@ uv sync
 git init; git add .; git commit -m "Initial mytool"
 ```
 
-Commit `pyproject.toml`, `uv.lock` and `.python-version`. There's no `.venv` folder to ignore, because it lives outside the project.
+`uv init` writes a `.python-version` file pinning the project to the Python minor version you have now. Commit it with `pyproject.toml` and `uv.lock`, so the tool doesn't silently change Python versions under you. There's no `.venv` folder to ignore, because it lives outside the project.
 
 **Each work session:**
 
@@ -293,10 +299,29 @@ function uvenv {
 ### Python patch releases {#upgrade-python}
 
 ```powershell
-uv python upgrade 3.13   # or just: uv python upgrade
+uv python upgrade
 ```
 
-This moves to the newest 3.13.x (it never jumps minor versions). Existing venvs built from the 3.13 junction follow the upgrade; the old patch is kept for anything still pinned to it.
+This moves every installed minor version to its newest patch (e.g. 3.14.x to the latest 3.14.x). It never jumps minor versions. Existing venvs built from the junction follow the upgrade; the old patch is kept for anything still pinned to it.
+
+### New minor versions {#upgrade-minor}
+
+When a new Python minor version ships (e.g. 3.15), get it the same way you got the first one:
+
+```powershell
+uv python install          # now picks the new release; older versions stay installed
+uv python list --only-installed
+```
+
+Quick scripts use the newest Python that meets their `requires-python`, so they move up on their own. Maintained tools stay on the version in `.python-version` until you move them:
+
+```powershell
+uv python pin 3.15   # updates .python-version
+uv sync              # rebuilds the venv on the new Python
+uv run pytest        # confirm, then commit .python-version and uv.lock
+```
+
+Remove an old version once nothing uses it: `uv python uninstall 3.13`.
 
 ### uv itself {#upgrade-uv}
 
@@ -317,7 +342,7 @@ It removes every Python it can find, then sets up the layout from this article:
 
 1. **Inventory:** lists python.org installs and the `py` launcher, Store/MSIX Python packages, uv-managed Pythons, shims in `.local\bin`, leftover folders, and Python entries on PATH.
 2. **Remove:** runs each installer's own uninstaller, removes Store packages, runs `uv python uninstall --all`, deletes leftover folders (`%LOCALAPPDATA%\Programs\Python`, `%APPDATA%\Python`, the pip cache, uv's AppData Python folder), empties `C:\Dev\venvs`, and cleans PATH. It also clears `PYTHONHOME` and `PYTHONPATH` if they're set.
-3. **Install:** installs uv if needed, sets `UV_PYTHON_INSTALL_DIR` and `UV_CACHE_DIR`, then runs `uv python install 3.13` and `uv python update-shell`.
+3. **Install:** installs uv if needed, sets `UV_PYTHON_INSTALL_DIR` and `UV_CACHE_DIR`, then installs the latest stable Python (or the version you pass with `-Version`) and runs `uv python update-shell`.
 
 It does **not** touch your project folders, Anaconda/Miniconda (it only reports them), or Python that's bundled inside other apps.
 
@@ -336,7 +361,7 @@ Options:
 
 | Parameter | Default | What it does |
 |---|---|---|
-| `-Version` | `3.13` | Python version to install afterward |
+| `-Version` | latest stable | Pin a specific version instead, e.g. `-Version 3.13` |
 | `-DevRoot` | `C:\Dev` | Root for `uv-python`, `uv-cache`, `venvs` |
 | `-KeepVenvs` | off | Don't empty `C:\Dev\venvs` |
 | `-DryRun` | off | Show what would happen, change nothing |
@@ -344,7 +369,7 @@ Options:
 
 ### After it finishes {#after-reset}
 
-1. Open a **new** PowerShell window and check `where.exe python3.13` and `python3.13 --version`.
+1. Open a **new** PowerShell window and run the check the script prints at the end (e.g. `python3.14 --version`).
 2. In **Settings > Apps > Advanced app settings > App execution aliases**, turn off `python.exe` and `python3.exe` (App Installer) so typing `python` doesn't open the Microsoft Store.
 3. Rebuild each project's venv: set `UV_PROJECT_ENVIRONMENT`, then run `uv sync`.
 4. If you use uv tools, rebuild them: `uv tool upgrade --all --reinstall`.
@@ -369,7 +394,7 @@ If it’s blank, set it for this session and reinstall:
 
 ```powershell
 $env:UV_PYTHON_INSTALL_DIR = "C:\Dev\uv-python"
-uv python install 3.13
+uv python install
 ```
 
 ### .local\bin warning persists {#local-bin-warning-persists}
@@ -383,7 +408,7 @@ uv python update-shell
 Then restart PowerShell and re-check:
 
 ```powershell
-where.exe python3.13
+Get-Command python3.*
 ```
 
 ### `where python` prints nothing {#where-prints-nothing}

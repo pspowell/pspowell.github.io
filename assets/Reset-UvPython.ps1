@@ -25,7 +25,8 @@
     installs Python, and runs uv python update-shell.
 
 .PARAMETER Version
-    Python version to install afterward. Default 3.13.
+    Python version to install afterward (e.g. 3.13). Leave it off to get the
+    latest stable release uv knows about.
 
 .PARAMETER DevRoot
     Root folder for uv-python, uv-cache and venvs. Default C:\Dev.
@@ -42,7 +43,7 @@
 .EXAMPLE
     .\Reset-UvPython.ps1 -DryRun
     .\Reset-UvPython.ps1
-    .\Reset-UvPython.ps1 -Version 3.14 -KeepVenvs
+    .\Reset-UvPython.ps1 -Version 3.13 -KeepVenvs
 
 .NOTES
     Run from an elevated (Run as administrator) PowerShell to also remove
@@ -51,7 +52,7 @@
 #>
 [CmdletBinding()]
 param(
-    [string]$Version = "3.13",
+    [string]$Version = "",
     [string]$DevRoot = "C:\Dev",
     [switch]$KeepVenvs,
     [switch]$DryRun,
@@ -175,7 +176,8 @@ if (-not $IsAdmin -and (($regInstalls | Where-Object AllUsers) -or $machPathHits
 }
 
 Write-Host ""
-Write-Host "   Then install: uv (if missing), Python $Version into $UvPythonDir, cache at $UvCacheDir"
+$VersionLabel = $(if ($Version) { $Version } else { "(latest stable)" })
+Write-Host "   Then install: uv (if missing), Python $VersionLabel into $UvPythonDir, cache at $UvCacheDir"
 
 if ($DryRun) {
     Write-Host ""
@@ -301,8 +303,24 @@ if (-not (Get-Command uv -ErrorAction SilentlyContinue)) {
 }
 
 & uv cache clean 2>&1 | Out-Null
-& uv python install $Version --force
+
+# Run from TEMP so a stray .python-version in the current folder can't pick the version
+Push-Location $env:TEMP
+try {
+    if ($Version) { & uv python install $Version --force }
+    else          { & uv python install --force }
+    # (empty strings are passed differently by PS 5.1 and 7.3+, so branch instead)
+    if ($Version) { $pyExe = (& uv python find --managed-python $Version 2>$null | Select-Object -First 1) }
+    else          { $pyExe = (& uv python find --managed-python 2>$null | Select-Object -First 1) }
+} finally {
+    Pop-Location
+}
 & uv python update-shell
+
+$Installed = ""
+if ($pyExe) {
+    $Installed = (& $pyExe -c "import sys; print('%d.%d' % sys.version_info[:2])" 2>$null)
+}
 
 # ---------------------------------------------------------------------------
 # 8. Report
@@ -312,7 +330,11 @@ Write-Step "Done"
 Write-Host ""
 Write-Host "Next:" -ForegroundColor Green
 Write-Host "  1. Close this window and open a new PowerShell."
-Write-Host "  2. Check:  where.exe python$Version   and   python$Version --version"
+if ($Installed) {
+    Write-Host "  2. Check:  where.exe python$Installed   and   python$Installed --version"
+} else {
+    Write-Host "  2. Check:  uv python list --only-installed"
+}
 Write-Host "  3. Settings > Apps > Advanced app settings > App execution aliases:"
 Write-Host "     turn off 'python.exe' and 'python3.exe' (App Installer) so they"
 Write-Host "     don't open the Microsoft Store."
