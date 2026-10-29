@@ -5,7 +5,7 @@
 
 .DESCRIPTION
     From the article "Python + uv + OneDrive: full install & setup (Windows 11)"
-    https://pspowell.github.io/2026/03/02/python-uv-onedrive-install-path.html
+    https://pspowell.github.io/2026/10/29/python-uv-onedrive-install-path.html
 
     What it removes:
       - uv-managed Pythons (in C:\Dev\uv-python and uv's default AppData folder)

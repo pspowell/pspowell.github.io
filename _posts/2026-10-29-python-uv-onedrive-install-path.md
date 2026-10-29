@@ -17,7 +17,76 @@ This guide assumes **Windows 11 + PowerShell**.
 
 ---
 
-## Recommended folder layout {#recommended-folder-layout}
+## Quick setup: one script {#reset}
+
+The fastest way to get this setup is one PowerShell script. It works on a fresh PC, and on one that already has Python from several sources (python.org installers, the Microsoft Store, an older uv setup, stray PATH entries): it wipes those and starts clean, which is usually faster than untangling them.
+
+**Script:** [Reset-UvPython.ps1](/assets/Reset-UvPython.ps1)
+
+It removes every Python it can find, then does the manual steps further down for you:
+
+1. **Inventory:** lists python.org installs and the `py` launcher, Store/MSIX Python packages, uv-managed Pythons, shims in `.local\bin`, leftover folders, and Python entries on PATH.
+2. **Remove:** runs each installer's own uninstaller, removes Store packages, runs `uv python uninstall --all`, deletes leftover folders (`%LOCALAPPDATA%\Programs\Python`, `%APPDATA%\Python`, the pip cache, uv's AppData Python folder), empties `C:\Dev\venvs`, and cleans PATH. It also clears `PYTHONHOME` and `PYTHONPATH` if they're set.
+3. **Install:** asks which drive should hold the `Dev` folder (only if you have more than one fixed drive), installs uv if needed, sets `UV_PYTHON_INSTALL_DIR` and `UV_CACHE_DIR`, then installs the latest stable Python (or the version you pass with `-Version`) and runs `uv python update-shell`.
+
+At the end it checks whether Windows blocks uv's `python3.<minor>.exe` launcher. If it does, the script prints the PATH fix from [Troubleshooting](#app-control-blocked).
+
+It does **not** touch your project folders, Anaconda/Miniconda (it only reports them), or Python that's bundled inside other apps.
+
+### Run it {#run-reset}
+
+Download the script (it lands in your Downloads folder), then run it from PowerShell. Use **Run as administrator** if any Python was installed "for all users":
+
+```powershell
+cd "$env:USERPROFILE\Downloads"
+Unblock-File .\Reset-UvPython.ps1                       # clears the "downloaded from internet" flag
+powershell -ExecutionPolicy Bypass -File .\Reset-UvPython.ps1 -DryRun   # preview only
+powershell -ExecutionPolicy Bypass -File .\Reset-UvPython.ps1           # do it (asks you to type YES)
+```
+
+Options:
+
+| Parameter | Default | What it does |
+|---|---|---|
+| `-Version` | latest stable | Pin a specific version instead, e.g. `-Version 3.13` |
+| `-DevRoot` | ask (see below) | Root for `uv-python`, `uv-cache`, `venvs`, e.g. `D:\Dev` |
+| `-KeepVenvs` | off | Don't empty `C:\Dev\venvs` |
+| `-DryRun` | off | Show what would happen, change nothing |
+| `-Force` | off | Skip the prompts: YES and drive choice (uses the default drive) |
+
+### Choosing the drive {#reset-drive}
+
+If you don't pass `-DevRoot` and the PC has more than one fixed drive, the script lists them with their free space and asks which one should hold the `Dev` folder:
+
+```text
+== Which drive should hold the Dev folder?
+   1) C:  Windows           112.4 GB free of 475.8 GB  [system, has \Dev, default]
+   2) D:  Data              801.0 GB free of 931.5 GB
+   Enter a number, or press Enter for C:
+```
+
+The default is the drive that already has a `\Dev` folder, or `C:` if none does. With one fixed drive, it uses `C:\Dev` without asking. Everything in this article that says `C:\Dev` then means `<drive>:\Dev`. The script sets `UV_PYTHON_INSTALL_DIR` and `UV_CACHE_DIR` to match, and you use the same drive for `UV_PROJECT_ENVIRONMENT` and the `uvenv` helper.
+
+If you move to a different drive, the script creates nothing on the old drive. It removes the old uv Python install and cache (wherever `UV_PYTHON_INSTALL_DIR` and `UV_CACHE_DIR` pointed) and empties the old `venvs` folder (unless you pass `-KeepVenvs`). It deletes the old `Dev` folder only if that leaves it empty. Projects and anything else there are kept; move those yourself.
+
+### After it finishes {#after-reset}
+
+1. Open a **new** PowerShell window and run the check the script prints at the end (e.g. `python3.14 --version`).
+2. In **Settings > Apps > Advanced app settings > App execution aliases**, turn off `python.exe` and `python3.exe` (App Installer) so typing `python` doesn't open the Microsoft Store.
+3. Rebuild each project's venv: set `UV_PROJECT_ENVIRONMENT`, then run `uv sync`.
+4. If you use uv tools, rebuild them: `uv tool upgrade --all --reinstall`.
+
+> Always run `-DryRun` first. If an uninstaller fails, the script says so. Remove that entry from **Settings > Apps** and re-run.
+
+---
+
+Prefer to do it by hand, or want to know exactly what the script sets up? The manual steps follow. After either route, see [Workflows](#workflows) for day-to-day use.
+
+---
+
+## Manual setup {#manual-setup}
+
+### Recommended folder layout {#recommended-folder-layout}
 
 Keep the *project* in OneDrive, but keep the *venv + caches + Python installs* in a local, non-synced location.
 
@@ -326,69 +395,6 @@ Remove an old version once nothing uses it: `uv python uninstall 3.13`.
 uv self update                    # if installed with Astral's installer
 winget upgrade --id=astral-sh.uv  # if installed with WinGet
 ```
-
----
-
-## Resetting your current install {#reset}
-
-If your machine already has Python from several sources (python.org installers, the Microsoft Store, an older uv setup in AppData, stray PATH entries), it's often faster to wipe it all and start clean than to untangle it.
-
-**Script:** [Reset-UvPython.ps1](/assets/Reset-UvPython.ps1)
-
-It removes every Python it can find, then sets up the layout from this article:
-
-1. **Inventory:** lists python.org installs and the `py` launcher, Store/MSIX Python packages, uv-managed Pythons, shims in `.local\bin`, leftover folders, and Python entries on PATH.
-2. **Remove:** runs each installer's own uninstaller, removes Store packages, runs `uv python uninstall --all`, deletes leftover folders (`%LOCALAPPDATA%\Programs\Python`, `%APPDATA%\Python`, the pip cache, uv's AppData Python folder), empties `C:\Dev\venvs`, and cleans PATH. It also clears `PYTHONHOME` and `PYTHONPATH` if they're set.
-3. **Install:** asks which drive should hold the `Dev` folder (only if you have more than one fixed drive), installs uv if needed, sets `UV_PYTHON_INSTALL_DIR` and `UV_CACHE_DIR`, then installs the latest stable Python (or the version you pass with `-Version`) and runs `uv python update-shell`.
-
-At the end it checks whether Windows blocks uv's `python3.<minor>.exe` launcher. If it does, the script prints the PATH fix from [Troubleshooting](#app-control-blocked).
-
-It does **not** touch your project folders, Anaconda/Miniconda (it only reports them), or Python that's bundled inside other apps.
-
-### Run it {#run-reset}
-
-Download the script to `C:\Dev`, then from PowerShell. Use **Run as administrator** if any Python was installed "for all users":
-
-```powershell
-cd C:\Dev
-Unblock-File .\Reset-UvPython.ps1                       # clears the "downloaded from internet" flag
-powershell -ExecutionPolicy Bypass -File .\Reset-UvPython.ps1 -DryRun   # preview only
-powershell -ExecutionPolicy Bypass -File .\Reset-UvPython.ps1           # do it (asks you to type YES)
-```
-
-Options:
-
-| Parameter | Default | What it does |
-|---|---|---|
-| `-Version` | latest stable | Pin a specific version instead, e.g. `-Version 3.13` |
-| `-DevRoot` | ask (see below) | Root for `uv-python`, `uv-cache`, `venvs`, e.g. `D:\Dev` |
-| `-KeepVenvs` | off | Don't empty `C:\Dev\venvs` |
-| `-DryRun` | off | Show what would happen, change nothing |
-| `-Force` | off | Skip the prompts: YES and drive choice (uses the default drive) |
-
-### Choosing the drive {#reset-drive}
-
-If you don't pass `-DevRoot` and the PC has more than one fixed drive, the script lists them with their free space and asks which one should hold the `Dev` folder:
-
-```text
-== Which drive should hold the Dev folder?
-   1) C:  Windows           112.4 GB free of 475.8 GB  [system, has \Dev, default]
-   2) D:  Data              801.0 GB free of 931.5 GB
-   Enter a number, or press Enter for C:
-```
-
-The default is the drive that already has a `\Dev` folder, or `C:` if none does. With one fixed drive, it uses `C:\Dev` without asking. Everything in this article that says `C:\Dev` then means `<drive>:\Dev`. The script sets `UV_PYTHON_INSTALL_DIR` and `UV_CACHE_DIR` to match, and you use the same drive for `UV_PROJECT_ENVIRONMENT` and the `uvenv` helper.
-
-If you move to a different drive, the script creates nothing on the old drive. It removes the old uv Python install and cache (wherever `UV_PYTHON_INSTALL_DIR` and `UV_CACHE_DIR` pointed) and empties the old `venvs` folder (unless you pass `-KeepVenvs`). It deletes the old `Dev` folder only if that leaves it empty. Projects and anything else there are kept; move those yourself.
-
-### After it finishes {#after-reset}
-
-1. Open a **new** PowerShell window and run the check the script prints at the end (e.g. `python3.14 --version`).
-2. In **Settings > Apps > Advanced app settings > App execution aliases**, turn off `python.exe` and `python3.exe` (App Installer) so typing `python` doesn't open the Microsoft Store.
-3. Rebuild each project's venv: set `UV_PROJECT_ENVIRONMENT`, then run `uv sync`.
-4. If you use uv tools, rebuild them: `uv tool upgrade --all --reinstall`.
-
-> Always run `-DryRun` first. If an uninstaller fails, the script says so. Remove that entry from **Settings > Apps** and re-run.
 
 ---
 
