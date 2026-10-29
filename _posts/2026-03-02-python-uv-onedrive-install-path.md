@@ -6,7 +6,7 @@ tags: [python, uv, onedrive, windows, dev-environment]
 last_modified_at: 2026-10-29
 ---
 
-> **Updated 2026-10-29** (checked against uv 0.12.x): fixed the PowerShell `where` checks, clarified which shims uv installs, dropped a redundant `uv venv`, and added sections on upgrading Python and uv.
+> **Updated 2026-10-29** (checked against uv 0.12.x): fixed the PowerShell `where` checks, clarified which shims uv installs, dropped a redundant `uv venv`, and and added sections on workflows (quick script vs. maintained tool), upgrading, and a reset script.
 
 ## Goals {#goals}
 
@@ -190,15 +190,91 @@ uv sync
 
 ---
 
-## Daily workflow {#daily-workflow}
+## Workflows {#workflows}
+
+Two kinds of sessions cover most work: a **quick script** you write once (or occasionally rerun), and a **maintained tool** you keep improving and use day to day.
+
+### Quick script session {#quick-script}
+
+For a single `.py` file there's no project and no venv to manage. uv stores the script's dependencies in the file itself (inline metadata, PEP 723) and builds a throwaway environment in the uv cache (`C:\Dev\uv-cache`), so nothing lands in OneDrive except the script.
 
 ```powershell
-$env:UV_PROJECT_ENVIRONMENT="C:\Dev\venvs\myapp"
-uv sync
-uv run python -V
+cd "C:\Users\<you>\OneDrive\Projects\scripts"
+
+uv init --script tidy_photos.py --python 3.13   # creates the file with a metadata header
+uv add --script tidy_photos.py pillow rich      # records dependencies in that header
+uv run tidy_photos.py                           # runs it (builds/reuses the cached env)
 ```
 
-### Optional: set it automatically from the folder name {#profile-helper}
+The top of the file now looks like this:
+
+```python
+# /// script
+# requires-python = ">=3.13"
+# dependencies = [
+#     "pillow>=<latest>",
+#     "rich>=<latest>",
+# ]
+# ///
+```
+
+Useful extras:
+
+- **One-off dependency without editing the file:** `uv run --with requests tidy_photos.py`
+- **Pin exact versions for later reruns:** `uv lock --script tidy_photos.py` (writes `tidy_photos.py.lock` next to it)
+- **Edit in VS Code:** run `uv sync --script tidy_photos.py` to build the env, then `uv python find --script tidy_photos.py` and paste that path into *Python: Select Interpreter*
+
+When a script grows a second file, tests, or a settings file, promote it to a tool (below).
+
+### Maintained tool session {#maintained-tool}
+
+For something you'll keep using and changing, make it a real package with a command-line entry point, a lockfile, and dev tools. The source stays in OneDrive; the venv goes in `C:\Dev\venvs`.
+
+**One-time setup:**
+
+```powershell
+cd "C:\Users\<you>\OneDrive\Projects"
+uv init --package mytool --python 3.13   # src\mytool\ layout + [project.scripts] entry point
+cd mytool
+
+$env:UV_PROJECT_ENVIRONMENT = "C:\Dev\venvs\mytool"   # or run the uvenv helper below
+uv add httpx typer                   # runtime dependencies
+uv add --dev pytest ruff             # dev-only tools
+uv sync
+git init; git add .; git commit -m "Initial mytool"
+```
+
+Commit `pyproject.toml`, `uv.lock` and `.python-version`. There's no `.venv` folder to ignore, because it lives outside the project.
+
+**Each work session:**
+
+```powershell
+cd "C:\Users\<you>\OneDrive\Projects\mytool"
+$env:UV_PROJECT_ENVIRONMENT = "C:\Dev\venvs\mytool"   # or: uvenv
+uv sync                    # bring the venv in line with uv.lock
+uv run mytool --help       # run the tool from source
+uv run pytest              # test
+uv run ruff check --fix .  # lint
+```
+
+**Put it on your PATH for everyday use:**
+
+```powershell
+uv tool install --editable .   # 'mytool' now works from any folder
+```
+
+`--editable` means code changes take effect immediately, without reinstalling. Add `--force` to reinstall after changing dependencies or entry points. The tool gets its own venv under `%APPDATA%\uv\tools` (outside OneDrive). To keep it with the rest of the layout, set `UV_TOOL_DIR` to `C:\Dev\uv-tools` at User scope.
+
+**Maintenance:**
+
+```powershell
+uv lock --upgrade      # move all dependencies to their newest allowed versions
+uv sync
+uv run pytest          # confirm nothing broke, then commit uv.lock
+uv build               # optional: wheel + sdist in .\dist for sharing
+```
+
+### Optional: set the venv path automatically from the folder name {#profile-helper}
 
 Add this to your PowerShell profile (`notepad $PROFILE`). Run `uvenv` from any project folder and it points uv at `C:\Dev\venvs\<folder-name>`:
 
@@ -228,6 +304,52 @@ This moves to the newest 3.13.x (it never jumps minor versions). Existing venvs 
 uv self update                    # if installed with Astral's installer
 winget upgrade --id=astral-sh.uv  # if installed with WinGet
 ```
+
+---
+
+## Resetting your current install {#reset}
+
+If your machine already has Python from several sources (python.org installers, the Microsoft Store, an older uv setup in AppData, stray PATH entries), it's often faster to wipe it all and start clean than to untangle it.
+
+**Script:** [Reset-UvPython.ps1](/assets/Reset-UvPython.ps1)
+
+It removes every Python it can find, then sets up the layout from this article:
+
+1. **Inventory:** lists python.org installs and the `py` launcher, Store/MSIX Python packages, uv-managed Pythons, shims in `.local\bin`, leftover folders, and Python entries on PATH.
+2. **Remove:** runs each installer's own uninstaller, removes Store packages, runs `uv python uninstall --all`, deletes leftover folders (`%LOCALAPPDATA%\Programs\Python`, `%APPDATA%\Python`, the pip cache, uv's AppData Python folder), empties `C:\Dev\venvs`, and cleans PATH. It also clears `PYTHONHOME` and `PYTHONPATH` if they're set.
+3. **Install:** installs uv if needed, sets `UV_PYTHON_INSTALL_DIR` and `UV_CACHE_DIR`, then runs `uv python install 3.13` and `uv python update-shell`.
+
+It does **not** touch your project folders, Anaconda/Miniconda (it only reports them), or Python that's bundled inside other apps.
+
+### Run it {#run-reset}
+
+Download the script to `C:\Dev`, then from PowerShell. Use **Run as administrator** if any Python was installed "for all users":
+
+```powershell
+cd C:\Dev
+Unblock-File .\Reset-UvPython.ps1                       # clears the "downloaded from internet" flag
+powershell -ExecutionPolicy Bypass -File .\Reset-UvPython.ps1 -DryRun   # preview only
+powershell -ExecutionPolicy Bypass -File .\Reset-UvPython.ps1           # do it (asks you to type YES)
+```
+
+Options:
+
+| Parameter | Default | What it does |
+|---|---|---|
+| `-Version` | `3.13` | Python version to install afterward |
+| `-DevRoot` | `C:\Dev` | Root for `uv-python`, `uv-cache`, `venvs` |
+| `-KeepVenvs` | off | Don't empty `C:\Dev\venvs` |
+| `-DryRun` | off | Show what would happen, change nothing |
+| `-Force` | off | Skip the YES prompt |
+
+### After it finishes {#after-reset}
+
+1. Open a **new** PowerShell window and check `where.exe python3.13` and `python3.13 --version`.
+2. In **Settings > Apps > Advanced app settings > App execution aliases**, turn off `python.exe` and `python3.exe` (App Installer) so typing `python` doesn't open the Microsoft Store.
+3. Rebuild each project's venv: set `UV_PROJECT_ENVIRONMENT`, then run `uv sync`.
+4. If you use uv tools, rebuild them: `uv tool upgrade --all --reinstall`.
+
+> Always run `-DryRun` first. If an uninstaller fails, the script says so. Remove that entry from **Settings > Apps** and re-run.
 
 ---
 
