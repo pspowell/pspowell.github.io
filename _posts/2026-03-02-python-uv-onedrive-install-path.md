@@ -342,7 +342,7 @@ It removes every Python it can find, then sets up the layout from this article:
 
 1. **Inventory:** lists python.org installs and the `py` launcher, Store/MSIX Python packages, uv-managed Pythons, shims in `.local\bin`, leftover folders, and Python entries on PATH.
 2. **Remove:** runs each installer's own uninstaller, removes Store packages, runs `uv python uninstall --all`, deletes leftover folders (`%LOCALAPPDATA%\Programs\Python`, `%APPDATA%\Python`, the pip cache, uv's AppData Python folder), empties `C:\Dev\venvs`, and cleans PATH. It also clears `PYTHONHOME` and `PYTHONPATH` if they're set.
-3. **Install:** installs uv if needed, sets `UV_PYTHON_INSTALL_DIR` and `UV_CACHE_DIR`, then installs the latest stable Python (or the version you pass with `-Version`) and runs `uv python update-shell`.
+3. **Install:** asks which drive should hold the `Dev` folder (only if you have more than one fixed drive), installs uv if needed, sets `UV_PYTHON_INSTALL_DIR` and `UV_CACHE_DIR`, then installs the latest stable Python (or the version you pass with `-Version`) and runs `uv python update-shell`.
 
 At the end it checks whether Windows blocks uv's `python3.<minor>.exe` launcher. If it does, the script prints the PATH fix from [Troubleshooting](#app-control-blocked).
 
@@ -364,10 +364,25 @@ Options:
 | Parameter | Default | What it does |
 |---|---|---|
 | `-Version` | latest stable | Pin a specific version instead, e.g. `-Version 3.13` |
-| `-DevRoot` | `C:\Dev` | Root for `uv-python`, `uv-cache`, `venvs` |
+| `-DevRoot` | ask (see below) | Root for `uv-python`, `uv-cache`, `venvs`, e.g. `D:\Dev` |
 | `-KeepVenvs` | off | Don't empty `C:\Dev\venvs` |
 | `-DryRun` | off | Show what would happen, change nothing |
-| `-Force` | off | Skip the YES prompt |
+| `-Force` | off | Skip the prompts: YES and drive choice (uses the default drive) |
+
+### Choosing the drive {#reset-drive}
+
+If you don't pass `-DevRoot` and the PC has more than one fixed drive, the script lists them with their free space and asks which one should hold the `Dev` folder:
+
+```text
+== Which drive should hold the Dev folder?
+   1) C:  Windows           112.4 GB free of 475.8 GB  [system, has \Dev, default]
+   2) D:  Data              801.0 GB free of 931.5 GB
+   Enter a number, or press Enter for C:
+```
+
+The default is the drive that already has a `\Dev` folder, or `C:` if none does. With one fixed drive, it uses `C:\Dev` without asking. Everything in this article that says `C:\Dev` then means `<drive>:\Dev`. The script sets `UV_PYTHON_INSTALL_DIR` and `UV_CACHE_DIR` to match, and you use the same drive for `UV_PROJECT_ENVIRONMENT` and the `uvenv` helper.
+
+If you move to a different drive, the script removes the old uv Python install (wherever `UV_PYTHON_INSTALL_DIR` pointed). It doesn't move anything else from the old `Dev` folder, such as projects or old venvs. Move or delete those yourself.
 
 ### After it finishes {#after-reset}
 

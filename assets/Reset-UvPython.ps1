@@ -29,7 +29,9 @@
     latest stable release uv knows about.
 
 .PARAMETER DevRoot
-    Root folder for uv-python, uv-cache and venvs. Default C:\Dev.
+    Root folder for uv-python, uv-cache and venvs, e.g. D:\Dev. If you leave
+    it off and the PC has more than one fixed drive, the script asks which
+    drive to use (default: the drive that already has \Dev, else C:).
 
 .PARAMETER KeepVenvs
     Do not delete the contents of <DevRoot>\venvs.
@@ -44,6 +46,7 @@
     .\Reset-UvPython.ps1 -DryRun
     .\Reset-UvPython.ps1
     .\Reset-UvPython.ps1 -Version 3.13 -KeepVenvs
+    .\Reset-UvPython.ps1 -DevRoot D:\Dev
 
 .NOTES
     Run from an elevated (Run as administrator) PowerShell to also remove
@@ -53,13 +56,57 @@
 [CmdletBinding()]
 param(
     [string]$Version = "",
-    [string]$DevRoot = "C:\Dev",
+    [string]$DevRoot = "",
     [switch]$KeepVenvs,
     [switch]$DryRun,
     [switch]$Force
 )
 
 $ErrorActionPreference = "Continue"
+
+function Write-Step($msg) { Write-Host ""; Write-Host "== $msg" -ForegroundColor Cyan }
+function Write-Item($msg) { Write-Host "   - $msg" }
+function Write-Warn($msg) { Write-Host "   ! $msg" -ForegroundColor Yellow }
+
+# ---------------------------------------------------------------------------
+# 0. Pick the drive for the Dev folder
+# ---------------------------------------------------------------------------
+if (-not $DevRoot) {
+    $sysDrive = $env:SystemDrive                      # usually C:
+    $drives = @(Get-CimInstance Win32_LogicalDisk -Filter "DriveType=3" -ErrorAction SilentlyContinue |
+                Sort-Object DeviceID)
+
+    # Default: first fixed drive that already has \Dev, else the system drive
+    $default = ($drives | Where-Object { Test-Path -LiteralPath ($_.DeviceID + "\Dev") } |
+                Select-Object -First 1).DeviceID
+    if (-not $default) { $default = $sysDrive }
+
+    if ($drives.Count -gt 1 -and -not $Force) {
+        Write-Host ""
+        Write-Host "== Which drive should hold the Dev folder?" -ForegroundColor Cyan
+        for ($i = 0; $i -lt $drives.Count; $i++) {
+            $d = $drives[$i]
+            $freeGB = [math]::Round($d.FreeSpace / 1GB, 1)
+            $sizeGB = [math]::Round($d.Size / 1GB, 1)
+            $label  = $(if ($d.VolumeName) { $d.VolumeName } else { "(no label)" })
+            $notes  = @()
+            if ($d.DeviceID -eq $sysDrive) { $notes += "system" }
+            if (Test-Path -LiteralPath ($d.DeviceID + "\Dev")) { $notes += "has \Dev" }
+            if ($d.DeviceID -eq $default)  { $notes += "default" }
+            $noteText = $(if ($notes) { "  [" + ($notes -join ", ") + "]" } else { "" })
+            Write-Host ("   {0}) {1}  {2,-16} {3,8} GB free of {4} GB{5}" -f ($i + 1), $d.DeviceID, $label, $freeGB, $sizeGB, $noteText)
+        }
+        $pick = Read-Host "   Enter a number, or press Enter for $default"
+        if ($pick -match '^\d+$' -and [int]$pick -ge 1 -and [int]$pick -le $drives.Count) {
+            $default = $drives[[int]$pick - 1].DeviceID
+        } elseif ($pick) {
+            Write-Warn "'$pick' is not on the list - using $default"
+        }
+    }
+    $DevRoot = $default + "\Dev"
+}
+$DevRoot = $DevRoot.TrimEnd('\')
+Write-Host "   Dev folder: $DevRoot"
 
 $UvPythonDir = Join-Path $DevRoot "uv-python"
 $UvCacheDir  = Join-Path $DevRoot "uv-cache"
@@ -69,9 +116,6 @@ $LocalBin    = Join-Path $env:USERPROFILE ".local\bin"
 $IsAdmin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(
     [Security.Principal.WindowsBuiltInRole]::Administrator)
 
-function Write-Step($msg) { Write-Host ""; Write-Host "== $msg" -ForegroundColor Cyan }
-function Write-Item($msg) { Write-Host "   - $msg" }
-function Write-Warn($msg) { Write-Host "   ! $msg" -ForegroundColor Yellow }
 
 function Remove-PathSafe($path) {
     if (-not (Test-Path -LiteralPath $path)) { return }
@@ -143,8 +187,10 @@ $leftoverDirs = @(
     (Join-Path $env:APPDATA "Python"),
     (Join-Path $env:LOCALAPPDATA "pip\cache"),
     (Join-Path $env:APPDATA "uv\python"),
-    $UvPythonDir
-) | Where-Object { Test-Path -LiteralPath $_ }
+    $UvPythonDir,
+    # wherever uv-managed Python was before, in case the Dev folder is moving drives
+    [Environment]::GetEnvironmentVariable("UV_PYTHON_INSTALL_DIR", "User")
+) | Where-Object { $_ -and (Test-Path -LiteralPath $_) } | Sort-Object -Unique
 
 $userPath = [Environment]::GetEnvironmentVariable("Path", "User")
 $machPath = [Environment]::GetEnvironmentVariable("Path", "Machine")
