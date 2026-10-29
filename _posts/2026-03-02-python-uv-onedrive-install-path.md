@@ -3,7 +3,10 @@ layout: post
 title: "Python + uv + OneDrive: full install & setup (Windows 11)"
 date: 2026-03-02 00:00:00 -0500
 tags: [python, uv, onedrive, windows, dev-environment]
+last_modified_at: 2026-10-29
 ---
+
+> **Updated 2026-10-29** (checked against uv 0.12.x): fixed the PowerShell `where` checks, clarified which shims uv installs, dropped a redundant `uv venv`, and added sections on upgrading Python and uv.
 
 ## Goals {#goals}
 
@@ -115,17 +118,21 @@ uv python list
 
 You should see a line with a path like:
 
-- `C:\Dev\uv-python\cpython-3.13.12-windows-x86_64-none\python.exe`
+- `C:\Dev\uv-python\cpython-3.13.<patch>-windows-x86_64-none\python.exe`
+
+You'll also see a `cpython-3.13-windows-x86_64-none` folder. That is a junction uv maintains that points at the newest installed 3.13 patch, so venvs built from it pick up patch upgrades automatically (see [Upgrading](#upgrading)).
 
 ---
 
 ## Step 4 — Update PATH so python shims work everywhere {#step-4-update-path}
 
-uv often places “shim” executables (e.g., `python3.13.exe`) into:
+`uv python install` puts a **versioned** executable (e.g., `python3.13.exe`) into:
 
 - `C:\Users\<you>\.local\bin`
 
 If that directory isn’t on PATH, uv will warn.
+
+Plain `python` / `python3` shims are only installed if you add the still-experimental `--default` flag (`uv python install 3.13 --default`). Without it, `python` resolves to whatever else is on PATH (often the Microsoft Store alias). Inside projects this doesn't matter — use `uv run python`.
 
 ### 4.1 Add uv shims to PATH automatically {#update-shell}
 
@@ -137,13 +144,12 @@ uv python update-shell
 
 Then **close PowerShell and open a new one**.
 
-Verify:
+Verify (in PowerShell, plain `where` is an alias for `Where-Object`, so use `where.exe` or `Get-Command`):
 
 ```powershell
-where python
-where python3.13
-python --version
+where.exe python3.13
 python3.13 --version
+Get-Command python -All   # only uv's if you used --default
 ```
 
 ### 4.2 If you get “Executable already exists … not managed by uv” {#force-replace-shim}
@@ -171,13 +177,16 @@ uv init
 
 ### 5.2 Put the venv outside OneDrive {#external-venv}
 
-Set `UV_PROJECT_ENVIRONMENT` per project (recommended):
+Set `UV_PROJECT_ENVIRONMENT` per project, in the session:
 
 ```powershell
 $env:UV_PROJECT_ENVIRONMENT = "C:\Dev\venvs\myapp"
-uv venv
 uv sync
 ```
+
+`uv sync` creates the venv if it doesn't exist, so a separate `uv venv` isn't needed.
+
+> **Don't** set `UV_PROJECT_ENVIRONMENT` at User scope. An absolute path is used as-is for *every* project, so each project's `uv sync` would overwrite the same venv (and remove the other projects' packages). Keep it one path per project, set per session.
 
 ---
 
@@ -187,6 +196,37 @@ uv sync
 $env:UV_PROJECT_ENVIRONMENT="C:\Dev\venvs\myapp"
 uv sync
 uv run python -V
+```
+
+### Optional: set it automatically from the folder name {#profile-helper}
+
+Add this to your PowerShell profile (`notepad $PROFILE`). Run `uvenv` from any project folder and it points uv at `C:\Dev\venvs\<folder-name>`:
+
+```powershell
+function uvenv {
+    $name = Split-Path -Leaf (Get-Location)
+    $env:UV_PROJECT_ENVIRONMENT = "C:\Dev\venvs\$name"
+    Write-Host "UV_PROJECT_ENVIRONMENT = $env:UV_PROJECT_ENVIRONMENT"
+}
+```
+
+---
+
+## Upgrading {#upgrading}
+
+### Python patch releases {#upgrade-python}
+
+```powershell
+uv python upgrade 3.13   # or just: uv python upgrade
+```
+
+This moves to the newest 3.13.x (it never jumps minor versions). Existing venvs built from the 3.13 junction follow the upgrade; the old patch is kept for anything still pinned to it.
+
+### uv itself {#upgrade-uv}
+
+```powershell
+uv self update                    # if installed with Astral's installer
+winget upgrade --id=astral-sh.uv  # if installed with WinGet
 ```
 
 ---
@@ -221,14 +261,19 @@ uv python update-shell
 Then restart PowerShell and re-check:
 
 ```powershell
-where python3.13
+where.exe python3.13
 ```
+
+### `where python` prints nothing {#where-prints-nothing}
+
+In PowerShell `where` is `Where-Object`, not the Windows `where` command. Use `where.exe` or `Get-Command`.
 
 ---
 
 ## References {#references}
 
-- uv installation
-- uv Python installation & management
-- uv project environment configuration (`UV_PROJECT_ENVIRONMENT`)
-- Microsoft OneDrive restrictions and limitations
+- [uv installation](https://docs.astral.sh/uv/getting-started/installation/)
+- [uv Python versions (install, upgrade, executables)](https://docs.astral.sh/uv/concepts/python-versions/)
+- [uv project environment configuration (`UV_PROJECT_ENVIRONMENT`)](https://docs.astral.sh/uv/concepts/projects/config/)
+- [uv releases](https://github.com/astral-sh/uv/releases)
+- [Microsoft OneDrive restrictions and limitations](https://support.microsoft.com/en-us/office/restrictions-and-limitations-in-onedrive-and-sharepoint-64883a5d-228e-48f5-b3d2-eb39e07630fa)
