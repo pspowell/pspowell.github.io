@@ -1,20 +1,17 @@
 ---
 layout: post
 title: "Python + uv + OneDrive: full install & setup (Windows 11)"
-date: 2026-03-02 00:00:00 -0500
+date: 2026-10-29 00:00:00 -0500
 tags: [python, uv, onedrive, windows, dev-environment]
 last_modified_at: 2026-10-29
 ---
-
-> **Updated 2026-10-29** (checked against uv 0.12.x): commands now use the latest Python instead of a fixed 3.13; fixed the PowerShell `where` checks, clarified which shims uv installs, dropped a redundant `uv venv`, and added sections on workflows (quick script vs. maintained tool), upgrading, a reset script, and Smart App Control blocking uv's launcher.
-
 ## Goals {#goals}
 
 You want:
 
 - Your **project files** (code, `pyproject.toml`, docs) in **OneDrive** for sync/backup.
 - Your **virtual environment** and **caches** *outside* OneDrive (to avoid sync thrash, file-locking, long paths, and “sync pending” headaches).
-- `uv` to manage **Python installs** and **dependencies**, with installs landing in `C:\Dev\uv-python`.
+- `uv` to manage **Python installs** and **dependencies**, with installs landing in `C:\Dev\uv-python` (or D: if desired).
 
 This guide assumes **Windows 11 + PowerShell**.
 
