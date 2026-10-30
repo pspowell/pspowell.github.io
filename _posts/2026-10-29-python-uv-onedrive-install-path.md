@@ -477,3 +477,53 @@ Open a new PowerShell and run `python --version`. The junction always points to 
 - [uv project environment configuration (`UV_PROJECT_ENVIRONMENT`)](https://docs.astral.sh/uv/concepts/projects/config/)
 - [uv releases](https://github.com/astral-sh/uv/releases)
 - [Microsoft OneDrive restrictions and limitations](https://support.microsoft.com/en-us/office/restrictions-and-limitations-in-onedrive-and-sharepoint-64883a5d-228e-48f5-b3d2-eb39e07630fa)
+
+### uv commands and options used here {#uv-options}
+
+There's no `man` page for uv, but the full option list for any command is built in and always matches your installed version:
+
+```powershell
+uv help python install      # long form, every option explained
+uv python install --help    # same detail
+uv python install -h        # short summary
+```
+
+Online, the [CLI reference](https://docs.astral.sh/uv/reference/cli/) covers every command and option, and the [environment variable reference](https://docs.astral.sh/uv/reference/environment/) covers the `UV_*` variables. Command names below link to their entry.
+
+| Command | Option | What it does |
+|---|---|---|
+| [`uv init`](https://docs.astral.sh/uv/reference/cli/#uv-init) | `--script` | Create a single-file script with an inline metadata header |
+| [`uv init`](https://docs.astral.sh/uv/reference/cli/#uv-init) | `--package` | Set up a project to be built as a package (src layout + entry point) |
+| [`uv add`](https://docs.astral.sh/uv/reference/cli/#uv-add) | `--script <file>` | Add dependencies to a script's inline metadata instead of a project |
+| [`uv add`](https://docs.astral.sh/uv/reference/cli/#uv-add) | `--dev` | Add to the development dependency group (test/lint tools) |
+| [`uv run`](https://docs.astral.sh/uv/reference/cli/#uv-run) | `--with <pkg>` | Run with extra packages installed for this run only |
+| [`uv sync`](https://docs.astral.sh/uv/reference/cli/#uv-sync) | `--script <file>` | Build/update the environment for a script instead of a project |
+| [`uv lock`](https://docs.astral.sh/uv/reference/cli/#uv-lock) | `--script <file>` | Write a lockfile for a script instead of a project |
+| [`uv lock`](https://docs.astral.sh/uv/reference/cli/#uv-lock) | `--upgrade` | Move dependencies to the newest allowed versions, ignoring current pins |
+| [`uv tool install`](https://docs.astral.sh/uv/reference/cli/#uv-tool-install) | `--editable` | Install your own package so source changes take effect without reinstalling |
+| [`uv tool install`](https://docs.astral.sh/uv/reference/cli/#uv-tool-install) | `--force` | Reinstall the tool even if it's already installed |
+| [`uv tool upgrade`](https://docs.astral.sh/uv/reference/cli/#uv-tool-upgrade) | `--all`, `--reinstall` | Upgrade every tool and rebuild its packages (after Python changes) |
+| [`uv python install`](https://docs.astral.sh/uv/reference/cli/#uv-python-install) | *(no version)* | Install the latest stable Python |
+| [`uv python install`](https://docs.astral.sh/uv/reference/cli/#uv-python-install) | `--force` | Replace existing Python executables (shims) during installation |
+| [`uv python install`](https://docs.astral.sh/uv/reference/cli/#uv-python-install) | `--default` | Experimental: also install plain `python` / `python3` executables |
+| [`uv python list`](https://docs.astral.sh/uv/reference/cli/#uv-python-list) | `--only-installed` | Show installed versions only, not downloadable ones |
+| [`uv python find`](https://docs.astral.sh/uv/reference/cli/#uv-python-find) | `--script <file>` | Print the interpreter of a script's environment |
+| [`uv python find`](https://docs.astral.sh/uv/reference/cli/#uv-python-find) | `--managed-python` | Only consider uv-managed Pythons (used by the reset script) |
+| [`uv python upgrade`](https://docs.astral.sh/uv/reference/cli/#uv-python-upgrade) | *(no version)* | Upgrade every installed minor version to its latest patch |
+| [`uv python pin`](https://docs.astral.sh/uv/reference/cli/#uv-python-pin) | `<version>` | Write `.python-version` for the project |
+| [`uv python uninstall`](https://docs.astral.sh/uv/reference/cli/#uv-python-uninstall) | `--all` | Remove all uv-managed Pythons |
+| [`uv python update-shell`](https://docs.astral.sh/uv/reference/cli/#uv-python-update-shell) |  | Add the executable directory (`.local\bin`) to PATH |
+| [`uv cache clean`](https://docs.astral.sh/uv/reference/cli/#uv-cache-clean) |  | Empty the uv cache |
+| [`uv self update`](https://docs.astral.sh/uv/reference/cli/#uv-self-update) |  | Update uv itself (Astral installer installs only) |
+| [`uv build`](https://docs.astral.sh/uv/reference/cli/#uv-build) |  | Build a wheel and sdist into `dist\` |
+
+Global option used by the reset script: [`--no-cache`](https://docs.astral.sh/uv/reference/cli/) (`-n`) uses a temporary cache for that one command, so uv doesn't create or touch the configured cache folder.
+
+Environment variables used in this article:
+
+| Variable | Purpose |
+|---|---|
+| `UV_PYTHON_INSTALL_DIR` | Where uv-managed Pythons are installed (`C:\Dev\uv-python`) |
+| `UV_CACHE_DIR` | Where the uv cache lives (`C:\Dev\uv-cache`) |
+| `UV_PROJECT_ENVIRONMENT` | Venv location for the current project (`C:\Dev\venvs\<project>`); set per session |
+| `UV_TOOL_DIR` | Optional: where `uv tool install` puts tool environments |
