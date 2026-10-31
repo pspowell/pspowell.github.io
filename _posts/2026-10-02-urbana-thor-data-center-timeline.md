@@ -8,6 +8,8 @@ tags: [urbana, champaign-county, data-centers, thor-equities, cedar-bog, zoning,
 
 *Updated October 30, 2026, with the county's Oct. 28 lawsuit over its 94-acre land sale in the project area ([separate timeline](/2026/10/30/champaign-county-land-lawsuit-timeline.html)). Earlier update (October 29) added an Oct. 20 Ohio Supreme Court ruling on a Lordstown data center moratorium and Urbana Daily Citizen coverage through Oct. 28: the ballot-wording confusion over the charter amendment, the Rittal expansion next to the site, and details of the Nov. 3 council meeting. Earlier update (October 22) added the October 20 council vote to table the settlement, a parcel map and deed dates from county records, and a correction to the site purchase date. Earlier update (October 11) added the proposed settlement, the October 6 council meeting, and earlier events reported by the Urbana Daily Citizen.*
 
+*Related: [Holes in the Proposed Thor Equities Settlement](/2026/10/07/thor-settlement-holes.html) · [Champaign County Sues Over the 94-Acre Land Deal](/2026/10/30/champaign-county-land-lawsuit-timeline.html)*
+
 ## Introduction
 
 In February 2026, Urbana residents learned that New York–based real estate firm Thor Equities planned to build a roughly 460,000-square-foot data center, branded the **Urbana Technology Hub**, on land near the intersection of State Route 55 and U.S. Route 68, south of the Rittal plant. Thor described about $1 billion in private investment. Texas-based operator CyrusOne later joined the project as an operations partner. The end user has never been disclosed.

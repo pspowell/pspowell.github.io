@@ -10,6 +10,8 @@ In late September 2026, court-ordered mediation produced a proposed settlement o
 
 *Updated Oct. 22, 2026, after the Oct. 20 vote to table.*
 
+*Related: [The Thor Equities Data Center in Urbana: Background and Timeline](/2026/10/02/urbana-thor-data-center-timeline.html) · [Champaign County Sues Over the 94-Acre Land Deal](/2026/10/30/champaign-county-land-lawsuit-timeline.html)*
+
 This post looks at what the deal leaves out or leaves open: 23 gaps, each with the question residents should put to council before any vote. For background, see the [timeline of the Thor data center dispute]({% post_url 2026-10-02-urbana-thor-data-center-timeline %}).
 
 *Not legal advice.*
