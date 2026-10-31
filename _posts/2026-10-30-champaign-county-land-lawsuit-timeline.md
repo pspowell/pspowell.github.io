@@ -17,22 +17,24 @@ This is a separate case from Thor's two lawsuits against the city of Urbana. For
 |-------|------|
 | Champaign County Board of Commissioners | Plaintiff; owner and seller of the 94.11 acres |
 | Champaign Economic Partnership (CEP) | The county's designated agent for the sale |
-| Urbana0624C LLC | Defendant; buyer under the purchase agreement. Its managing member on the agreement is Scott T. Mallory. |
+| Urbana0624C LLC | Defendant; buyer under the purchase agreement. Scott T. Mallory signed the agreement as its managing member (Springfield News-Sun). |
 | Talon Title Agency LLC | Defendant; closing agent holding the buyer's three deposits |
 | Kevin Talebi, Champaign County Prosecutor | Counsel for the commissioners |
 
-Earlier Urbana Daily Citizen reporting described the county's agreement as a sale option signed "with Thor and its agents." The Oct. 29 article names only Urbana0624C LLC as the buyer.
+The Oct. 29 article names Thor Equities and Highland Real Estate as the parties in the dispute with the city over the Urbana Technology Hub. Earlier Urbana Daily Citizen reporting described the county's agreement as a sale option signed "with Thor and its agents." In the county's complaint, the only buyer named is Urbana0624C LLC.
 
 ## Timeline
 
 | Date | Event |
 |------|-------|
 | June 25, 2024 (on or about) | The county designates the Champaign Economic Partnership as its agent for the sale of 94.11 acres. |
-| Sept. 2024 | The CEP, for the commissioners, signs a real estate purchase agreement with Urbana0624C LLC. The buyer would pay **$3,293,850** at closing, or $35,000 an acre. A **$10,000** first deposit goes to Talon Title Agency when the agreement is signed. |
+| Sept. 17, 2024 | The CEP signs a real estate purchase agreement to sell the 94.11 acres to Urbana0624C LLC. The contract price at closing is **$3,293,850**, about $35,000 an acre. |
+| Sept. 18, 2024 | Urbana0624C LLC signs the agreement. A **$10,000** first deposit goes to Talon Title Agency when the agreement is signed. |
 | Sept. 5, 2025 | Urbana0624C LLC pays a second deposit of **$20,000** to Talon. |
-| Feb. 2026 | Thor's data center plans become public. The commissioners write that they had not been told of any data center plan for the proposed industrial park, and that zoning on the land belongs to the city, not the county. They say they are looking for a way out of the purchase agreement. |
+| Feb. 2026 | Thor's data center plans become public. County officials have said they did not know the land was part of a data center campus when they agreed to sell it. The commissioners write that they had not been told of any data center plan for the proposed industrial park, and that zoning on the land belongs to the city, not the county. They say they are looking for a way out of the purchase agreement. |
 | Jan.–March 2026 (first quarter) | According to the complaint, Urbana0624C LLC fails to close on the purchase, though the county and the CEP were ready to transfer title. |
 | April 1, 2026 (on or about) | Counsel for the CEP notifies Urbana0624C LLC that it is in default of its obligation to close and gives it a period to cure the default. |
+| After the cure period | Urbana0624C LLC does not close in time. CEP counsel notifies it that it has failed to close or to schedule a closing. |
 | Early 2026 | The commissioners seek outside legal counsel to end the agreement. As of mid-June, the sale has not been completed. |
 | Sept. 9, 2026 (on or about) | Urbana0624C LLC tells the CEP it has paid a third deposit of **$10,000** to Talon, "as if it had not defaulted." Talon now holds all three deposits, $40,000 in total. |
 | Sept. 21, 2026 | The CEP director notifies the county of the third deposit. |
