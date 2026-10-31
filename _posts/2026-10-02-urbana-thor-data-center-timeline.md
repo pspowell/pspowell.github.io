@@ -2,11 +2,11 @@
 layout: post
 title: "The Thor Equities Data Center in Urbana, Ohio: Background and Timeline"
 date: 2026-10-02
-last_modified_at: 2026-10-29
+last_modified_at: 2026-10-30
 tags: [urbana, champaign-county, data-centers, thor-equities, cedar-bog, zoning, local-government, maps]
 ---
 
-*Updated October 29, 2026, with an Oct. 20 Ohio Supreme Court ruling on a Lordstown data center moratorium and Urbana Daily Citizen coverage through Oct. 28: the ballot-wording confusion over the charter amendment, the Rittal expansion next to the site, and details of the Nov. 3 council meeting. Earlier update (October 22) added the October 20 council vote to table the settlement, a parcel map and deed dates from county records, and a correction to the site purchase date. Earlier update (October 11) added the proposed settlement, the October 6 council meeting, and earlier events reported by the Urbana Daily Citizen.*
+*Updated October 30, 2026, with the county's Oct. 28 lawsuit over its 94-acre land sale in the project area ([separate timeline](/2026/10/30/champaign-county-land-lawsuit-timeline.html)). Earlier update (October 29) added an Oct. 20 Ohio Supreme Court ruling on a Lordstown data center moratorium and Urbana Daily Citizen coverage through Oct. 28: the ballot-wording confusion over the charter amendment, the Rittal expansion next to the site, and details of the Nov. 3 council meeting. Earlier update (October 22) added the October 20 council vote to table the settlement, a parcel map and deed dates from county records, and a correction to the site purchase date. Earlier update (October 11) added the proposed settlement, the October 6 council meeting, and earlier events reported by the Urbana Daily Citizen.*
 
 ## Introduction
 
@@ -82,6 +82,7 @@ Boundaries come from the county auditor's parcel layer as of Oct. 22, 2026. Lots
 | Oct. 20, 2026 | After about 90 minutes in executive session, council votes 4–3 to table the settlement. Stephanie Truelove, Cledis Scott, Patrick Thackery, and Amy Jumper vote to table. Residents hold "No Deal" signs, and the Moratorium Committee again asks for time, saying its findings point to a substantial health burden from pollution. Thor global COO Melissa Gliatta tells council the company has invested about $19.6 million. WDTN headlines the vote as council choosing to fight the lawsuit. |
 | Oct. 26, 2026 | The Urbana Daily Citizen reports that some voters may be voting against their own intent on the charter amendment. Because of the "No Data Center" yard signs and the "No Deal" campaign, many believe a "No" vote bans data centers. Petition organizer Nicole Nawman says a **"Yes"** vote is needed to approve the ban. |
 | Oct. 26, 2026 | The Ohio Tax Credit Authority approves a nine-year Job Creation Tax Credit for Rittal LLC on SR 55, directly north of the Thor site. Rittal, which makes IT infrastructure components for data centers, expects to add 182 full-time jobs and about $12 million in annual payroll in Urbana by the end of 2029. |
+| Oct. 28, 2026 | The Champaign County Commissioners sue Urbana0624C LLC and Talon Title Agency LLC in Common Pleas Court over a 2024 agreement to buy 94.11 county-owned acres in the project area for $3,293,850. The county says the buyer defaulted by not closing in early 2026 and asks the court to end its obligation to sell and award it $30,000 in deposits. See the [county land lawsuit timeline](/2026/10/30/champaign-county-land-lawsuit-timeline.html). |
 | Nov. 3, 2026 | General election: the data center charter amendment and the mayoral recall are on the ballot. Council's regular meeting falls the same day, at 6 p.m. in the training room of the municipal building, 205 S. Main St., and the tabled settlement can come back then. Council can also table it again. |
 
 ## Open Questions
@@ -116,6 +117,7 @@ Boundaries come from the county auditor's parcel layer as of Oct. 22, 2026. Lots
 - Springfield News-Sun, "Urbana council takes no action on proposed data center settlement" (Oct. 7, 2026) — <https://www.springfieldnewssun.com/local/urbana-council-takes-no-action-on-proposed-data-center-settlement/article_a7d516c4-7a31-5d7f-9127-cdd89c13d9bd.html>
 - WDTN, "Urbana City Council votes to fight data center lawsuit" (Oct. 21, 2026) — <https://www.wdtn.com/news/miami-valley-data-centers/urbana-city-council-votes-to-fight-data-center-lawsuit/>
 - Urbana Daily Citizen, "Anti-data center issue requires 'Yes' for passage" (Oct. 26, 2026) — <https://www.urbanacitizen.com/2026/10/26/anti-data-center-issue-requires-yes-for-passage/>
+- Urbana Daily Citizen, "Land in proposed data center area part of civil case" (Oct. 29, 2026) — <https://www.urbanacitizen.com/2026/10/29/land-in-proposed-data-center-area-part-of-civil-case/>
 - Urbana Daily Citizen, "Rittal set to expand in Urbana" (Oct. 26, 2026) — <https://www.urbanacitizen.com/2026/10/26/rittal-set-to-expand-in-urbana/>
 - Peak of Ohio, "“We cannot be bought”: Urbana residents challenge data center deal" (Oct. 7, 2026) — <https://www.peakofohio.com/local-news/we-cannot-be-bought-urbana-residents-challenge-data-center-deal/>
 - Springfield News-Sun, "Urbana council tables data center settlement proposal for second time" — <https://www.springfieldnewssun.com/local/urbana-council-tables-data-center-settlement-proposal-for-second-time/article_79d7634c-e12e-5aa4-9731-81436857bfd5.html>
