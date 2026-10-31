@@ -11,6 +11,12 @@ The county says the buyer defaulted by failing to close in early 2026. It wants 
 
 This is a separate case from Thor's two lawsuits against the city of Urbana. For the full data center story, see [The Thor Equities Data Center in Urbana, Ohio: Background and Timeline](/2026/10/02/urbana-thor-data-center-timeline.html).
 
+## Where the Land Is
+
+![Parcel map of south Urbana showing the county's 94.5 acres under contract to Urbana0624C LLC (blue) directly south of Thor Equities' land (brown)](/assets/images/urbana-thor-parcels-map.png)
+
+The county auditor lists two county parcels directly south of Thor's 90-acre parcel and east to US 68: K48-25-11-01-36-001-00 (85.3 acres) and K48-25-11-01-37-001-00 (9.2 acres). Together they total 94.5 acres. That is close to the 94.11 acres in the contract, and they appear to be the land in the lawsuit. The complaint, as reported, does not list parcel numbers.
+
 ## The Parties
 
 | Party | Role |
@@ -67,6 +73,7 @@ The complaint asks the court to:
 ## Sources
 
 - Urbana Daily Citizen, "Land in proposed data center area part of civil case" (Oct. 29, 2026) — <https://www.urbanacitizen.com/2026/10/29/land-in-proposed-data-center-area-part-of-civil-case/>
+- Champaign County Auditor, parcel records for K48-25-11-01-36-001-00 and K48-25-11-01-37-001-00 (accessed Oct. 30, 2026) — <https://auditor.co.champaign.oh.us/Parcel?Parcel=K48-25-11-01-36-001-00>
 - Urbana Daily Citizen, "Council OKs zoning reversal" (June 16, 2026) — <https://www.urbanacitizen.com/2026/06/16/city-council-approves-zoning-reversal-relating-to-data-centers/>
 - Springfield News-Sun, "Potential data center considered for Champaign County" (Feb. 2026) — <https://www.springfieldnewssun.com/news/potential-data-center-considered-for-champaign-county/BYYV3EK3ARGZFM4ARE3NPOSEH4/>
 - Springfield News-Sun, "Urbana neighbors, Cedar Bog advocates push back against data center" — <https://www.springfieldnewssun.com/news/urbana-neighbors-cedar-bog-advocates-push-back-against-data-center/article_ef8b79ef-69ee-52f1-a625-70058877177e.html>

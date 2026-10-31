@@ -26,7 +26,7 @@ Over the following months the city reversed course. It passed a moratorium, repe
 
 ## Site Map
 
-![Parcel map of Thor Equities land in south Urbana, south of SR 55 and west of US 68](/assets/images/urbana-thor-parcels-map.png)
+![Parcel map of Thor Equities land in south Urbana, south of SR 55 and west of US 68, with the county-owned land under contract to Urbana0624C LLC shown in blue](/assets/images/urbana-thor-parcels-map.png)
 
 The Champaign County Auditor's parcel records show three parcels, 144.7 acres in all, held by two Thor Equities LLCs. All three are mailed to Thor Equities at 25 W 39th St, New York. Together they run from SR 55 south and east to US 68, beside the Urbana City Schools parcel at 1673 S US 68.
 
@@ -41,7 +41,9 @@ The two Owner II parcels match the "nearly 100 acres of Organ Farms land (about 
 
 The hatched parcel to the west is 85.6 acres owned by Highland55 Investments LLC of Columbus, sold in November 2025 for $3,210,713. The county record does not name Thor. Its size is the reason it is shown. It plus the 47.6-acre parcel make about 133 acres, the figure reported for Thor's 2025 purchases. All four parcels together total about 230 acres, the figure Thor gave in its federal lawsuit. Whether Highland55 is connected to Thor is not confirmed.
 
-Boundaries come from the county auditor's parcel layer as of Oct. 22, 2026. Lots under one acre are omitted from the drawing.
+The blue hatched land directly south of Thor's 90 acres belongs to the Champaign County Commissioners: parcels K48-25-11-01-36-001-00 (85.3 acres) and K48-25-11-01-37-001-00 (9.2 acres), 94.5 acres in all. This appears to be the 94.11 acres the county agreed in September 2024 to sell to Urbana0624C LLC for $3,293,850. The county sued the buyer on Oct. 28, 2026, saying it defaulted and the sale is off (see the [county land lawsuit timeline](/2026/10/30/champaign-county-land-lawsuit-timeline.html)). The parcels run from Thor's southern line east to US 68. The county's acreage of record is slightly larger than the contract figure.
+
+Boundaries come from the county auditor's parcel layer as of Oct. 22, 2026 (county parcels checked Oct. 30). Lots under one acre are omitted from the drawing.
 
 ## Timeline
 
