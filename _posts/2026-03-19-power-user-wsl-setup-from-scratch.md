@@ -79,7 +79,7 @@ Install a practical set of tools:
       htop btop tree jq \
       ripgrep fd-find fzf \
       neovim vim tmux \
-      python3 python3-pip python3-venv pipx \
+      python3 \
       zsh \
       x11-apps
 
@@ -98,16 +98,17 @@ Here is why these matter:
 | `fzf` | Fuzzy finding |
 | `neovim` | Terminal editor |
 | `tmux` | Persistent terminal sessions |
-| `python3-*` | Python runtime and virtual environments |
-| `pipx` | Isolated Python CLI installs |
+| `python3` | System Python for the OS and quick one-offs (`uv` handles project Pythons) |
 | `zsh` | Alternative shell if you want it |
 | `x11-apps` | Basic GUI test tools |
 
-Set up `pipx` on your path:
+Install `uv`, which handles Python versions, project environments, packages, and CLI tools in one program:
 
-    pipx ensurepath
+    curl -LsSf https://astral.sh/uv/install.sh | sh
 
-Then restart your shell, or source the appropriate profile file.
+Then restart your shell (or run `source ~/.bashrc`) and check it:
+
+    uv --version
 
 ## Create a sane working directory layout
 
@@ -250,33 +251,59 @@ Set safe permissions:
 
 ## Python: the clean power-user setup
 
-Ubuntu’s system Python is fine, but do not treat it like a global junk drawer. Use virtual environments for projects and `pipx` for CLI tools.
+Ubuntu’s system Python is fine, but do not treat it like a global junk drawer. Let `uv` own everything Python: project environments, dependencies, Python versions, and command-line tools. You never need to run `pip`, `venv`, or `pipx` by hand.
 
-Good global CLI installs through `pipx`:
+Good global CLI installs through `uv tool`:
 
-    pipx install uv
-    pipx install ruff
-    pipx install black
-    pipx install httpie
+    uv tool install ruff
+    uv tool install black
+    uv tool install httpie
+
+Each tool gets its own isolated environment, the way `pipx` would do it. If `uv` warns that `~/.local/bin` is not on your `PATH`, run `uv tool update-shell` and restart the shell.
 
 That gives you a very strong baseline:
 
 | Tool | Why use it |
 |---|---|
-| `uv` | Fast Python package and environment management |
+| `uv` | Fast Python package, environment, and version management |
 | `ruff` | Extremely fast linting and formatting support |
 | `black` | Consistent formatting |
 | `httpie` | Better command-line HTTP client |
 
+Keep them current with:
+
+    uv self update
+    uv tool upgrade --all
+
 For project work:
 
-    mkdir -p ~/projects/demo-python
-    cd ~/projects/demo-python
-    python3 -m venv .venv
-    source .venv/bin/activate
-    python -m pip install --upgrade pip
+    mkdir -p ~/projects
+    cd ~/projects
+    uv init demo-python
+    cd demo-python
+    uv add requests
+    uv run main.py
 
-Or, if you prefer `uv`, build around that instead of manually managing `venv` and `pip`.
+`uv init` creates the project files (`pyproject.toml`, `main.py`, `.python-version`, a Git repo). `uv add` creates `.venv` on first use, installs the package, and records it in `pyproject.toml` and `uv.lock`. `uv run` runs inside that environment, so there is nothing to activate.
+
+A few more commands you will use often:
+
+| Command | What it does |
+|---|---|
+| `uv add --dev pytest` | Add a development-only dependency |
+| `uv remove requests` | Remove a dependency |
+| `uv sync` | Rebuild `.venv` from `uv.lock` (after cloning a repo, for example) |
+| `uv run pytest` | Run any tool inside the project environment |
+| `uv python install 3.12` | Download a specific Python version |
+| `uv python pin 3.12` | Make this project use that version |
+
+For a single script, `uv` can store its dependencies in the file itself:
+
+    uv init --script fetch.py
+    uv add --script fetch.py requests
+    uv run fetch.py
+
+Commit `pyproject.toml`, `uv.lock`, and `.python-version`. Leave `.venv` out (the `.gitignore` that `uv init` writes already does).
 
 The key idea is simple: keep project dependencies inside the project, and keep your global environment boring.
 
@@ -433,7 +460,7 @@ If I were rebuilding from scratch, the sequence would look like this:
       htop btop tree jq \
       ripgrep fd-find fzf \
       neovim tmux \
-      python3 python3-pip python3-venv pipx \
+      python3 \
       zsh \
       xfce4-terminal thunar file-roller mousepad
 
@@ -464,13 +491,13 @@ If I were rebuilding from scratch, the sequence would look like this:
     git config --global core.editor nvim
     git config --global core.autocrlf input
 
-### 7. Set up Python CLI tools
+### 7. Set up Python with uv
 
-    pipx ensurepath
-    pipx install uv
-    pipx install ruff
-    pipx install black
-    pipx install httpie
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+    source ~/.bashrc
+    uv tool install ruff
+    uv tool install black
+    uv tool install httpie
 
 ### 8. Shut WSL down from PowerShell
 
@@ -540,6 +567,6 @@ Those are different use cases and deserve different tools.
 
 If your goal is a power-user workstation on Windows, the best WSL setup is usually the least theatrical one.
 
-Install Ubuntu. Keep your code in Linux space. Add a strong terminal stack. Use Git and SSH properly. Use Python virtual environments and `pipx`. Launch Linux GUI apps individually through WSLg when they are actually useful. Avoid the urge to turn WSL into an ersatz desktop distro.
+Install Ubuntu. Keep your code in Linux space. Add a strong terminal stack. Use Git and SSH properly. Let `uv` manage Python projects and tools. Launch Linux GUI apps individually through WSLg when they are actually useful. Avoid the urge to turn WSL into an ersatz desktop distro.
 
 That path is stable, fast, and rebuildable. More importantly, it leaves your energy available for real work instead of continuous environment repair.
