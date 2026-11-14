@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Classic Peach Pie"
-date: 2026-07-14
+date: 2026-07-21 18:11:13 -0400
 tags: [recipes, baking, pie, dessert]
 ---
 

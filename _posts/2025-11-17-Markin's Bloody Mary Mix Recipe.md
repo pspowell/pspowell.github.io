@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Dano’s Dill-Stacker Bloody Mary"
-date: 2025-11-17
+date: 2026-01-23 17:51:20 -0500
 tags: [recipes, drinks, cocktails, bloody-mary]
 ---
 

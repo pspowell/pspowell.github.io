@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Build and use the Hirens BootCD PE USB"
-date:   2023-11-08
+date: 2024-09-27 07:27:03 -0700
 categories: tech
 ---
 

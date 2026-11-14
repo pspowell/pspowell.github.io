@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Power-user WSL setup from scratch"
-date: 2026-03-19
+date: 2026-11-14 13:10:55 -0500
 tags:
   - wsl
   - windows

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "WinUtil Technical Analysis: GUI Framework & Development Tools"
-date: 2025-11-06
+date: 2025-11-06 19:51:34 -0500
 author: "Preston Powell"
 categories: [PowerShell, WPF, GUI Development, Technical Analysis]
 tags: [powershell, wpf, xaml, gui, windows, development, chris-titus, winutil]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "2026 MLB Team Payrolls, Standings, and Cost-Per-Win Rankings"
-date: 2026-08-02
+date: 2026-08-02 22:21:18 -0400
 tags: [mlb, baseball, payroll, sports-finance]
 ---
 

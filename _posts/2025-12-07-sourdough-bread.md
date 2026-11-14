@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Everyday Sourdough Bread (Step-by-Step)"
-date: 2025-12-07
+date: 2025-12-07 12:19:07 -0500
 tags: [baking, sourdough, bread, recipes]
 ---
 

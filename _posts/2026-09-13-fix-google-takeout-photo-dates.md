@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Fixing Date Taken/Modified on Google Takeout Photos with ExifTool"
-date: 2026-09-13
+date: 2026-09-14 09:13:27 -0400
 tags: [photos, exiftool, windows, powershell, google-takeout]
 ---
 

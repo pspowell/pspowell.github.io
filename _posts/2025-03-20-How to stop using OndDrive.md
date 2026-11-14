@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "**How to stop using OneDrive**"
-date:   2025-03-20
+date: 2025-03-20 11:49:17 -0400
 categories: tech
 ---
 

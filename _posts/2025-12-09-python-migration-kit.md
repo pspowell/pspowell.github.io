@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Python Migration & Cleanup Kit for Windows"
-date: 2025-12-09
+date: 2025-12-09 11:13:17 -0500
 tags: [python, windows, scripting, migration]
 ---
 

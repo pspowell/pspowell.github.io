@@ -2,7 +2,7 @@
 categories:
 - recipes
 - dressings
-date: 2026-06-09
+date: 2026-06-09 10:14:15 -0400
 description: A simple homemade zesty Italian dressing recipe with
   vinegar, olive oil, and herbs.
 layout: post

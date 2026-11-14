@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Instant Pot Duo Pressure Sensor Replacement and Calibration"
-date: 2025-11-07
+date: 2025-11-07 16:12:51 -0500
 tags: [Instant Pot, Repair, Pressure Cooker, DIY, Calibration, Safety]
 ---
 

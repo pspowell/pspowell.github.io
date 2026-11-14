@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "DISM vs SDCLT vs Disk2VHD – Choosing the Right Backup Tool"
-date: 2025-10-06
+date: 2025-10-06 07:22:31 -0400
 tags: [Windows, DISM, Backup, Imaging, VHD, System Recovery]
 ---
 

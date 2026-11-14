@@ -1,5 +1,5 @@
 ---
-date: 2026-02-20
+date: 2026-02-20 15:40:22 -0500
 layout: post
 tags:
 - gnucash

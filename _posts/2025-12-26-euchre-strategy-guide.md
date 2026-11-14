@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Euchre Strategy Guide: How to Play Better (Without Memorizing a Book)"
-date: 2025-12-26
+date: 2025-12-26 12:50:24 -0500
 tags:
   - cards
   - euchre

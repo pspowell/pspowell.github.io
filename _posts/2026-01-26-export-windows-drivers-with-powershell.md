@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Export and backup Windows drivers with PowerShell (and how to restore them)"
-date: 2026-01-26 00:00:00 -0500
+date: 2026-01-26 02:18:09 -0500
 tags: [windows-11, windows-10, powershell, drivers, backup, winpe]
 ---
 

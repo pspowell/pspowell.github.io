@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Simple, Relevant, Scannable — The Only Three Things Your Resume Needs"
-date: 2025-10-28
+date: 2025-10-28 09:31:33 -0400
 tags: [career, resume, professional, template]
 ---
 

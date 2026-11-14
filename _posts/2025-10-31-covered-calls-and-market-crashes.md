@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "What Happens to a Covered Call if the Market Crashes"
-date: 2025-10-31
+date: 2025-10-31 11:07:23 -0400
 tags: [investing, covered-calls, options, risk-management]
 ---
 

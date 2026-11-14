@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Plan, Implement, Direct, Control, and Staff: Core Management Responsibilities"
-date: 2026-01-16
+date: 2026-01-16 10:43:03 -0500
 tags: [management, leadership, operations]
 ---
 

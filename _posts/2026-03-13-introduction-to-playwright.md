@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introduction to Playwright"
-date: 2026-03-13
+date: 2026-03-13 13:15:19 -0400
 tags: [automation, testing, playwright, browser-automation, python]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Japanese Roasted Sesame Dressing (Kewpie Copycat)"
-date: 2026-09-27
+date: 2026-09-27 13:20:56 -0400
 tags: [recipes, sauces, dressing, japanese, sesame, kewpie]
 ---
 

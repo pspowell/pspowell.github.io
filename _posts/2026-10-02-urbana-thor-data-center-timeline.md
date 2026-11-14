@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Thor Equities Data Center in Urbana, Ohio: Background and Timeline"
-date: 2026-10-02
+date: 2026-11-14 08:54:48 -0500
 last_modified_at: 2026-11-14
 tags: [urbana, champaign-county, data-centers, thor-equities, cedar-bog, zoning, local-government, maps]
 ---

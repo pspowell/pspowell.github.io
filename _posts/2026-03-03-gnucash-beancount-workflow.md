@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "GnuCash → Beancount + Fava Workflow (uv + Windows 11)"
-date: 2026-03-03 00:00:00 -0500
+date: 2026-03-03 11:13:59 -0500
 tags: [gnucash, beancount, fava, uv, windows]
 ---
 

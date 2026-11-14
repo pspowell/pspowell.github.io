@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Three Snows After Forsythia: The Truth Behind the Saying"
-date: 2026-03-17
+date: 2026-03-17 12:42:37 -0400
 tags: [weather, folklore, gardening, phenology, midwest, ohio,climate]
 ---
 

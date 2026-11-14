@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Best Seasoning Process for Cast Iron Cookware"
-date: 2025-10-05
+date: 2025-10-05 09:28:35 -0400
 tags: [cast iron, seasoning, cookware, kitchen, maintenance]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Types of Traders and Trading Strategies"
-date: 2025-12-05
+date: 2025-12-05 13:42:01 -0500
 tags: [trading, investing, markets, education]
 ---
 

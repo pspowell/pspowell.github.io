@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AI Sycophancy, Scientific American, and How to Push Back"
-date: 2026-04-03
+date: 2026-04-04 09:41:52 -0400
 tags: [ai, alignment, chatbots, scientific-american, prompting]
 ---
 

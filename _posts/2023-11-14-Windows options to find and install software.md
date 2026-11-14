@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Windows options to find and install software"
-date:   2023-11-14 
+date: 2023-11-15 12:07:29 -0500
 categories: software
 ---
 

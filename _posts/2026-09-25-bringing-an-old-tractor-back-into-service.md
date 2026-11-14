@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Bringing an Old Tractor Back Into Service"
-date: 2026-09-25
+date: 2026-09-25 12:25:31 -0400
 tags: [tractor, restoration, small-engine, maintenance, farm-equipment, checklist]
 ---
 

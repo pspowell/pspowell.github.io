@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Fidelity Import Classification Table (Machine-Friendly)"
-date: 2026-03-05
+date: 2026-03-05 09:11:37 -0500
 tags: [finance, fidelity, gnucash, imports, python, mapping]
 ---
 

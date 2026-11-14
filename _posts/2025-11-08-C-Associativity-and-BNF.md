@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Understanding C Associativity and BNF Syntax Rules"
-date: 2025-11-08
+date: 2025-11-08 11:53:58 -0500
 tags: [C, programming, BNF, associativity, grammar, syntax]
 ---
 

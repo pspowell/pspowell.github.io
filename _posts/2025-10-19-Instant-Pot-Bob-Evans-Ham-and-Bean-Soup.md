@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Instant Pot Bob Evans–Style Ham & Bean Soup"
-date: 2025-10-19
+date: 2025-10-19 09:46:12 -0400
 tags: [recipes, instantpot, soup, copycat]
 ---
 

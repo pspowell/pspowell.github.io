@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Understanding the Whiz and Pop of This Year's World Series Games"
-date: 2026-10-26
+date: 2026-10-26 22:15:42 -0400
 tags: [baseball, world-series, broadcasting, audio, sound, physics]
 ---
 

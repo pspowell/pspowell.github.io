@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Upgrade an Unsupported PC to Windows 11 (In‑Place Upgrade Guide)"
-date: 2026-01-26 00:00:00 -0500
+date: 2026-01-26 02:08:09 -0500
 tags: [windows, windows-11, windows-10, upgrade, troubleshooting]
 ---
 

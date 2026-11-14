@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Quick HD replacement with SSD on a laptop for under $30"
-date:   2023-11-14 
+date: 2023-11-15 12:07:29 -0500
 categories: software
 ---
 

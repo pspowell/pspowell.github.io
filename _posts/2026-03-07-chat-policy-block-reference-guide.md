@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Chat Policy Block Reference Guide"
-date: 2026-03-07
+date: 2026-03-07 10:43:02 -0500
 tags: [ai, prompting, workflow, policy, automation, reference]
 ---
 

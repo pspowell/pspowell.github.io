@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ".NET Static Methods for PowerShell Cheat Sheet"
-date: 2025-10-31
+date: 2025-10-31 07:32:31 -0400
 tags: [PowerShell, .NET, Reference, CheatSheet]
 ---
 

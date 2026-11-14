@@ -2,7 +2,7 @@
 layout: post
 title: "The Complete Google Gemini Reference Guide"
 description: "A comprehensive guide to capabilities, tips, and tricks for optimal use of Google Gemini, including command aliases and workflow shortcuts."
-date: 2026-03-11
+date: 2026-03-11 18:12:19 -0400
 category: reference
 tags: [AI, Gemini, Productivity, Guide, Shortcuts]
 ---

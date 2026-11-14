@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Copilot+ PCs and ChatGPT: What Each Is and How They Work Together"
-date: 2026-01-09
+date: 2026-01-09 13:35:16 -0500
 tags: [AI, Copilot+, ChatGPT, Windows, NPU]
 ---
 

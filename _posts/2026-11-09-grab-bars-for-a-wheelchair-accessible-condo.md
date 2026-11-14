@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Grab Bars for a Wheelchair-Accessible Condo: Where They Go and What to Buy"
-date: 2026-11-09 00:00:00 -0500
+date: 2026-11-09 23:14:00 -0500
 last_modified_at: 2026-11-09
 tags: [accessibility, aging-in-place, grab-bars, bathroom, diy, home-modification]
 ---

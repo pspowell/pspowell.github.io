@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Communicate with a Narcissist (Concise, Battle-Tested Rules)"
-date: 2026-01-08
+date: 2026-01-08 22:29:44 -0500
 tags: [communication, boundaries, conflict, psychology]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "DIY Cat Exercise Wheel – Complete Build Plan"
-date: 2026-02-03
+date: 2026-02-03 22:16:21 -0500
 tags: [DIY, pets, woodworking, shop-class]
 ---
 

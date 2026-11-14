@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Moving to a new PC with robocopy (now that PC-to-PC Migration is gone)"
-date: 2026-10-30 00:00:00 -0400
+date: 2026-10-30 05:14:29 -0400
 tags: [windows, robocopy, migration, backup, powershell]
 last_modified_at: 2026-10-30
 ---

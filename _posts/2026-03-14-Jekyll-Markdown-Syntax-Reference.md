@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jekyll Markdown Syntax Reference"
-date: 2026-03-10
+date: 2026-03-14 15:27:13 -0400
 tags:
   - jekyll
   - markdown

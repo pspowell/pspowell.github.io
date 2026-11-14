@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Toggle Windows Start Full-Screen Mode with PowerShell"
-date: 2025-11-03
+date: 2025-11-03 09:01:47 -0500
 tags: [Windows, PowerShell, StartMenu, Explorer, Registry, Scripts]
 ---
 

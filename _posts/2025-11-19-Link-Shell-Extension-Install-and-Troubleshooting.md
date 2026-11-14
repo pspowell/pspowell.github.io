@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Install and Use Link Shell Extension on Windows 11 (with Troubleshooting Guide)"
-date: 2025-11-19
+date: 2025-11-23 13:31:09 -0500
 tags: [windows, shell, links, filesystem, tools]
 ---
 

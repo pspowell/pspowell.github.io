@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Gluten-Free Smashburgers with Smashburger Sauce"
-date: 2026-07-21
+date: 2026-07-21 18:15:13 -0400
 tags: [recipes, burgers, grilling, gluten-free]
 ---
 

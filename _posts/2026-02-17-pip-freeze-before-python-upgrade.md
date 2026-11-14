@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Freeze pip Modules Before Upgrading Python"
-date: 2026-02-17
+date: 2026-02-17 15:06:34 -0500
 tags: [python, pip, virtualenv, windows]
 ---
 

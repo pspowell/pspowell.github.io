@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Shop-Style Gyro at Home: Rolling Pin + Parchment (No Food Processor Needed)"
-date: 2026-01-15
+date: 2026-01-15 17:18:58 -0500
 tags: [cooking, greek, gyro, meal-prep, techniques]
 ---
 

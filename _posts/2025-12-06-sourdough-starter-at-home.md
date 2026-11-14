@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Start and Maintain a Sourdough Starter at Home"
-date: 2025-12-06
+date: 2025-12-21 11:44:30 -0500
 tags: [baking, sourdough, bread, how-to]
 ---
 

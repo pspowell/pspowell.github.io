@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to Install and Use Winget on Windows"
-date:   2023-11-10 
+date: 2023-11-15 12:07:29 -0500
 categories: tech
 ---
 

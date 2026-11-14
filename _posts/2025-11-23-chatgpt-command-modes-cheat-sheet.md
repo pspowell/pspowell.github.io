@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ChatGPT Command Modes Cheat Sheet"
-date: 2025-11-23
+date: 2025-11-23 09:43:20 -0500
 tags: [chatgpt, shortcuts, modes, howto]
 ---
 

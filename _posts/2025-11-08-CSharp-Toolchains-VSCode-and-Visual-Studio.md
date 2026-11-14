@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CSharp Toolchains VSCode and Visual Studio"
-date: 2025-11-08
+date: 2026-03-10 20:56:48 -0400
 tags:
   - csharp
   - dotnet

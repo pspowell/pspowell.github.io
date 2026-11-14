@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "PowerShell + VS Code Starter Repos with Git, Debug, and Linting"
-date: 2025-11-01
+date: 2025-11-01 08:31:01 -0400
 tags: [PowerShell, VSCode, Git, Pester, ScriptAnalyzer]
 ---
 

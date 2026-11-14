@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Charred Corn Syrup"
-date: 2026-08-23
+date: 2026-08-23 18:33:25 -0400
 tags: [recipes, bartending, syrups, cocktails]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Make and Use DIY Wood Grain Filler"
-date: 2025-10-24
+date: 2025-10-24 07:24:24 -0400
 tags: [woodworking, finishing, DIY, grain-filler, pumice, linseed-oil]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Local Beef Producers in Champaign County, Ohio"
-date: 2026-02-04
+date: 2026-02-04 15:46:33 -0500
 tags: [local-food, beef, farms, champaign-county]
 ---
 ## Scope {#scope}

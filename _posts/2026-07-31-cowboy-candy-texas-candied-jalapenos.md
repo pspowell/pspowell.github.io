@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cowboy Candy (Texas Candied Jalapeños)"
-date: 2026-07-31
+date: 2026-07-31 17:01:51 -0400
 tags: [recipes, canning, preserving, peppers]
 ---
 

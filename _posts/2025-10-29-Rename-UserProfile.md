@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rename Your Windows User Profile Directory
-date: 2025-10-29
+date: 2025-10-29 17:37:37 -0700
 tags: [Windows, PowerShell, Profile, Rename, Script]
 ---
 

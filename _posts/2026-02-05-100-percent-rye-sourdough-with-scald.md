@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "100% Rye Sourdough Bread (With Scald and Sour Stages)"
-date: 2026-02-05
+date: 2026-02-05 08:17:51 -0500
 tags: [bread, sourdough, rye, baking]
 ---
 

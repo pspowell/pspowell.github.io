@@ -1,7 +1,7 @@
-2026-02-17-double-entry-bookkeeping-explained.md---
+---
 layout: post
 title: "Double-Entry Bookkeeping, Explained"
-date: 2026-02-17
+date: 2026-02-17 09:20:03 -0500
 tags: [accounting, bookkeeping, double-entry, debits-credits]
 ---
 

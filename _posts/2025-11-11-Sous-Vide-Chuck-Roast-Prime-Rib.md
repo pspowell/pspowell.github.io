@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Sous Vide Chuck Roast That Tastes Like Prime Rib"
-date: 2025-11-11
+date: 2025-11-11 13:11:10 -0500
 tags: [sous-vide, beef, chuck-roast, prime-rib, recipe]
 ---
 

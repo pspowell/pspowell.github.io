@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Complete Guide: Drupal 11 with Docker, DDEV, and Composer (Windows 11)"
-date: 2025-11-20
+date: 2025-11-20 07:46:38 -0500
 tags: [drupal11, docker, ddev, composer, php, windows]
 ---
 

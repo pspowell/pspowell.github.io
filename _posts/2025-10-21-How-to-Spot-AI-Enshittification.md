@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Spot AI Enshittification"
-date: 2025-10-21
+date: 2025-10-22 08:24:32 -0400
 tags: [AI, technology, enshittification, Doctorow, ethics, platforms]
 ---
 

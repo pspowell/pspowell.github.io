@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Duplicate Google Forms Functionality in Microsoft 365"
-date: 2025-11-04
+date: 2025-11-04 08:17:22 -0500
 tags: [Microsoft 365, Forms, Power Automate, Power Apps, Google Forms, Office Scripts]
 ---
 

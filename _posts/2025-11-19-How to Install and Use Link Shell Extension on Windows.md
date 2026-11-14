@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Install and Use Link Shell Extension on Windows"
-date: 2025-11-19
+date: 2025-11-24 12:55:02 -0500
 tags: [windows, filesystems, symlinks, tools]
 ---
 

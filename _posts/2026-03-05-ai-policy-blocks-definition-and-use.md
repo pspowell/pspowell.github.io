@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AI Policy Blocks: Definition and Use"
-date: 2026-03-05
+date: 2026-03-05 09:11:37 -0500
 tags: [ai, automation, workflow, prompting]
 ---
 

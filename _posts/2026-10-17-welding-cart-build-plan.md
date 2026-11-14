@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Welding Cart Build Plan: Drawing, Cut List and Assembly"
-date: 2026-10-17
+date: 2026-10-18 09:17:58 -0400
 tags: [welding, fabrication, welding-cart, square-tube, cut-list]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Private Core Dump — AI Knowledge About Preston Powell"
-date: 2025-12-21
+date: 2025-12-21 14:48:41 -0500
 tags:
   - private
   - core-dump

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "If you win the lottery big: cautionary tales and a first-steps checklist"
-date: 2026-11-06 00:00:00 -0500
+date: 2026-11-06 15:48:26 -0500
 tags: [lottery, money, estate-planning, attorneys, personal-finance]
 last_modified_at: 2026-11-06
 ---

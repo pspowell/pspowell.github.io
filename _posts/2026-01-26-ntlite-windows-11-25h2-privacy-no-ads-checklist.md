@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "NTLite Preset Checklist: Windows 11 25H2 (Privacy, No Ads, Minimal Telemetry)"
-date: 2026-01-26 22:00:00 -0500
+date: 2026-01-30 04:15:40 -0500
 tags: [windows-11, ntlite, privacy, debloat, imaging]
 ---
 

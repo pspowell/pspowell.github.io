@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Pinpointing with the Garrett ACE 400 and Its DD Coil"
-date: 2026-10-19
+date: 2026-10-19 09:34:08 -0400
 tags: [metal-detecting, garrett-ace-400, pinpointing, dd-coil, practice]
 ---
 

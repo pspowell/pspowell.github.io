@@ -3,6 +3,7 @@ layout: page
 title: "Fix Windows ISO Script (v3.1)"
 description: "Automated PowerShell tool for rebuilding Windows ISOs with TPM check removed and oscdimg integration."
 permalink: /fix-windows-iso/
+date: 2025-10-17 20:08:38 -0400
 ---
 
 # 🧰 FixWindowsISO_with_Oscdimg_v3.1.ps1

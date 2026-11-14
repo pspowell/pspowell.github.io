@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Negotiate Dental Fees When You Don’t Have Insurance"
-date: 2025-12-03 00:00:00 -0500
+date: 2025-12-03 18:12:54 -0500
 tags: [personal finance, healthcare, dental, frugal]
 ---
 

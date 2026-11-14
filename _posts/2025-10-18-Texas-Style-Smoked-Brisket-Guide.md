@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Texas-Style Smoked Brisket Guide"
-date: 2025-10-18
+date: 2025-10-18 15:14:11 -0400
 tags: [brisket, barbecue, smoker, beef, texas-bbq]
 categories: recipes
 ---

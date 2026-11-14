@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Safely Reset Docker and DDEV on Windows (PowerShell-Friendly)"
-date: 2025-11-22
+date: 2025-11-22 10:44:48 -0500
 tags: [docker, ddev, windows, powershell, webdev]
 ---
 

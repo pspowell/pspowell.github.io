@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Holes in the Proposed Thor Equities Settlement"
-date: 2026-10-07
+date: 2026-10-30 20:22:29 -0400
 last_modified_at: 2026-10-29
 tags: [urbana, champaign-county, data-centers, thor-equities, settlement, cedar-bog, local-government]
 ---

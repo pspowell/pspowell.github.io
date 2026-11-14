@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "In-Wall 12V Driver and Dimmer Options for Undercabinet Tape Lighting"
-date: 2026-03-24
+date: 2026-03-24 19:18:44 -0400
 tags: [lighting, electrical, undercabinet, led, dimming, jekyll]
 ---
 

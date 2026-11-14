@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Improving the PowerShell Autocomplete Experience"
-date: 2026-03-22
+date: 2026-03-22 10:57:55 -0400
 tags: [powershell, productivity, cli, psreadline, automation]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "UV Cheatsheet"
-date: 2026-03-03
+date: 2026-03-03 11:35:22 -0500
 tags: [python, uv, virtualenv, packaging, windows]
 ---
 

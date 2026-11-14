@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ExifTool User Guide"
-date: 2026-09-14
+date: 2026-09-14 09:13:27 -0400
 tags: [photography, metadata, command-line, tools]
 ---
 

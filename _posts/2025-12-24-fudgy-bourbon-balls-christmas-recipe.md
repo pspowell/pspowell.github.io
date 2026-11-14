@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Fudgy Bourbon Balls (Classic Christmas)"
-date: 2025-12-24 09:00:00 -0500
+date: 2026-03-11 20:53:57 -0400
 tags: [recipe, dessert, christmas, holiday, bourbon]
 description: "A classic Christmas bourbon ball recipe with chocolate cookie crumbs and pecans—perfect for gifting."
 permalink: /recipes/fudgy-bourbon-balls/

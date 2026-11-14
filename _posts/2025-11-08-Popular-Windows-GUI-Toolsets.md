@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Popular Toolsets for Building Windows GUI Applications"
-date: 2025-11-08
+date: 2025-11-08 09:51:51 -0500
 tags: [windows, gui, programming, development, .net, c++, python, electron]
 ---
 

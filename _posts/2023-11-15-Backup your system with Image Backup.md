@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Backup your system with Image_Backup"
-date:   2023-11-15
+date: 2023-11-15 12:07:29 -0500
 categories: tech
 ---
 

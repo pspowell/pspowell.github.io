@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Python workflows using the new Python Install Manager"
-date: 2026-02-02
+date: 2026-02-02 13:42:45 -0500
 tags: [python, windows, tooling, pip, workflows]
 ---
 

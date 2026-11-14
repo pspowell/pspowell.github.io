@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Understanding U.S. Gift Taxes"
-date: 2025-11-06
+date: 2025-11-06 07:45:44 -0500
 tags: [taxes, finance, estate, irs]
 ---
 

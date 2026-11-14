@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Google Apps Script: Complete Guide"
-date: 2025-11-04
+date: 2025-11-04 08:00:31 -0500
 tags: [Google, Apps Script, Automation, Google Workspace, Scripting]
 ---
 

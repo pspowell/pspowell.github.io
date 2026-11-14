@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Poor Boy’s Manhattan (High-Low Perfection)"
-date: 2026-03-28
+date: 2026-03-29 21:55:37 -0400
 tags: [cocktails, whiskey, manhattan, recipes, high-low]
 ---
 

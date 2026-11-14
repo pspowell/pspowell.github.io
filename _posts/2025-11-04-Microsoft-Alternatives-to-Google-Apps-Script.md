@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Microsoft Alternatives to Google Apps Script"
-date: 2025-11-04
+date: 2025-11-04 08:17:22 -0500
 tags: [microsoft, automation, office-scripts, power-automate, google-apps-script, excel]
 ---
 

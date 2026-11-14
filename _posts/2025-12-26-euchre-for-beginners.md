@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Euchre for Beginners: Rules, Scoring, and How to Play"
-date: 2025-12-26
+date: 2025-12-26 12:29:53 -0500
 tags:
   - cards
   - euchre

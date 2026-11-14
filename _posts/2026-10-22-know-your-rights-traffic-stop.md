@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Know Your Rights at a Traffic Stop (Including Your Phone)"
-date: 2026-10-22
+date: 2026-10-22 10:34:56 -0400
 tags: [rights, traffic-stop, police, privacy, phone, ohio, fourth-amendment, fifth-amendment]
 ---
 

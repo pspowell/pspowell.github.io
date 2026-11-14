@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Everyday Sourdough Bread (Loaf Pan Method)"
-date: 2026-01-14
+date: 2026-01-15 17:18:58 -0500
 tags: [baking, sourdough, bread, recipes]
 ---
 

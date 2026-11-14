@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Python + uv + OneDrive: full install & setup (Windows 11)"
-date: 2026-10-29 00:00:00 -0500
+date: 2026-10-30 03:46:54 -0400
 tags: [python, uv, onedrive, windows, dev-environment]
 last_modified_at: 2026-10-29
 ---

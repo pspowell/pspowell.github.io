@@ -1,5 +1,5 @@
 ---
-date: 2025-12-05
+date: 2025-12-05 23:28:38 -0500
 layout: post
 tags:
 - car-buying

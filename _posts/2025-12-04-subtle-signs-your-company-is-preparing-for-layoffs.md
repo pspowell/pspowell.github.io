@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Subtle Signs Your Company Is Preparing for Layoffs (From a Former HR Insider)"
-date: 2025-12-04
+date: 2025-12-04 09:14:28 -0500
 tags: [career, layoffs, hr, employment, job-search]
 ---
 

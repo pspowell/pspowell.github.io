@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Use Shredded Paper Waste in a Worm Farm (Vermicompost Bin)"
-date: 2026-02-24
+date: 2026-02-24 08:59:28 -0500
 tags: [composting, vermicompost, worms, bedding, paper, recycling]
 ---
 

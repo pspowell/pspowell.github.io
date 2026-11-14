@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Activate Windows God Mode**"
-date:   2023-11-20
+date: 2023-11-22 21:20:37 -0500
 categories: tech
 ---
 

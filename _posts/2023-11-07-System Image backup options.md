@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "System Image backup options"
-date:   2023-11-07 23:21
+date: 2023-11-15 12:07:29 -0500
 categories: tech
 ---
 

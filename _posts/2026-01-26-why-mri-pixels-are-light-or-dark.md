@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why MRI Pixels Are Light or Dark"
-date: 2026-01-26
+date: 2026-01-26 20:12:56 -0500
 tags: [mri, radiology, medical-imaging, physics]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Champaign County Sues Over the 94-Acre Land Deal in the Thor Data Center Area: Timeline"
-date: 2026-10-30
+date: 2026-10-30 20:22:29 -0400
 tags: [urbana, champaign-county, data-centers, thor-equities, lawsuits, land-sales, local-government]
 ---
 

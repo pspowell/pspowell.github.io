@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Social Security Early-Claim Workbook (Before FRA)"
-date: 2026-02-26
+date: 2026-02-26 11:56:07 -0500
 ---
 
 This page documents the Excel workbook used to analyze whether to **claim Social Security before full retirement age (FRA)** versus **claiming at FRA** or **delaying (typically to age 70)**.

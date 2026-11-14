@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Chat Policy Block — Investment Account Handling"
-date: 2026-03-05
+date: 2026-03-05 09:11:37 -0500
 tags: [finance, gnucash, accounting, investments, fidelity]
 ---
 

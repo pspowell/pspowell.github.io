@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Protecting Memory After 50: What to Avoid and What to Increase"
-date: 2026-06-23
+date: 2026-06-23 16:25:17 -0400
 tags: [health, brain-health, aging, memory, nutrition, lifestyle]
 ---
 

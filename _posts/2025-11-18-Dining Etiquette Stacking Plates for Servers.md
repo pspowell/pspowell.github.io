@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Dining Etiquette: Stacking Plates for Servers"
-date: 2025-11-16
+date: 2025-11-16 08:54:55 -0500
 categories: etiquette dining
 ---
 

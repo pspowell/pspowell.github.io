@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Starbucks-Style Lemon Pound Cake (Classic & Bakery-Dense Versions)"
-date: 2026-04-01
+date: 2026-04-03 11:38:54 -0400
 tags: [baking, desserts, lemon, pound-cake, copycat, recipes]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "All I wanted was a blog!"
-date:   2023-11-02 00:44:25 -0700
+date: 2023-11-15 12:07:29 -0500
 categories: rant
 ---
 I Wanted to use Github Pages to host a static website, where I could just publish markdown documents and have a blog.

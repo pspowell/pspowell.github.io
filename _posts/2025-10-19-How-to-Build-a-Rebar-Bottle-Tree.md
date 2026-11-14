@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Build a Rebar Bottle Tree"
-date: 2025-10-19
+date: 2025-10-19 12:43:49 -0400
 tags: [DIY, garden art, rebar, metalwork, bottle tree]
 ---
 

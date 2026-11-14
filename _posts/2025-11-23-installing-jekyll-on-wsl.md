@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Installing Jekyll on WSL (Best Practices Guide)"
-date: 2025-11-23
+date: 2026-11-14 09:16:04 -0500
 last_modified_at: 2026-11-14
 tags: [jekyll, wsl, ruby, windows11, github-pages, tutorial]
 ---

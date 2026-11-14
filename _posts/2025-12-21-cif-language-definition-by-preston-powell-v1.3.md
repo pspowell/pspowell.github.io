@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CIF Language Definition by Preston Powell"
-date: 2025-12-21 00:00:00 -0500
+date: 2025-12-22 12:35:05 -0500
 tags: [CIF, Chat Instructional Format, language, specification]
 ---
 

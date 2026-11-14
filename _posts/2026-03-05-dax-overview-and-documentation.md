@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "DAX Explained (Data Analysis Expressions)"
-date: 2026-03-05
+date: 2026-03-05 11:06:57 -0500
 tags: [excel, powerpivot, dax, powerbi, data-model]
 ---
 

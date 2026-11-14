@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Loosen Phlegm Stuck in Your Throat"
-date: 2026-01-30
+date: 2026-01-30 04:16:29 -0500
 tags: [health, cold-flu, home-remedies]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why Elderberry Elixir Works: Benefits of Elderberry, Ginger, Lemon, and Honey"
-date: 2026-06-07
+date: 2026-06-07 21:35:38 -0400
 last_modified_at: 2026-06-07
 categories:
   - Health

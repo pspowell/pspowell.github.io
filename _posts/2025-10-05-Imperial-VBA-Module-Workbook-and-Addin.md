@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Imperial VBA Module: Use as a Macro-Enabled Workbook or Excel Add-in"
-date: 2025-10-05
+date: 2025-10-05 19:27:21 -0400
 tags: [excel, vba, add-in, macros, measurement, woodworking]
 ---
 
