@@ -130,14 +130,24 @@ git clone https://github.com/USERNAME/USERNAME.github.io.git
 cd USERNAME.github.io
 ```
 
-Your **Gemfile** should use the `github-pages` gem so you get the same Jekyll and plugins GitHub uses:
+Your **Gemfile** (a file in the repo folder, not a command) should use the `github-pages` gem so you get the same Jekyll and plugins GitHub uses. Check what's there first:
 
-```ruby
+```bash
+cat Gemfile
+```
+
+If it's missing or doesn't match, create it with this command. It writes the file for you, so the Ruby lines never get run by the shell:
+
+```bash
+cat > Gemfile <<'EOF'
 source "https://rubygems.org"
 
 gem "github-pages", group: :jekyll_plugins
 gem "webrick"   # needed by `jekyll serve` on Ruby 3.x
+EOF
 ```
+
+> **Don't paste the Gemfile lines straight into the terminal.** Bash tries to run each one and you'll see errors like `https://rubygems.org: No such file or directory` and `Unknown command github-pages`. If that happens, nothing broke; just run the command above.
 
 Install the gems into the project folder (keeps them out of your system Ruby):
 
