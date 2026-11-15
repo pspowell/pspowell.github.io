@@ -12,7 +12,7 @@ title_separator: "|"
 subtitle: "Making complex things a little easier"
 name: "Preston Powell"
 description: "Practical guides, scripts and write-ups: Windows and PC help, coding and automation, recipes, DIY and local Champaign County topics."
-url: "https://pspowell.github.io"   # change to https://www.highserv.com once that domain points here
+url: "https://pspowell.github.io"   # highserv.com builds override this via _config.highserv.yml
 baseurl: ""
 repository: "pspowell/pspowell.github.io"
 logo: ""
@@ -66,6 +66,7 @@ footer:
 # Reading files
 include:
   - _pages
+  - .htaccess
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -90,6 +91,7 @@ exclude:
   - tmp
   - _config.yml.save
   - CLAUDE.md
+  - _config.highserv.yml
 keep_files:
   - .git
   - .svn

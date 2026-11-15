@@ -1,0 +1,4 @@
+# Extra settings for the copy of the site hosted at www.highserv.com (VeeroTech).
+# Used only by:  bundle exec jekyll build --config _config.yml,_config.highserv.yml
+# (the hpub shortcut does this). GitHub Pages ignores this file.
+url: "https://www.highserv.com"
