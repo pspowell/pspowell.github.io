@@ -30,7 +30,6 @@ github_username:  pspowell
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-redirect-from
 
 # Exclude from processing.
 # The following items will not be processed, by default.
