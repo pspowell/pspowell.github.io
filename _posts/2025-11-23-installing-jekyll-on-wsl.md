@@ -14,6 +14,42 @@ This guide sets up **Jekyll** on Windows 11 using **WSL2 + Ubuntu 24.04**, confi
 
 ------------------------------------------------------------------------
 
+## Quick Setup: Let a Script Do Steps 2–9
+
+Once WSL and Ubuntu are installed (**Step 1** below), one script does the rest: packages, rbenv, Ruby, Bundler, Git, the GitHub login, cloning your site, installing its gems, and adding the `jserve` and `jpub` shortcuts.
+
+Download it and run it from the Ubuntu terminal:
+
+```bash
+curl -fsSL https://pspowell.github.io/assets/scripts/setup-jekyll-wsl.sh -o ~/setup-jekyll-wsl.sh
+bash ~/setup-jekyll-wsl.sh
+```
+
+By default it clones `<your-github-user>.github.io`. To use a different repo, pass it as `owner/repo`:
+
+```bash
+bash ~/setup-jekyll-wsl.sh USERNAME/my-other-site
+```
+
+It only stops for input when it needs you:
+
+- your Ubuntu password (for `sudo`)
+- your Git name and email, if they aren't already set
+- the GitHub login. Choose **GitHub.com → HTTPS → Yes → Login with a web browser**, then paste the code it shows at [github.com/login/device](https://github.com/login/device).
+
+Compiling Ruby takes 5–10 minutes. You can run the script again at any time: anything already done is skipped, so if it stops partway, fix the problem and run it again.
+
+When it finishes, **close the terminal and open a new one**, then:
+
+```bash
+jserve                 # start the site and open it in your browser
+jpub "New post"        # add, commit and push in one step
+```
+
+[View the script](/assets/scripts/setup-jekyll-wsl.sh). The rest of this guide covers the same steps by hand, which is useful if you'd rather see what each one does or need to fix one.
+
+------------------------------------------------------------------------
+
 ## 1. Install WSL2 + Ubuntu
 
 Open **PowerShell as Administrator** and run:
@@ -116,7 +152,10 @@ To push to GitHub from WSL, the easiest route is the GitHub CLI:
 ```bash
 sudo apt install -y gh
 gh auth login
+gh auth setup-git
 ```
+
+At the prompts, choose **GitHub.com → HTTPS → Yes → Login with a web browser**. `gh auth setup-git` makes `git push` use that login, so Git never asks for a password.
 
 ------------------------------------------------------------------------
 
