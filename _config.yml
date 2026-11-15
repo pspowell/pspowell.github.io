@@ -89,6 +89,7 @@ exclude:
   - README.md
   - tmp
   - _config.yml.save
+  - CLAUDE.md
 keep_files:
   - .git
   - .svn
