@@ -194,6 +194,33 @@ Useful extra flags:
 | `--incremental` | Faster rebuilds on large sites |
 | `--force_polling` | Needed only if the site lives under `/mnt/c` |
 
+### Make starting the server a one-word command
+
+Typing the `cd` and `bundle exec` lines every time gets old. Run this once to add a `jserve` command to your shell (change `USERNAME.github.io` to your repo folder):
+
+```bash
+cat >> ~/.bashrc <<'EOF'
+
+# Start the Jekyll site: type "jserve"
+jserve() {
+  cd ~/dev/USERNAME.github.io || return
+  (sleep 6 && explorer.exe http://localhost:4000) &
+  bundle exec jekyll serve --livereload "$@"
+}
+EOF
+source ~/.bashrc
+```
+
+Now just type **`jserve`** from any folder. It switches to your repo, starts the server, and opens the site in your Windows browser a few seconds later. Press **Ctrl + C** to stop it. Any flags from the table above still work, for example `jserve --drafts`.
+
+**Optional: a Windows desktop shortcut.** Right-click the desktop, choose **New → Shortcut**, and use this as the location:
+
+```
+wsl.exe -e bash -lic "jserve"
+```
+
+Name it something like "Jekyll Server". Double-click it to open a terminal with the server running; close that window to stop it.
+
 ------------------------------------------------------------------------
 
 ## 10. Publish
