@@ -260,6 +260,29 @@ wsl.exe -e bash -lic "jserve"
 
 Name it something like "Jekyll Server". Double-click it to open a terminal with the server running; close that window to stop it.
 
+### Pull the latest changes with one word
+
+If you also edit the site from another computer, or someone else pushes to it, add a `jpull` command so your local copy stays current (change `USERNAME.github.io` to your repo folder):
+
+```bash
+cat >> ~/.bashrc <<'EOF'
+
+# Pull the latest site changes: type "jpull"
+jpull() {
+  cd ~/dev/USERNAME.github.io || return
+  local before; before=$(git rev-parse HEAD)
+  git pull --ff-only || return
+  if ! git diff --quiet "$before" HEAD -- Gemfile Gemfile.lock; then
+    echo "Gemfile changed - updating gems..."
+    bundle install
+  fi
+}
+EOF
+source ~/.bashrc
+```
+
+Type **`jpull`** from any folder. It switches to your repo, pulls the latest commits, and runs `bundle install` only if the Gemfile changed. `--ff-only` makes it stop instead of creating a merge commit when your copy has commits GitHub doesn't; run `git status` to see what's different. Run `jpull` before you start editing, then `jserve`.
+
 ------------------------------------------------------------------------
 
 ## 10. Publish
