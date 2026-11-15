@@ -4,6 +4,8 @@ date: 2026-11-14 09:16:04 -0500
 last_modified_at: 2026-11-14
 tags: [jekyll, wsl, ruby, windows11, github-pages, tutorial]
 categories: ["Coding & Automation"]
+redirect_from:
+  - "/2025/11/23/installing-jekyll-on-wsl.html"
 excerpt: "This guide sets up Jekyll on Windows 11 using WSL2 + Ubuntu 24.04, configured to match what GitHub Pages actually builds with, so a site that works on your PC works when you push it."
 ---
 
