@@ -1,7 +1,17 @@
 # Builds the site for www.highserv.com and syncs it to VeeroTech over SSH
-# every time main changes. GitHub Pages (pspowell.github.io) is unaffected.
-# Secrets: HIGHSERV_SSH_KEY, HIGHSERV_KNOWN_HOSTS, HIGHSERV_HOST, HIGHSERV_PORT, HIGHSERV_USER
-# Variable: HIGHSERV_LIVE = "true" to really upload; anything else = dry run only
+# every time main changes. GitHub Pages (pspowell.github.io) keeps building
+# on its own as before; this workflow doesn't touch it.
+#
+# Save as: .github/workflows/deploy-highserv.yml
+#
+# Needs these repo secrets (Settings > Secrets and variables > Actions > Secrets):
+#   HIGHSERV_SSH_KEY      private key authorized in cPanel (deploy-only key)
+#   HIGHSERV_KNOWN_HOSTS  output of: ssh-keyscan -p PORT HOST
+#   HIGHSERV_HOST         server name, e.g. server.veerotech.net
+#   HIGHSERV_PORT         SSH port
+#   HIGHSERV_USER         cPanel username
+# And this repo variable (same page, Variables tab):
+#   HIGHSERV_LIVE         "true" to really upload; anything else = dry run only
 
 name: Deploy to highserv.com
 
