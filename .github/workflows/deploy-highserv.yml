@@ -35,7 +35,7 @@ permissions:
 jobs:
   deploy:
     if: github.repository == 'pspowell/pspowell.github.io'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
       - name: Check out the site
@@ -44,7 +44,7 @@ jobs:
       - name: Set up Ruby (same version as GitHub Pages)
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.3.4"
+          ruby-version: "3.3"
           bundler-cache: true
 
       - name: Build for www.highserv.com
