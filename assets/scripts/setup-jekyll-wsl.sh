@@ -97,16 +97,41 @@ bundle config set --local path vendor/bundle
 bundle install
 grep -qx 'vendor/' .gitignore 2>/dev/null || echo 'vendor/' >> .gitignore
 
-# --- Step 9 shortcuts: jserve and jpub ------------------------------------------
-if ! grep -q '# jekyll shortcuts' "$HOME/.bashrc"; then
+# --- Step 9 shortcuts: jserve, jpull and jpub -----------------------------------
+# Each one is added only if it isn't already in ~/.bashrc, so re-running the
+# script picks up any shortcut added in a newer version.
+if ! grep -q '^jserve()' "$HOME/.bashrc"; then
   cat >> "$HOME/.bashrc" <<EOF
 
-# jekyll shortcuts (added by setup-jekyll-wsl.sh)
+# Start the Jekyll site: type "jserve" (added by setup-jekyll-wsl.sh)
 jserve() {
   cd "$REPO_DIR" || return
   (sleep 6 && explorer.exe http://localhost:4000) &
   bundle exec jekyll serve --livereload "\$@"
 }
+EOF
+fi
+
+if ! grep -q '^jpull()' "$HOME/.bashrc"; then
+  cat >> "$HOME/.bashrc" <<EOF
+
+# Pull the latest site changes: type "jpull" (added by setup-jekyll-wsl.sh)
+jpull() {
+  cd "$REPO_DIR" || return
+  local before; before=\$(git rev-parse HEAD)
+  git pull --ff-only || return
+  if ! git diff --quiet "\$before" HEAD -- Gemfile Gemfile.lock; then
+    echo "Gemfile changed - updating gems..."
+    bundle install
+  fi
+}
+EOF
+fi
+
+if ! grep -q '^jpub()' "$HOME/.bashrc"; then
+  cat >> "$HOME/.bashrc" <<EOF
+
+# Commit and push the site: type jpub "message" (added by setup-jekyll-wsl.sh)
 jpub() {
   cd "$REPO_DIR" || return
   git add . && git commit -m "\${1:-Update site}" && git push
@@ -115,4 +140,5 @@ EOF
 fi
 
 say "All set. Close this terminal and open a new one, then type:  jserve"
+say "Get the latest changes first with:  jpull"
 say "When you're happy with a change, publish it with:  jpub \"New post\""

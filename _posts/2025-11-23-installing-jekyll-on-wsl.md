@@ -16,7 +16,7 @@ This guide sets up **Jekyll** on Windows 11 using **WSL2 + Ubuntu 24.04**, confi
 
 ## Quick Setup: Let a Script Do Steps 2–9
 
-Once WSL and Ubuntu are installed (**Step 1** below), one script does the rest: packages, rbenv, Ruby, Bundler, Git, the GitHub login, cloning your site, installing its gems, and adding the `jserve` and `jpub` shortcuts.
+Once WSL and Ubuntu are installed (**Step 1** below), one script does the rest: packages, rbenv, Ruby, Bundler, Git, the GitHub login, cloning your site, installing its gems, and adding the `jserve`, `jpull` and `jpub` shortcuts.
 
 Download it and run it from the Ubuntu terminal:
 
@@ -42,6 +42,7 @@ Compiling Ruby takes 5–10 minutes. You can run the script again at any time: a
 When it finishes, **close the terminal and open a new one**, then:
 
 ```bash
+jpull                  # get the latest changes from GitHub
 jserve                 # start the site and open it in your browser
 jpub "New post"        # add, commit and push in one step
 ```
