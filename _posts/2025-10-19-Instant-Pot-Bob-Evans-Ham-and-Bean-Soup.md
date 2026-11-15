@@ -1,11 +1,11 @@
 ---
-layout: post
 title: "Instant Pot Bob Evans–Style Ham & Bean Soup"
 date: 2025-10-19 09:46:12 -0400
 tags: [recipes, instantpot, soup, copycat]
+categories: ["Kitchen & Recipes"]
+excerpt: "Quick Soak + Full Instant Pot Preparation"
 ---
 
-# 🍲 Instant Pot Bob Evans–Style Ham & Bean Soup
 **Quick Soak + Full Instant Pot Preparation**
 
 **Yield:** ~8 servings  

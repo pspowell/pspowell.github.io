@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Simple, Relevant, Scannable — The Only Three Things Your Resume Needs"
 date: 2025-10-28 09:31:33 -0400
 tags: [career, resume, professional, template]
+categories: ["Life & Leisure"]
+excerpt: "There are only three things that a recruiter really looks for in any CV."
 ---
 
 There are **only three things that a recruiter really looks for in any CV**.

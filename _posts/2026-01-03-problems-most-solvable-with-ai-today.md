@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "The Problems Most Solvable With AI Today"
 date: 2026-01-03 11:32:04 -0500
 tags:
@@ -8,6 +7,8 @@ tags:
   - applied-ai
   - technology
   - analysis
+categories: ["AI & Chat Tools"]
+excerpt: "Much of the public conversation around artificial intelligence focuses on what might be possible someday. Far less attention is paid to what AI is already doing reliably, economically, and at scale right now."
 ---
 
 ## Introduction {#introduction}

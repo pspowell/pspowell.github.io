@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Gluten-Free Smashburgers with Smashburger Sauce"
 date: 2026-07-21 18:15:13 -0400
 tags: [recipes, burgers, grilling, gluten-free]
+categories: ["Kitchen & Recipes"]
+excerpt: "Crisp, juicy smashburgers with a tangy, creamy sauce caramelized right into the patty. Adapted from Meaningful Eats' Gluten-Free Smashburgers."
 ---
 
 Crisp, juicy smashburgers with a tangy, creamy sauce caramelized right into the patty. Adapted from Meaningful Eats' [Gluten-Free Smashburgers](https://meaningfuleats.com/gluten-free-smashburgers/).

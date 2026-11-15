@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Charred Corn Syrup"
 date: 2026-08-23 18:33:25 -0400
 tags: [recipes, bartending, syrups, cocktails]
+categories: ["Kitchen & Recipes"]
+excerpt: "A smoky-sweet syrup used in bartending — grill-charred corn blended and strained into a rich simple syrup with roasted, caramelized corn flavor. Great in mezcal, tequila, or bourbon cocktails, or shaken with lime for a…"
 ---
 
 A smoky-sweet syrup used in bartending — grill-charred corn blended and strained into a rich simple syrup with roasted, caramelized corn flavor. Great in mezcal, tequila, or bourbon cocktails, or shaken with lime for a savory-sweet margarita variation.

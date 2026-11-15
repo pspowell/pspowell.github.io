@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "How to Make and Use DIY Wood Grain Filler"
 date: 2025-10-24 07:24:24 -0400
 tags: [woodworking, finishing, DIY, grain-filler, pumice, linseed-oil]
+categories: ["Home, Shop & DIY"]
+excerpt: "This guide explains how to make and use a professional-quality wood grain filler using boiled linseed oil and 4F grade pumice powder. The 4F grade (very fine, approximately 75–100 microns) is strongly recommended for…"
 ---
 
 ## Using Boiled Linseed Oil and 4F Pumice Powder

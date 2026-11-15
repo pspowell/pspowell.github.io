@@ -1,9 +1,10 @@
 ---
-layout: post
 title: "If you win the lottery big: cautionary tales and a first-steps checklist"
 date: 2026-11-06 15:48:26 -0500
 tags: [lottery, money, estate-planning, attorneys, personal-finance]
 last_modified_at: 2026-11-06
+categories: ["Money & Retirement"]
+excerpt: "There's an essay that has been passed around the internet for years, usually titled \"You just won a 656 Million Dollar Lottery. What do you do now?\" It was written around the record $656 million Mega Millions jackpot in…"
 ---
 ## Why this post {#why}
 

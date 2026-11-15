@@ -1,8 +1,8 @@
 ---
-layout: post
 title: "Turkish Doner Kebab Recipe"
 date: 2025-12-07 11:56:28 -0500
 tags: [recipe, cooking, kebab, turkish]
+categories: ["Kitchen & Recipes"]
 ---
 
 # Turkish Doner Kebab {#turkish-doner-kebab}

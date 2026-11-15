@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Facebook Usage Guide"
 date: 2026-01-07 13:38:51 -0500
 tags: [facebook, social-media, privacy, safety, messenger, groups, marketplace]
+categories: ["Health & Safety"]
+excerpt: "A practical, everyday guide to using Facebook on desktop and mobile: posting, messaging, groups, pages, Marketplace, and the privacy/security basics that prevent most headaches."
 ---
 
 A practical, everyday guide to using Facebook on desktop and mobile: posting, messaging, groups, pages, Marketplace, and the privacy/security basics that prevent most headaches.

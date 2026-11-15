@@ -1,53 +1,184 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
+# Highland Services - Minimal Mistakes configuration
+# Theme docs: https://mmistakes.github.io/minimal-mistakes/docs/configuration/
+# This file is NOT reloaded by `jekyll serve`; restart the server after editing.
+
+remote_theme: "mmistakes/minimal-mistakes@4.28.1"   # pinned so theme updates can't break the site
+minimal_mistakes_skin: "default"  # air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
+
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+locale: "en-US"
+title: "Highland Services"
+title_separator: "|"
+subtitle: "Making complex things a little easier"
+name: "Preston Powell"
+description: "Practical guides, scripts and write-ups: Windows and PC help, coding and automation, recipes, DIY and local Champaign County topics."
+url: "https://pspowell.github.io"   # change to https://www.highserv.com once that domain points here
+baseurl: ""
+repository: "pspowell/pspowell.github.io"
+logo: ""
+masthead_title: ""
+breadcrumbs: false   # true makes post crumbs link to /YYYY/ pages that do not exist
+words_per_minute: 200
+search: true
+search_full_content: false
+og_image: "/assets/me.png"
 
-title: Highland Services
-email: pspowell@gmail.com
-description: Making complex things a little easier
-url: "www.highserv.com"
-twitter_username: pspowell71
-facebook_username:  preston.powell3
-github_username:  pspowell
+# Social / SEO
+twitter:
+  username: "pspowell71"
+facebook:
+  username: "preston.powell3"
+social:
+  type: Person
+  name: "Preston Powell"
+  links:
+    - "https://github.com/pspowell"
+    - "https://www.facebook.com/preston.powell3"
+    - "https://x.com/pspowell71"
 
-# Build settings
-theme: minima
+# Site author (sidebar on posts and pages)
+author:
+  name: "Preston Powell"
+  avatar: "/assets/me.png"
+  bio: "Making complex things a little easier."
+  location: "Central Ohio"
+  email: "pspowell@gmail.com"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/pspowell"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://www.facebook.com/preston.powell3"
+    - label: "X / Twitter"
+      icon: "fab fa-fw fa-x-twitter"
+      url: "https://x.com/pspowell71"
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/pspowell"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://www.facebook.com/preston.powell3"
+
+# Reading files
+include:
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gemfile.lock
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README.md
+  - tmp
+  - _config.yml.save
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Outputting
+# Same pattern the site used before, minus the category folders, so post URLs
+# stay put. Posts that used to have categories redirect from their old URLs.
+# GitHub Pages builds in UTC; pinning UTC makes local builds produce the same dates/URLs.
+timezone: Etc/UTC
+permalink: /:year/:month/:day/:title:output_ext
+paginate: 10
+paginate_path: /page:num/
+
+# Plugins (all supported by GitHub Pages)
 plugins:
+  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
   - jekyll-feed
+  - jekyll-include-cache
   - jekyll-redirect-from
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+whitelist:
+  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-redirect-from
+
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# HTML compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+      comments: false
+      share: true
+      related: true
+      toc: true
+      toc_sticky: true
+      toc_label: "On this page"
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true

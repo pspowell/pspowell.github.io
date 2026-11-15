@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Jekyll Markdown Syntax Reference"
 date: 2026-03-14 15:27:13 -0400
 tags:
@@ -7,6 +6,8 @@ tags:
   - markdown
   - kramdown
   - reference
+categories: ["Coding & Automation"]
+excerpt: "This page is a single-file reference for writing Markdown in a typical Jekyll site."
 ---
 
 # Jekyll Markdown Syntax Reference {#jekyll-markdown-syntax-reference}

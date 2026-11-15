@@ -1,11 +1,10 @@
 ---
-layout: post
 title: "Date Pudding"
 date: 2025-11-21 10:38:19 -0500
 tags: [recipe, dessert, pudding, family]
+categories: ["Kitchen & Recipes"]
+excerpt: "Original contributor: Betty Powell – Urbana, Ohio"
 ---
-
-## Date Pudding
 
 ### Ingredients
 

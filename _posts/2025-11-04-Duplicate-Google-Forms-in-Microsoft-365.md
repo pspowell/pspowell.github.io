@@ -1,11 +1,10 @@
 ---
-layout: post
 title: "How to Duplicate Google Forms Functionality in Microsoft 365"
 date: 2025-11-04 08:17:22 -0500
 tags: [Microsoft 365, Forms, Power Automate, Power Apps, Google Forms, Office Scripts]
+categories: ["Coding & Automation"]
+excerpt: "Duplicating Google Forms functionality in Microsoft 365 (Office 365) is completely achievable using built-in Microsoft tools. This guide explains how to replicate form creation, data collection, automation, and…"
 ---
-
-# How to Duplicate Google Forms Functionality in Microsoft 365
 
 Duplicating **Google Forms** functionality in **Microsoft 365 (Office 365)** is completely achievable using built-in Microsoft tools. This guide explains how to replicate form creation, data collection, automation, and scripting workflows — all without leaving your Microsoft environment.
 

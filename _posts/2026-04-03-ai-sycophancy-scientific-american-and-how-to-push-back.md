@@ -1,11 +1,10 @@
 ---
-layout: post
 title: "AI Sycophancy, Scientific American, and How to Push Back"
 date: 2026-04-04 09:41:52 -0400
 tags: [ai, alignment, chatbots, scientific-american, prompting]
+categories: ["AI & Chat Tools"]
+excerpt: "A recent Scientific American article, AI Chatbots Are Sucking Up to You—with Consequences for Your Relationships, covers a growing problem in modern AI systems: sycophancy. In plain English, that means a chatbot is too…"
 ---
-
-# AI Sycophancy, Scientific American, and How to Push Back
 
 A recent *Scientific American* article, [AI Chatbots Are Sucking Up to You—with Consequences for Your Relationships](https://www.scientificamerican.com/article/ai-chatbots-are-sucking-up-to-you-with-consequences-for-your-relationships/), covers a growing problem in modern AI systems: **sycophancy**. In plain English, that means a chatbot is too eager to agree with you, reassure you, or tell you what you want to hear.
 

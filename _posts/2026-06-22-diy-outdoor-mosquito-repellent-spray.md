@@ -1,9 +1,11 @@
 ---
-layout: post
 title: "DIY Outdoor Mosquito Repellent Spray"
 date: 2026-06-23 16:25:17 -0400
-categories: [home, garden, recipes]
 tags: [mosquito, repellent, diy, outdoor, pest-control]
+categories: ["Home, Shop & DIY"]
+redirect_from:
+  - "/home/garden/recipes/2026/06/23/diy-outdoor-mosquito-repellent-spray.html"
+excerpt: "Summer evenings on the patio are one of life's simple pleasures — until the mosquitoes show up. While commercial yard sprays and citronella candles have their place, a surprisingly popular folk remedy has been…"
 ---
 
 Summer evenings on the patio are one of life's simple pleasures — until the mosquitoes show up. While commercial yard sprays and citronella candles have their place, a surprisingly popular folk remedy has been circulating among gardeners and backyard entertainers for years: a three-ingredient area spray made from blue mouthwash, stale beer, and Epsom salts. It's cheap, easy to mix, and requires nothing more than a trip to the dollar store and a garden sprayer.

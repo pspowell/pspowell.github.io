@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "How to Loosen Phlegm Stuck in Your Throat"
 date: 2026-01-30 04:16:29 -0500
 tags: [health, cold-flu, home-remedies]
+categories: ["Health & Safety"]
+excerpt: "Phlegm that feels “stuck” in your throat is usually thick mucus from a cold, allergies/post‑nasal drip, dry air, or reflux. The goal is to thin it, moisten your airway, and move it upward so you can clear it without…"
 ---
 
 Phlegm that feels “stuck” in your throat is usually **thick mucus** from a cold, allergies/post‑nasal drip, dry air, or reflux. The goal is to **thin it, moisten your airway, and move it upward** so you can clear it without tearing up your throat.

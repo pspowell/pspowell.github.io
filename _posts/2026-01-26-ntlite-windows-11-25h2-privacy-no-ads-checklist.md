@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "NTLite Preset Checklist: Windows 11 25H2 (Privacy, No Ads, Minimal Telemetry)"
 date: 2026-01-30 04:15:40 -0500
 tags: [windows-11, ntlite, privacy, debloat, imaging]
+categories: ["Windows & PC Help"]
+excerpt: "This is a practical, upgrade-safe NTLite checklist for Windows 11 25H2 that focuses on: - Removing advertising / consumer experience features - Reducing telemetry - Avoiding common “I broke Windows Update / Start /…"
 ---
 
 This is a **practical, upgrade-safe NTLite checklist** for Windows 11 **25H2** that focuses on:

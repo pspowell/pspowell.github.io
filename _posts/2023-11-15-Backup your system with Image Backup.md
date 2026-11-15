@@ -1,8 +1,10 @@
 ---
-layout: post
 title:  "Backup your system with Image_Backup"
 date: 2023-11-15 12:07:29 -0500
-categories: tech
+categories: ["Windows & PC Help"]
+redirect_from:
+  - "/tech/2023/11/15/Backup-your-system-with-Image-Backup.html"
+excerpt: "This batch file is meant to easily create a system image of the boot drive and all other essential partitions and data needed to successfully boot the computer. It creates the backup on whatever drive it is installed on."
 ---
 
 ## Backup your system with Image_Backup.bat

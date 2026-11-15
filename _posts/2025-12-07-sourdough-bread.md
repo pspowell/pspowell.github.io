@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Everyday Sourdough Bread (Step-by-Step)"
 date: 2025-12-07 12:19:07 -0500
 tags: [baking, sourdough, bread, recipes]
+categories: ["Kitchen & Recipes"]
+excerpt: "This is a simple, repeatable sourdough bread you can bake any weeknight. It uses 100% natural leavening (no commercial yeast), works with a typical home oven, and assumes you have an active sourdough starter."
 ---
 
 ## Overview {#overview}

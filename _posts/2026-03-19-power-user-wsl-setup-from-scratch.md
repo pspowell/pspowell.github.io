@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Power-user WSL setup from scratch"
 date: 2026-11-14 13:10:55 -0500
 tags:
@@ -12,6 +11,8 @@ tags:
   - python
   - git
   - productivity
+categories: ["Coding & Automation"]
+excerpt: "If you use Windows but want a serious Linux command-line environment, WSL is the best compromise I know. It gives you fast access to Linux tools without forcing you into a VM, without the friction of dual boot, and…"
 ---
 
 If you use Windows but want a serious Linux command-line environment, WSL is the best compromise I know. It gives you fast access to Linux tools without forcing you into a VM, without the friction of dual boot, and without turning your machine into a desktop science project.

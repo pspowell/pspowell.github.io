@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "DISM vs SDCLT vs Disk2VHD – Choosing the Right Backup Tool"
 date: 2025-10-06 07:22:31 -0400
 tags: [Windows, DISM, Backup, Imaging, VHD, System Recovery]
+categories: ["Windows & PC Help"]
+excerpt: "Windows provides several ways to capture or back up a system—each built for a different purpose. Here’s how DISM, SDCLT, and Disk2VHD compare."
 ---
 
 ## Overview

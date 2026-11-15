@@ -1,6 +1,5 @@
 ---
 date: 2026-04-11 16:43:10 -0400
-layout: post
 tags:
 - ai
 - claude
@@ -8,6 +7,8 @@ tags:
 - workflows
 - context-engineering
 title: Stop Using Claude Like a Chatbot. Start Using It Like a System.
+categories: ["AI & Chat Tools"]
+excerpt: "Open it. Type something. Get an answer. Close it."
 ---
 
 Here is how most people use Claude:

@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Plan, Implement, Direct, Control, and Staff: Core Management Responsibilities"
 date: 2026-01-16 10:43:03 -0500
 tags: [management, leadership, operations]
+categories: ["Life & Leisure"]
+excerpt: "Effective management is not a single skill but a set of distinct responsibilities that must work together. Confusion between these responsibilities is one of the most common causes of organizational failure, burnout…"
 ---
 
 ## Introduction {#introduction}

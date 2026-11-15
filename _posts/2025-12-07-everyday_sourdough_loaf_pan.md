@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Everyday Sourdough Bread (Loaf Pan Method)"
 date: 2026-01-15 17:18:58 -0500
 tags: [baking, sourdough, bread, recipes]
+categories: ["Kitchen & Recipes"]
+excerpt: "This post covers baking sourdough in a loaf pan for consistent shape, even slices, and sandwich-friendly crumb."
 ---
 
 ## Overview {#overview}

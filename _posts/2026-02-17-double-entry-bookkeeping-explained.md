@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Double-Entry Bookkeeping, Explained"
 date: 2026-02-17 09:20:03 -0500
 tags: [accounting, bookkeeping, double-entry, debits-credits]
+categories: ["Money & Retirement"]
+excerpt: "Double-entry bookkeeping is a system where every transaction is recorded in at least two accounts—one side is a debit and the other side is a credit—so that the books always stay in balance."
 ---
 
 Double-entry bookkeeping is a system where **every transaction is recorded in at least two accounts**—one side is a **debit** and the other side is a **credit**—so that the books always stay in balance.

@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "PowerShell + VS Code Starter Repos with Git, Debug, and Linting"
 date: 2025-11-01 08:31:01 -0400
 tags: [PowerShell, VSCode, Git, Pester, ScriptAnalyzer]
+categories: ["Coding & Automation"]
+excerpt: "Here are two ready-to-clone PowerShell development starters for Windows 11 and VS Code. Both include Git integration, PSScriptAnalyzer, Pester, and pre-wired debugging configurations."
 ---
 
 ## Overview

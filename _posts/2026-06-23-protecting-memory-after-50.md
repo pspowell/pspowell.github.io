@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Protecting Memory After 50: What to Avoid and What to Increase"
 date: 2026-06-23 16:25:17 -0400
 tags: [health, brain-health, aging, memory, nutrition, lifestyle]
+categories: ["Health & Safety"]
+excerpt: "Memory loss after 50 isn't inevitable. While proteins like amyloid-beta, tau, and RbAp48 play measurable roles in cognitive decline, decades of research point to a clear conclusion: lifestyle factors have an outsized…"
 ---
 
 Memory loss after 50 isn't inevitable. While proteins like **amyloid-beta**, **tau**, and **RbAp48** play measurable roles in cognitive decline, decades of research point to a clear conclusion: lifestyle factors have an outsized influence on how — and how fast — these processes unfold. Here's what the evidence says to cut, and what to add.

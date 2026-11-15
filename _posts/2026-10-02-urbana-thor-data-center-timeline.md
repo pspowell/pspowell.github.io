@@ -1,9 +1,10 @@
 ---
-layout: post
 title: "The Thor Equities Data Center in Urbana, Ohio: Background and Timeline"
 date: 2026-11-14 08:54:48 -0500
 last_modified_at: 2026-11-14
 tags: [urbana, champaign-county, data-centers, thor-equities, cedar-bog, zoning, local-government, maps]
+categories: ["Local Interest"]
+excerpt: "Updated November 14, 2026, with Mayor-elect Fields's first comments, the statewide results of data center ballot measures, and other communities' reactions to Urbana's vote. No action was reported in either lawsuit, and…"
 ---
 
 *Updated November 14, 2026, with Mayor-elect Fields's first comments, the statewide results of data center ballot measures, and other communities' reactions to Urbana's vote. No action was reported in either lawsuit, and council does not meet again until Nov. 17. Earlier update (November 4) added the Nov. 3 election results (data center ban passes with 77%; Mayor Bean recalled with 73%, Eugene Fields Jr. to replace him), the Nov. 3 council meeting, where council took no action on the settlement and found its Oct. 20 tabling vote was invalid, and the federal docket listing Highland55 Investments as a Thor co-plaintiff. Earlier update (October 30) added the county's Oct. 28 lawsuit over its 94-acre land sale in the project area ([separate timeline](/2026/10/30/champaign-county-land-lawsuit-timeline.html)). Earlier update (October 29) added an Oct. 20 Ohio Supreme Court ruling on a Lordstown data center moratorium and Urbana Daily Citizen coverage through Oct. 28: the ballot-wording confusion over the charter amendment, the Rittal expansion next to the site, and details of the Nov. 3 council meeting. Earlier update (October 22) added the October 20 council vote to table the settlement, a parcel map and deed dates from county records, and a correction to the site purchase date. Earlier update (October 11) added the proposed settlement, the October 6 council meeting, and earlier events reported by the Urbana Daily Citizen.*

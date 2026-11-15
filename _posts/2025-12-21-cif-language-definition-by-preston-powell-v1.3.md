@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "CIF Language Definition by Preston Powell"
 date: 2025-12-22 12:35:05 -0500
 tags: [CIF, Chat Instructional Format, language, specification]
+categories: ["AI & Chat Tools"]
+excerpt: "Chat Instructional Format (CIF) by Preston Powell"
 ---
 
 # CIF Language Definition {#cif-language-definition}

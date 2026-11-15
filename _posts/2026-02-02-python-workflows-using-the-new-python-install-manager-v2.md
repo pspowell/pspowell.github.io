@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Python workflows using the new Python Install Manager"
 date: 2026-02-02 13:42:45 -0500
 tags: [python, windows, tooling, pip, workflows]
+categories: ["Coding & Automation"]
+excerpt: "Recent Python releases (3.12+) on Windows introduced a much cleaner, first-class workflow centered around the Python Launcher (py) and improved packaging tools. This post documents a modern, low-friction Python workflow…"
 ---
 
 ## Introduction {#introduction}

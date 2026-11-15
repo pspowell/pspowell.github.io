@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "DAX Explained (Data Analysis Expressions)"
 date: 2026-03-05 11:06:57 -0500
 tags: [excel, powerpivot, dax, powerbi, data-model]
+categories: ["Coding & Automation"]
+excerpt: "DAX (Data Analysis Expressions) is the formula language used in the Excel Data Model / Power Pivot and in Microsoft Power BI."
 ---
 
 ## What DAX Is {#what-is-dax}

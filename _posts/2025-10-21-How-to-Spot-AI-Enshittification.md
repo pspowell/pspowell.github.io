@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "How to Spot AI Enshittification"
 date: 2025-10-22 08:24:32 -0400
 tags: [AI, technology, enshittification, Doctorow, ethics, platforms]
+categories: ["AI & Chat Tools"]
+excerpt: "Artificial intelligence is in its “good to users” phase — powerful, accessible, and often free. But history shows that platforms rarely stay that way. As Cory Doctorow warns, once a technology gains dominance, it often…"
 ---
 
 Artificial intelligence is in its “good to users” phase — powerful, accessible, and often free.  

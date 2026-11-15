@@ -1,11 +1,11 @@
 ---
-layout: post
 title: "WSL2 + Docker Desktop + DDEV Setup Guide"
 date: 2025-11-19 22:02:30 -0500
 tags: [windows, wsl2, docker, ddev, php]
+categories: ["Coding & Automation"]
+excerpt: "A complete walkthrough for Windows 11 users"
 ---
 
-# WSL2 + Docker Desktop + DDEV Setup Guide  
 *A complete walkthrough for Windows 11 users*
 
 ## Overview

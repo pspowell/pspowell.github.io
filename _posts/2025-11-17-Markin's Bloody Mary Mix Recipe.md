@@ -1,11 +1,10 @@
 ---
-layout: post
 title: "Dano’s Dill-Stacker Bloody Mary"
 date: 2026-01-23 17:51:20 -0500
 tags: [recipes, drinks, cocktails, bloody-mary]
+categories: ["Kitchen & Recipes"]
+excerpt: "A bold, tangy Bloody Mary built around dill stackers and Dano’s seasoning, from the warped minds of Tony Markin and Jim Baker."
 ---
-
-# Dano’s Dill-Stacker Bloody Mary
 
 A bold, tangy Bloody Mary built around dill stackers and Dano’s seasoning, from the warped minds of Tony Markin and Jim Baker.
 

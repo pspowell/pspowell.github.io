@@ -1,8 +1,9 @@
 ---
-layout: post
 title: Rename Your Windows User Profile Directory
 date: 2025-10-29 17:37:37 -0700
 tags: [Windows, PowerShell, Profile, Rename, Script]
+categories: ["Windows & PC Help"]
+excerpt: "Renaming the default Windows user profile folder (e.g., C:\\Users\\John → C:\\Users\\JohnDoe) requires care. This guide provides step-by-step instructions and a PowerShell script that automates the registry update and…"
 ---
 
 Renaming the default Windows user profile folder (e.g., `C:\Users\John` → `C:\Users\JohnDoe`) requires care. This guide provides **step-by-step instructions** and a **PowerShell script** that automates the registry update and folder rename safely.

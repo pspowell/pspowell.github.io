@@ -1,6 +1,5 @@
 ---
 date: 2026-03-07 10:23:32 -0500
-layout: post
 tags:
 - chatgpt
 - python
@@ -9,6 +8,8 @@ tags:
 - tools
 title: Understanding the /mnt/data Directory in ChatGPT's Python
   Environment
+categories: ["AI & Chat Tools"]
+excerpt: "When ChatGPT executes Python code using the Run feature, it operates inside a temporary sandbox environment. The primary working directory available to scripts inside that environment is…"
 ---
 
 ## Overview

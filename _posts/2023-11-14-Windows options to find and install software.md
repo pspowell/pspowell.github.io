@@ -1,8 +1,10 @@
 ---
-layout: post
 title:  "Windows options to find and install software"
 date: 2023-11-15 12:07:29 -0500
-categories: software
+categories: ["Windows & PC Help"]
+redirect_from:
+  - "/software/2023/11/15/Windows-options-to-find-and-install-software.html"
+excerpt: "This blog describes several different ways to install software on a Windows PC. With the exception of a direct download, all provide an assurance that the software is coming from a reputable source. Links are provided…"
 ---
 
 This blog describes several different ways to install software on a Windows PC.  With the exception of a direct download, all provide an assurance that the software is coming from a reputable source.  Links are provided where helpful.

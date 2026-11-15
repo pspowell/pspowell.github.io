@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Instant Pot Duo Pressure Sensor Replacement and Calibration"
 date: 2025-11-07 16:12:51 -0500
 tags: [Instant Pot, Repair, Pressure Cooker, DIY, Calibration, Safety]
+categories: ["Home, Shop & DIY"]
+excerpt: "Replacing and calibrating the high-pressure sensor on an Instant Pot Duo can restore full pressure operation when the unit throws C6 errors or fails to maintain cooking pressure. This guide covers diagnosis, part…"
 ---
 
 Replacing and calibrating the **high-pressure sensor** on an Instant Pot Duo can restore full pressure operation when the unit throws C6 errors or fails to maintain cooking pressure.  

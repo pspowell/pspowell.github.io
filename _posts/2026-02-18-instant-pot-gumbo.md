@@ -1,8 +1,8 @@
 ---
-layout: post
 title: "Instant Pot Gumbo (Chicken & Sausage)"
 date: 2026-02-18 03:46:01 -0500
 tags: [cooking, instant-pot, cajun, gumbo, recipes]
+categories: ["Kitchen & Recipes"]
 ---
 
 ## Overview {#overview}

@@ -1,0 +1,17 @@
+main:
+  - title: "Windows & PC"
+    url: /categories/windows-pc-help/
+  - title: "Coding"
+    url: /categories/coding-automation/
+  - title: "AI"
+    url: /categories/ai-chat-tools/
+  - title: "Recipes"
+    url: /categories/kitchen-recipes/
+  - title: "DIY"
+    url: /categories/home-shop-diy/
+  - title: "Local"
+    url: /categories/local-interest/
+  - title: "All Topics"
+    url: /categories/
+  - title: "About"
+    url: /about/

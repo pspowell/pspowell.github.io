@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Classic Peach Pie"
 date: 2026-07-21 18:11:13 -0400
 tags: [recipes, baking, pie, dessert]
+categories: ["Kitchen & Recipes"]
+excerpt: "A juicy, buttery double-crust peach pie with a hint of cinnamon and lemon. Serves 8."
 ---
 
 A juicy, buttery double-crust peach pie with a hint of cinnamon and lemon. Serves 8.

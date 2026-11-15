@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "How to Freeze pip Modules Before Upgrading Python"
 date: 2026-02-17 15:06:34 -0500
 tags: [python, pip, virtualenv, windows]
+categories: ["Coding & Automation"]
+excerpt: "If you are upgrading Python and want to reinstall all your previously installed modules, you can use pip freeze to capture your current environment and restore it later."
 ---
 
 ## Overview {#overview}

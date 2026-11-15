@@ -1,6 +1,5 @@
 ---
 date: 2025-12-05 23:28:38 -0500
-layout: post
 tags:
 - car-buying
 - negotiation
@@ -9,6 +8,8 @@ tags:
 - tactics
 title: "Ultimate Car Buying Guide: Chris Voss Tactics + Insider
   Dealership Secrets"
+categories: ["Money & Retirement"]
+excerpt: "Buying a car is one of the biggest personal negotiations most people ever face. After negotiating 200+ car deals across the country and applying Chris Voss's negotiation methods from Never Split the Difference, I've…"
 ---
 
 Buying a car is one of the biggest personal negotiations most people

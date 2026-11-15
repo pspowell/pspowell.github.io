@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "How to Negotiate Dental Fees When You Don’t Have Insurance"
 date: 2025-12-03 18:12:54 -0500
 tags: [personal finance, healthcare, dental, frugal]
+categories: ["Money & Retirement"]
+excerpt: "Going to the dentist with no insurance can feel like stepping into a rigged game. You sit in the chair, get the work done, and a week later a bill shows up for some wild number you had no say in."
 ---
 
 Going to the dentist with **no insurance** can feel like stepping into a rigged game. You sit in the chair, get the work done, and a week later a bill shows up for some wild number you had no say in.

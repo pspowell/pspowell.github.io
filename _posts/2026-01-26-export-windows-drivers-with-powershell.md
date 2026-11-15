@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Export and backup Windows drivers with PowerShell (and how to restore them)"
 date: 2026-01-26 02:18:09 -0500
 tags: [windows-11, windows-10, powershell, drivers, backup, winpe]
+categories: ["Windows & PC Help"]
+excerpt: "If you’re about to reinstall Windows, move to new hardware, or build a WinPE recovery USB, it’s handy to grab a copy of your installed third‑party drivers first. Windows has built-in tooling for this—no third‑party…"
 ---
 
 If you’re about to reinstall Windows, move to new hardware, or build a WinPE recovery USB, it’s handy to grab a copy of your *installed* third‑party drivers first. Windows has built-in tooling for this—no third‑party “driver backup” apps required.

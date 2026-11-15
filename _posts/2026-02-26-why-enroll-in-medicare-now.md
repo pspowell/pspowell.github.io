@@ -1,12 +1,13 @@
 ---
 date: 2026-02-26 11:10:06 -0500
-layout: post
 tags:
 - medicare
 - retirement
 - insurance
 - financial-planning
 title: Why You Should Enroll in Medicare Now --- Not Later
+categories: ["Money & Retirement"]
+excerpt: "I wanted to share some important information about Medicare enrollment that could significantly affect your future healthcare costs and coverage."
 ---
 I wanted to share some important information about Medicare enrollment
 that could significantly affect your future healthcare costs and

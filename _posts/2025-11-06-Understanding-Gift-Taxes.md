@@ -1,11 +1,10 @@
 ---
-layout: post
 title: "Understanding U.S. Gift Taxes"
 date: 2025-11-06 07:45:44 -0500
 tags: [taxes, finance, estate, irs]
+categories: ["Money & Retirement"]
+excerpt: "Gift taxes are federal taxes imposed by the U.S. government on the transfer of money or property from one person to another without receiving something of equal value in return."
 ---
-
-# Understanding U.S. Gift Taxes
 
 Gift taxes are federal taxes imposed by the U.S. government on the transfer of money or property from one person to another **without receiving something of equal value in return**.
 

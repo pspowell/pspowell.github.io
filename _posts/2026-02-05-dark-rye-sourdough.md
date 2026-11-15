@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Dark Rye Sourdough Bread (70–80% Rye)"
 date: 2026-02-05 07:59:35 -0500
 tags: [bread, sourdough, rye, baking]
+categories: ["Kitchen & Recipes"]
+excerpt: "This is a traditional dark rye sourdough with deep, earthy flavor, mild tang, and a tight but moist crumb. The formula uses a high percentage of dark rye flour while remaining sliceable and reliable for a home oven."
 ---
 
 ## Overview {#overview}

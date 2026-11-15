@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Microsoft Alternatives to Google Apps Script"
 date: 2025-11-04 08:17:22 -0500
 tags: [microsoft, automation, office-scripts, power-automate, google-apps-script, excel]
+categories: ["Coding & Automation"]
+excerpt: "If you’ve used Google Apps Script to automate Google Sheets, Docs, or Forms, you might wonder whether Microsoft offers a similar scripting platform for its online tools. The short answer: yes — but the ecosystem is…"
 ---
 
 ## Overview

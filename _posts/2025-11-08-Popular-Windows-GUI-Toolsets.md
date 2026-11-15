@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Popular Toolsets for Building Windows GUI Applications"
 date: 2025-11-08 09:51:51 -0500
 tags: [windows, gui, programming, development, .net, c++, python, electron]
+categories: ["Coding & Automation"]
+excerpt: "Building modern graphical applications on Windows can be done using a wide variety of frameworks — ranging from classic Win32-based APIs to modern cross-platform UI systems. This guide highlights the most popular and…"
 ---
 
 ## Overview

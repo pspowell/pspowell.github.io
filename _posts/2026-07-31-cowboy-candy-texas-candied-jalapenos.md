@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Cowboy Candy (Texas Candied Jalapeños)"
 date: 2026-07-31 17:01:51 -0400
 tags: [recipes, canning, preserving, peppers]
+categories: ["Kitchen & Recipes"]
+excerpt: "Sweet, spicy, tangy candied jalapeño slices — great on burgers, crackers with cream cheese, or straight from the jar. Makes about 3-4 pints."
 ---
 
 Sweet, spicy, tangy candied jalapeño slices — great on burgers, crackers with cream cheese, or straight from the jar. Makes about 3-4 pints.

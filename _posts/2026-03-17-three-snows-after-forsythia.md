@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Three Snows After Forsythia: The Truth Behind the Saying"
 date: 2026-03-17 12:42:37 -0400
 tags: [weather, folklore, gardening, phenology, midwest, ohio,climate]
+categories: ["Local Interest"]
+excerpt: "Every year, usually sometime in March, the same thing happens."
 ---
 
 ## The Yellow Warning Sign

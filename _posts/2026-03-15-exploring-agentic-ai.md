@@ -1,11 +1,10 @@
 ---
-layout: post
 title: "Exploring Agentic AI and Building a Personal Agent Stack"
 date: 2026-03-15 12:30:09 -0400
 tags: [ai, agents, agentic-ai, automation, software, python]
+categories: ["AI & Chat Tools"]
+excerpt: "This document is a running exploration of modern agentic AI systems and the practical path toward building a small personal agent stack."
 ---
-
-# Exploring Agentic AI and Building a Personal Agent Stack
 
 This document is a running exploration of **modern agentic AI systems** and the practical path toward building a **small personal agent stack**.
 

@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Bringing an Old Tractor Back Into Service"
 date: 2026-09-25 12:25:31 -0400
 tags: [tractor, restoration, small-engine, maintenance, farm-equipment, checklist]
+categories: ["Home, Shop & DIY"]
+excerpt: "A tractor that has sat for a decade can usually be brought back, but the order of operations matters. Rush to the key and you risk a hydrolocked cylinder, a scored crank bearing, or a carburetor full of varnish. The…"
 ---
 
 A tractor that has sat for a decade can usually be brought back, but the order of operations matters. Rush to the key and you risk a hydrolocked cylinder, a scored crank bearing, or a carburetor full of varnish. The sequence is: **fluids and fuel first, turn it by hand, crank without firing, then start.**

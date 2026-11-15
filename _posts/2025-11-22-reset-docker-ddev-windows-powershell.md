@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "How to Safely Reset Docker and DDEV on Windows (PowerShell-Friendly)"
 date: 2025-11-22 10:44:48 -0500
 tags: [docker, ddev, windows, powershell, webdev]
+categories: ["Coding & Automation"]
+excerpt: "When you’re first learning Docker and DDEV, it’s really common to get into a weird state and think, “I wish I could just start over without breaking anything.”"
 ---
 
 When you’re first learning Docker and DDEV, it’s really common to get into a weird state and think, *“I wish I could just start over without breaking anything.”*  

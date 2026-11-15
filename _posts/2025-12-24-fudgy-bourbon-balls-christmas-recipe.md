@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Fudgy Bourbon Balls (Classic Christmas)"
 date: 2026-03-11 20:53:57 -0400
 tags: [recipe, dessert, christmas, holiday, bourbon]
@@ -11,6 +10,8 @@ recipe:
   storage: "Up to 2 weeks at room temperature"
   best_after: "3–4 days"
   contains: "Bourbon; pecans (tree nuts)"
+categories: ["Kitchen & Recipes"]
+excerpt: "A classic Christmas bourbon ball recipe with chocolate cookie crumbs and pecans—perfect for gifting."
 ---
 
 ## Fudgy Bourbon Balls {#fudgy-bourbon-balls}

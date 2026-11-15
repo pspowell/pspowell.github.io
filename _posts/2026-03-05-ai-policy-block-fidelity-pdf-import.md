@@ -1,6 +1,5 @@
 ---
 date: 2026-03-05 09:11:37 -0500
-layout: post
 tags:
 - ai
 - policy-blocks
@@ -9,6 +8,8 @@ tags:
 - python
 - uv
 title: AI Policy Block -- Fidelity PDF Import Pipeline
+categories: ["Coding & Automation"]
+excerpt: "This policy block documents the rules, assumptions, and workflow used to convert Fidelity investment statements (PDF format) into a macro‑level GnuCash ledger."
 ---
 
 ## Overview

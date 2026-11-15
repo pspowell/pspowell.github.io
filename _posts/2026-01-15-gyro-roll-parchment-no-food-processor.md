@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Shop-Style Gyro at Home: Rolling Pin + Parchment (No Food Processor Needed)"
 date: 2026-01-15 17:18:58 -0500
 tags: [cooking, greek, gyro, meal-prep, techniques]
+categories: ["Kitchen & Recipes"]
+excerpt: "Make sliceable, crisp-able gyro meat with that tight, shop-style texture—using a rolling pin + parchment paper method that compresses the meat like a rotisserie cone (without special gear)."
 ---
 
 ## The Goal {#the-goal}

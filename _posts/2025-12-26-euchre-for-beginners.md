@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Euchre for Beginners: Rules, Scoring, and How to Play"
 date: 2025-12-26 12:29:53 -0500
 tags:
@@ -7,6 +6,8 @@ tags:
   - euchre
   - games
   - beginner
+categories: ["Life & Leisure"]
+excerpt: "Euchre (pronounced YOU-ker) is a fast-paced trick-taking card game most commonly played in the Midwest United States, including Ohio. It’s easy to learn, highly social, and full of strategy once you understand the…"
 ---
 
 Euchre (pronounced **YOU-ker**) is a fast-paced trick-taking card game most commonly played in the **Midwest United States**, including Ohio. It’s easy to learn, highly social, and full of strategy once you understand the basics.

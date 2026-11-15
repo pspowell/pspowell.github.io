@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Introduction to Playwright"
 date: 2026-03-13 13:15:19 -0400
 tags: [automation, testing, playwright, browser-automation, python]
+categories: ["Coding & Automation"]
+excerpt: "Playwright is a modern browser automation framework developed by Microsoft that allows developers to control Chromium, Firefox, and WebKit using a single API. While it is widely used for end-to-end testing, it is also…"
 ---
 
 Playwright is a modern browser automation framework developed by Microsoft that allows developers to control Chromium, Firefox, and WebKit using a single API. While it is widely used for end-to-end testing, it is also extremely useful for automation workflows such as downloading reports, navigating authenticated websites, capturing screenshots, or performing scripted data collection.

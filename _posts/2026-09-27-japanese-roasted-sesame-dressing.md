@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Japanese Roasted Sesame Dressing (Kewpie Copycat)"
 date: 2026-09-27 13:20:56 -0400
 tags: [recipes, sauces, dressing, japanese, sesame, kewpie]
+categories: ["Kitchen & Recipes"]
+excerpt: "A creamy, nutty Japanese roasted sesame dressing inspired by the classic Kewpie version. Easy to make at home in minutes with simple ingredients."
 ---
 
 A creamy, nutty Japanese roasted sesame dressing inspired by the classic Kewpie version. Easy to make at home in minutes with simple ingredients.

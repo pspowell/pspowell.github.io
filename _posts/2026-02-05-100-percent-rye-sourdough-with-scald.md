@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "100% Rye Sourdough Bread (With Scald and Sour Stages)"
 date: 2026-02-05 08:17:51 -0500
 tags: [bread, sourdough, rye, baking]
+categories: ["Kitchen & Recipes"]
+excerpt: "This is a true 100% rye sourdough, built using traditional sour + scald stages for structure, sweetness, and shelf life. There is no wheat flour and no kneading. Texture is dense but sliceable, moist, and deeply…"
 ---
 
 ## Overview {#overview}

@@ -1,6 +1,5 @@
 ---
 date: 2026-03-05 10:26:42 -0500
-layout: post
 tags:
 - fidelity
 - gnucash
@@ -8,6 +7,8 @@ tags:
 - powerquery
 - accounting
 title: An Excel power query for Fidelity csv exports
+categories: ["Coding & Automation"]
+excerpt: "This workbook provides an automated workflow for transforming Fidelity transaction history CSV exports into structured data suitable for GnuCash import or further processing."
 ---
 
 ## Overview

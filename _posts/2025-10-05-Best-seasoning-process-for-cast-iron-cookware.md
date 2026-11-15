@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Best Seasoning Process for Cast Iron Cookware"
 date: 2025-10-05 09:28:35 -0400
 tags: [cast iron, seasoning, cookware, kitchen, maintenance]
+categories: ["Kitchen & Recipes"]
+excerpt: "Properly seasoning your cast iron cookware transforms it from a dull, gray piece of metal into a naturally nonstick, rust-resistant, and easy-to-maintain kitchen tool. While there are dozens of methods online, this…"
 ---
 
 Properly seasoning your cast iron cookware transforms it from a dull, gray piece of metal into a naturally nonstick, rust-resistant, and easy-to-maintain kitchen tool. While there are dozens of methods online, this guide consolidates what truly works best—based on real chemistry, tradition, and experience.

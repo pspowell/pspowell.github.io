@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "AI Policy Blocks: Definition and Use"
 date: 2026-03-05 09:11:37 -0500
 tags: [ai, automation, workflow, prompting]
+categories: ["AI & Chat Tools"]
+excerpt: "AI systems often interpret data based on context and probability. A policy block provides explicit rules that control how the AI interprets information and performs a task."
 ---
 
 # AI Policy Blocks: Definition and Use {#ai-policy-blocks-definition-and-use}

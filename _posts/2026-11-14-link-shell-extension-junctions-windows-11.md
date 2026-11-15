@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Link Shell Extension on Windows 11: Install, Use, and Troubleshoot Junctions and Links"
 date: 2026-11-14 19:55:00 -0500
 tags: [windows, filesystem, junctions, symlinks, hardlinks, tools]
@@ -9,6 +8,8 @@ redirect_from:
   - /2025/11/19/How-to-Install-and-Use-Link-Shell-Extension-on-Windows.html
   - /2025/11/23/Link-Shell-Extension-Install-and-Troubleshooting.html
   - /2025/11/19/Link-Shell-Extension-Install-and-Troubleshooting.html
+categories: ["Windows & PC Help"]
+excerpt: "Link Shell Extension (LSE), by Hermann Schinagl, adds right-click commands to Windows Explorer for making junctions, hardlinks and symbolic links. It's free, and it's still the easiest way to do this in Explorer.…"
 ---
 ## Why this post {#why}
 

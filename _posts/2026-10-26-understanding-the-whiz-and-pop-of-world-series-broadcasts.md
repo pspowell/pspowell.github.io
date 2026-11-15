@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Understanding the Whiz and Pop of This Year's World Series Games"
 date: 2026-10-26 22:15:42 -0400
 tags: [baseball, world-series, broadcasting, audio, sound, physics]
+categories: ["Life & Leisure"]
+excerpt: "If you've been watching the Rays and Brewers on FOX this week, you've probably noticed it. The pitcher comes set, the ball leaves his hand, and you hear it: a quick whizzz through the air, then a sharp POP as it buries…"
 ---
 
 If you've been watching the Rays and Brewers on FOX this week, you've probably noticed it. The pitcher comes set, the ball leaves his hand, and you hear it: a quick *whizzz* through the air, then a sharp **POP** as it buries itself in the catcher's mitt. It sounds like you're crouched right behind home plate.

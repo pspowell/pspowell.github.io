@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Applying for Social Security Online"
 date: 2026-03-24 12:33:56 -0400
 tags: [social-security, retirement, medicare, government, how-to]
+categories: ["Money & Retirement"]
+excerpt: "Applying for Social Security online is usually the easiest way to start a retirement application. The process is designed so you can begin, save your progress, and return later if you need more time. This guide walks…"
 ---
 
 Applying for Social Security online is usually the easiest way to start a retirement application. The process is designed so you can begin, save your progress, and return later if you need more time. This guide walks through the typical links, the basic process, and a realistic estimate of how long it takes.
