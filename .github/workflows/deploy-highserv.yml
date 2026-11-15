@@ -1,0 +1,76 @@
+# Builds the site for www.highserv.com and syncs it to VeeroTech over SSH
+# every time main changes. GitHub Pages (pspowell.github.io) is unaffected.
+# Secrets: HIGHSERV_SSH_KEY, HIGHSERV_KNOWN_HOSTS, HIGHSERV_HOST, HIGHSERV_PORT, HIGHSERV_USER
+# Variable: HIGHSERV_LIVE = "true" to really upload; anything else = dry run only
+
+name: Deploy to highserv.com
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run (show changes, upload nothing)"
+        type: boolean
+        default: true
+
+concurrency:
+  group: deploy-highserv
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    if: github.repository == 'pspowell/pspowell.github.io'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out the site
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby (same version as GitHub Pages)
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3.4"
+          bundler-cache: true
+
+      - name: Build for www.highserv.com
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build --config _config.yml,_config.highserv.yml
+
+      - name: Set up SSH key
+        env:
+          SSH_KEY: ${{ secrets.HIGHSERV_SSH_KEY }}
+          KNOWN_HOSTS: ${{ secrets.HIGHSERV_KNOWN_HOSTS }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$SSH_KEY" > ~/.ssh/highserv
+          chmod 600 ~/.ssh/highserv
+          printf '%s\n' "$KNOWN_HOSTS" > ~/.ssh/known_hosts
+
+      - name: Sync to VeeroTech
+        env:
+          HOST: ${{ secrets.HIGHSERV_HOST }}
+          PORT: ${{ secrets.HIGHSERV_PORT }}
+          USER: ${{ secrets.HIGHSERV_USER }}
+          LIVE: ${{ vars.HIGHSERV_LIVE }}
+          MANUAL_DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
+        run: |
+          DRY="--dry-run"
+          if [ "$LIVE" = "true" ] && [ "$MANUAL_DRY_RUN" != "true" ]; then DRY=""; fi
+          echo "Mode: ${DRY:-LIVE UPLOAD}"
+          rsync -az --delete --itemize-changes $DRY \
+            --exclude '.well-known' --exclude 'cgi-bin' \
+            -e "ssh -i ~/.ssh/highserv -p $PORT -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes" \
+            _site/ "$USER@$HOST:public_html/"
+          if [ -n "$DRY" ]; then
+            echo "::notice::Dry run only - nothing uploaded. Set repo variable HIGHSERV_LIVE=true to deploy."
+          fi
+
+      - name: Remove SSH key
+        if: always()
+        run: rm -f ~/.ssh/highserv
