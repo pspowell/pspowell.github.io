@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Fidelity Import Classification Table (Machine-Friendly)"
 date: 2026-03-05 09:11:37 -0500
 tags: [finance, fidelity, gnucash, imports, python, mapping]
+categories: ["Coding & Automation"]
+excerpt: "This document provides a machine-friendly mapping table of common Fidelity activity/action strings to import handling groups for your Python → GnuCash pipeline."
 ---
 
 ## Purpose {#purpose}

@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Commercial Chicago / NYC Gyro Recipe (Shop-Accurate)"
 date: 2026-01-16 13:13:26 -0500
 tags: [gyro, greek-food, chicago-gyro, nyc-gyro, commercial-recipe]
+categories: ["Kitchen & Recipes"]
+excerpt: "This recipe reflects the commercial gyro cone profile used by Chicago and NYC gyro shops. It is not home-style Greek lamb and intentionally avoids spices common in traditional Greek roasts."
 ---
 
 ## Overview {#overview}

@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "How to Use Shredded Paper Waste in a Worm Farm (Vermicompost Bin)"
 date: 2026-02-24 08:59:28 -0500
 tags: [composting, vermicompost, worms, bedding, paper, recycling]
+categories: ["Home, Shop & DIY"]
+excerpt: "Shredded paper (from a home/office paper shredder) is one of the best carbon-rich bedding materials you can add to a worm farm—as long as you prepare and use it correctly. This guide covers what to use, what to avoid…"
 ---
 
 Shredded paper (from a home/office paper shredder) is one of the best **carbon-rich bedding materials** you can add to a worm farm—*as long as you prepare and use it correctly*. This guide covers what to use, what to avoid, and how to keep your bin healthy and odor-free.

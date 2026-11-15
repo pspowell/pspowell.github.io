@@ -1,11 +1,11 @@
 ---
-layout: post
 title:  "System Image backup options"
 date: 2023-11-15 12:07:29 -0500
-categories: tech
+categories: ["Windows & PC Help"]
+redirect_from:
+  - "/tech/2023/11/15/System-Image-backup-options.html"
+excerpt: "It is critically important to take an image backup of the operating system periodically. An image backup differs from a file backup in that it images the entire disk instead of just files, and allows the disc to be…"
 ---
-
-## System Image backup options
 
 It is critically important to take an image backup of the operating
 system periodically. An image backup differs from a file backup in that

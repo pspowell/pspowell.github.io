@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Improving the PowerShell Autocomplete Experience"
 date: 2026-03-22 10:57:55 -0400
 tags: [powershell, productivity, cli, psreadline, automation]
+categories: ["Coding & Automation"]
+excerpt: "Out of the box, PowerShell’s command-line experience is functional—but not optimized for speed or flow. Most users rely on basic tab completion or arrow-key suggestions, which can be limiting and inefficient for…"
 ---
 
 ## Why Customize PowerShell Autocomplete?

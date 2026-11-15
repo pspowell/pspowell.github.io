@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Installing Windows 11 on Unsupported Hardware (TPM 2.0 / CPU Bypass)"
 date: 2026-10-02 08:47:02 -0400
 tags: [windows-11, tpm, bypass, registry, rufus, upgrade, how-to]
+categories: ["Windows & PC Help"]
+excerpt: "When Windows 11 Setup reports \"This PC doesn't currently meet Windows 11 system requirements\", the usual causes are…"
 ---
 
 When Windows 11 Setup reports **"This PC doesn't currently meet Windows 11 system requirements"**, the usual causes are:

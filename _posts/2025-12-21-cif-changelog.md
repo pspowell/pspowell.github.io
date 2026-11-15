@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "CIF CHANGELOG"
 date: 2025-12-22 12:35:05 -0500
 tags: [CIF, changelog, releases]
+categories: ["AI & Chat Tools"]
+excerpt: "This changelog records normative changes to the CIF language."
 ---
 
 # CIF CHANGELOG {#cif-changelog}

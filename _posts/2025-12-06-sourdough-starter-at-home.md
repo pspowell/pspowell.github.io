@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "How to Start and Maintain a Sourdough Starter at Home"
 date: 2025-12-21 11:44:30 -0500
 tags: [baking, sourdough, bread, how-to]
+categories: ["Kitchen & Recipes"]
+excerpt: "Starting a sourdough starter at home is surprisingly simple. With just flour, water, and a little patience, you can create a living culture that will raise bread, pancakes, waffles, and more for years."
 ---
 
 Starting a sourdough starter at home is surprisingly simple. With just flour, water, and a little patience, you can create a living culture that will raise bread, pancakes, waffles, and more for years.

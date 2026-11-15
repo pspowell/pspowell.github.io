@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Chat Policy Block Reference Guide"
 date: 2026-03-07 10:43:02 -0500
 tags: [ai, prompting, workflow, policy, automation, reference]
+categories: ["AI & Chat Tools"]
+excerpt: "A chat policy block is a structured section of instructions that defines how a chat should process inputs, apply rules, handle edge cases, and format outputs. Used well, it turns a general-purpose assistant into a much…"
 ---
 
 # Chat Policy Block Reference Guide {#chat-policy-block-reference-guide}

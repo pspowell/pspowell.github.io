@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "DIY Cat Exercise Wheel – Complete Build Plan"
 date: 2026-02-03 22:16:21 -0500
 tags: [DIY, pets, woodworking, shop-class]
+categories: ["Home, Shop & DIY"]
+excerpt: "Build a quiet, stable, paw-safe cat exercise wheel using plywood rings and urethane roller wheels (skate/longboard wheels). This plan is written like a project/homework handout: goals, constraints, cut list, steps…"
 ---
 
 ## Overview {#overview}

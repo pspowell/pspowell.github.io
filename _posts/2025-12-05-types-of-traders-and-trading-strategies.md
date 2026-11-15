@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Types of Traders and Trading Strategies"
 date: 2025-12-05 13:42:01 -0500
 tags: [trading, investing, markets, education]
+categories: ["Money & Retirement"]
+excerpt: "If you’ve spent any time around markets, you’ve heard labels like day trader, swing trader, or scalper. Those labels describe how someone trades: their time horizon, tools, risk tolerance, and even personality."
 ---
 
 # Types of Traders and Trading Strategies {#types-of-traders-trading-strategies}

@@ -1,11 +1,11 @@
 ---
-layout: post
 title:  "Quick HD replacement with SSD on a laptop for under $30"
 date: 2023-11-15 12:07:29 -0500
-categories: software
+categories: ["Windows & PC Help"]
+redirect_from:
+  - "/software/2023/11/15/Quick-HD-replacement-with-SSD-on-a-laptop-for-under-$30.html"
+excerpt: "This is just a quick recounting of how I'd replace the Hard Disk on a laptop PC, for under $30. Prices change daily, so you'll find different deals, but the cost will be similar."
 ---
-
-## Quick HD replacement with SSD on a laptop for under $30
 
 This is just a quick recounting of how I'd replace the Hard Disk on a laptop PC, for under $30. Prices change daily, so you'll find different deals, but the cost will be similar.
 

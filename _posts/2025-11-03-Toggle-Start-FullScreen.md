@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Toggle Windows Start Full-Screen Mode with PowerShell"
 date: 2025-11-03 09:01:47 -0500
 tags: [Windows, PowerShell, StartMenu, Explorer, Registry, Scripts]
+categories: ["Windows & PC Help"]
+excerpt: "If your Windows Start menu opens briefly and then closes—or you just want to switch between full-screen and compact Start layouts—you can use this PowerShell script to toggle the setting instantly."
 ---
 
 If your Windows Start menu opens briefly and then closes—or you just want to switch between **full-screen** and **compact** Start layouts—you can use this PowerShell script to toggle the setting instantly.

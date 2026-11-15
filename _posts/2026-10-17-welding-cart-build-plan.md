@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Welding Cart Build Plan: Drawing, Cut List and Assembly"
 date: 2026-10-18 09:17:58 -0400
 tags: [welding, fabrication, welding-cart, square-tube, cut-list]
+categories: ["Home, Shop & DIY"]
+excerpt: "A three-shelf welding cart built from 1-1/2\" square tube (11 ga), with 3/4\" plywood on every shelf, 16\" of clear height above each shelf, and an 8\" extension on the bottom shelf for the gas tanks. Every column is a…"
 ---
 
 A three-shelf welding cart built from 1-1/2" square tube (11 ga), with 3/4" plywood on every shelf, 16" of clear height above each shelf, and an 8" extension on the bottom shelf for the gas tanks. Every column is a plain square-cut tube, and every joint is a butt joint. The front columns run the full height of the frame, the rear columns sit on the bottom side rails, and all columns end flush with the top of the top rails, where the open tube ends are covered by the top plywood. There are no notches or tabs.

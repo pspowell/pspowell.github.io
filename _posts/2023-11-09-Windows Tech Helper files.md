@@ -1,11 +1,11 @@
 ---
-layout: post
-title:  "**Windows Tech Helper files**"
+title:  "Windows Tech Helper files"
 date: 2024-08-06 15:09:47 -0400
-categories: tech
+categories: ["Windows & PC Help"]
+redirect_from:
+  - "/tech/2024/08/06/Windows-Tech-Helper-files.html"
+excerpt: "I've put an archive of helpful files on my GitHub which simplify tasks or add features such as creating a Windows Image backup under special conditions and adding new options to the right-click menu."
 ---
-
-## Windows Tech Helper files
 
 I've put an archive of helpful files on my GitHub which simplify tasks or add features such as creating a Windows Image backup under special conditions and adding new options to the right-click menu.
 

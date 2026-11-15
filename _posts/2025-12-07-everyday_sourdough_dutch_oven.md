@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Everyday Sourdough Bread (Dutch Oven Method)"
 date: 2026-01-15 17:18:58 -0500
 tags: [baking, sourdough, bread, recipes]
+categories: ["Kitchen & Recipes"]
+excerpt: "This is a simple, repeatable Dutch oven sourdough you can bake any weeknight. It uses 100% natural leavening, assumes an active starter, and is optimized for strong oven spring and a crisp crust."
 ---
 
 ## Overview {#overview}

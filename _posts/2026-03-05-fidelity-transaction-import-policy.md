@@ -1,12 +1,13 @@
 ---
 date: 2026-03-05 09:11:37 -0500
-layout: post
 tags:
 - fidelity
 - gnucash
 - accounting
 - automation
 title: Fidelity Transaction Import Policy (Rollup Model)
+categories: ["Coding & Automation"]
+excerpt: "This policy defines how Fidelity transaction exports (CSV/XLS/XLSX) should be interpreted when generating monthly rollups for GnuCash."
 ---
 
 # Fidelity Transaction Import Policy (Rollup Model) {#overview}

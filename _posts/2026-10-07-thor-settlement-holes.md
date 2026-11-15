@@ -1,9 +1,10 @@
 ---
-layout: post
 title: "Holes in the Proposed Thor Equities Settlement"
 date: 2026-10-30 20:22:29 -0400
 last_modified_at: 2026-10-29
 tags: [urbana, champaign-county, data-centers, thor-equities, settlement, cedar-bog, local-government]
+categories: ["Local Interest"]
+excerpt: "In late September 2026, court-ordered mediation produced a proposed settlement of Thor Equities' federal lawsuit against the City of Urbana over its data center moratorium and zoning repeal. The terms are in a…"
 ---
 
 In late September 2026, court-ordered mediation produced a proposed settlement of Thor Equities' federal lawsuit against the City of Urbana over its data center moratorium and zoning repeal. The terms are in a Memorandum of Understanding (MOU). Mayor Bill Bean summarized it in an Oct. 4 open letter and called it "a good deal." After council received the MOU in executive session on Oct. 6 and declined to vote, opponents obtained the text, and the Urbana Daily Citizen reported its key terms, including one the Mayor's letter left out: the project could grow to **2 million square feet**, more than four times the original proposal. On Oct. 20, council voted 4–3 to table the settlement. It can return at council's Nov. 3 meeting, which falls on Election Day.

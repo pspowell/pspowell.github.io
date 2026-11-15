@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Fixing Date Taken/Modified on Google Takeout Photos with ExifTool"
 date: 2026-09-14 09:13:27 -0400
 tags: [photos, exiftool, windows, powershell, google-takeout]
+categories: ["Windows & PC Help"]
+excerpt: "When you export photos from Google Takeout, each image file is accompanied by a .json sidecar file containing metadata - including the original photoTakenTime - but the image itself (especially PNGs) often has no…"
 ---
 
 When you export photos from Google Takeout, each image file is accompanied by a `.json` sidecar file containing metadata - including the original `photoTakenTime` - but the image itself (especially PNGs) often has no embedded date. This means Windows shows the wrong "Date taken" or "Date modified," and files sort incorrectly.

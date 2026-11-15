@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Flyby11 – Upgrade Unsupported PCs to Windows 11"
 date: 2025-10-06 08:18:50 -0400
 tags: [Windows 11, Flyby11, Flyoobe, Upgrade Tools, System Utilities]
+categories: ["Windows & PC Help"]
+excerpt: "Flyby11 is an open-source tool designed to let you upgrade a Windows 10 (or older) system to Windows 11 — even if your hardware doesn’t meet Microsoft’s official requirements. It bypasses checks for TPM, Secure Boot…"
 ---
 
 ## What is Flyby11?

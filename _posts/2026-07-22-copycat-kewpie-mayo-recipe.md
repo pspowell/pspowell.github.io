@@ -1,8 +1,8 @@
 ---
-layout: post
 title: "Copycat Kewpie Mayo Recipe"
 date: 2026-07-22 11:41:02 -0400
 tags: [recipes, condiments, sauces]
+categories: ["Kitchen & Recipes"]
 ---
 
 ## Overview

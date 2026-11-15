@@ -1,11 +1,11 @@
 ---
-layout: post
 title:  "How to Install and Use Winget on Windows"
 date: 2023-11-15 12:07:29 -0500
-categories: tech
+categories: ["Windows & PC Help"]
+redirect_from:
+  - "/tech/2023/11/15/How-to-Install-and-Use-Winget-on-Windows.html"
+excerpt: "Winget, also known as the Windows Package Manager, is a free and open-source package manager designed for Windows. It allows users to automate the process of installing, upgrading, configuring, and removing…"
 ---
-
-## How to Install and Use Winget on Windows**
 
 Winget, also known as the Windows Package Manager, is a free and
 open-source package manager designed for Windows. It allows users to

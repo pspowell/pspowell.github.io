@@ -1,11 +1,11 @@
 ---
-layout: post
 title:  "Build and use the Hirens BootCD PE USB"
 date: 2024-09-27 07:27:03 -0700
-categories: tech
+categories: ["Windows & PC Help"]
+redirect_from:
+  - "/tech/2024/09/27/Build-and-use-the-Hirens-BootCD-PE-USB.html"
+excerpt: "On the newest computers, secure boot may be enabled. In short, this means that the computer will not boot from the device unless it's been \"Enrolled\" by adding a Machine Owner Key (MOK) into a hidden, secure record in…"
 ---
-
-## Build and use the Hirens BootCD PE USB
 
 ### Build the USB
 

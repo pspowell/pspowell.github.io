@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Upgrade an Unsupported PC to Windows 11 (In‑Place Upgrade Guide)"
 date: 2026-01-26 02:08:09 -0500
 tags: [windows, windows-11, windows-10, upgrade, troubleshooting]
+categories: ["Windows & PC Help"]
+excerpt: "This post summarizes one practical, ISO-based in-place upgrade approach (keep apps + files) for moving from Windows 10 22H2 to Windows 11 25H2 on hardware that fails Windows 11 checks (TPM/CPU/UEFI). The workflow…"
 ---
 
 > **Important note about support:** Microsoft does **not** recommend installing Windows 11 on devices that don’t meet minimum system requirements, and notes that such devices may be **unsupported** and **not guaranteed to receive updates (including security updates)**. If you already installed Windows 11 on ineligible hardware, Microsoft recommends rolling back to Windows 10. citeturn3view0

@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Local Beef Producers in Champaign County, Ohio"
 date: 2026-02-04 15:46:33 -0500
 tags: [local-food, beef, farms, champaign-county]
+categories: ["Local Interest"]
+excerpt: "This is a work in process list of local and regional beef producers and custom meat processors serving the Champaign County, Ohio area (Urbana, Mechanicsburg, St. Paris, North Lewisburg, West Liberty, and nearby…"
 ---
 ## Scope {#scope}
 

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "CSharp Toolchains VSCode and Visual Studio"
 date: 2026-03-10 20:56:48 -0400
 tags:
@@ -8,6 +7,8 @@ tags:
   - vscode
   - visual-studio
   - toolchains
+categories: ["Coding & Automation"]
+excerpt: "This guide explains how the C# toolchain works with Visual Studio Code and Visual Studio, how the .NET SDK fits into the picture, and how to configure projects correctly."
 ---
 
 # C# Toolchains: VSCode and Visual Studio {#csharp-toolchains-vscode-and-visual-studio}

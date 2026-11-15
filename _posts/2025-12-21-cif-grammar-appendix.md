@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "CIF Grammar Appendix (EBNF)"
 date: 2025-12-22 12:35:05 -0500
 tags: [CIF, grammar, ebnf, specification]
+categories: ["AI & Chat Tools"]
+excerpt: "This appendix defines the formal grammar for CIF v1.x using Extended Backus–Naur Form (EBNF). The grammar is normative."
 ---
 
 # CIF Grammar Appendix {#cif-grammar-appendix}

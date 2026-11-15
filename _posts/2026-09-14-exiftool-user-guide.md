@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "ExifTool User Guide"
 date: 2026-09-14 09:13:27 -0400
 tags: [photography, metadata, command-line, tools]
+categories: ["Windows & PC Help"]
+excerpt: "ExifTool by Phil Harvey is the standard command-line tool for reading, writing, and editing metadata (EXIF, IPTC, XMP, and more) in image, video, PDF, and audio files. As of this writing, the current production release…"
 ---
 
 ## Overview

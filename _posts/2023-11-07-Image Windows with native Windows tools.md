@@ -1,11 +1,11 @@
 ---
-layout: post
 title:  "Image Windows with native Windows tools"
 date: 2023-11-18 14:02:27 -0500
-categories: tech
+categories: ["Windows & PC Help"]
+redirect_from:
+  - "/tech/2023/11/18/Image-Windows-with-native-Windows-tools.html"
+excerpt: "While many third-party tools exist to backup your PC, a Windows Image Backup created using the Microsoft tools has several advantages…"
 ---
-## Image Windows with native Windows tools
-
 While many third-party tools exist to backup your PC, a Windows Image Backup created using the Microsoft tools has several advantages:
 
 1. It's free, and already available on your computer

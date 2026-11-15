@@ -1,6 +1,5 @@
 ---
 date: 2025-12-21 11:52:56 -0500
-layout: post
 tags:
 - ai
 - chips
@@ -9,6 +8,8 @@ tags:
 - tpu
 - cloud
 title: "TPU vs Nvidia: Training, Inference, and Business Models"
+categories: ["AI & Chat Tools"]
+excerpt: "Training Summary:\\ Nvidia leads for general-purpose training. TPUs excel when fully embraced within Google's ecosystem."
 ---
 
 # TPU vs Nvidia: Training vs Inference and Business Model Differences

@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "In-Wall 12V Driver and Dimmer Options for Undercabinet Tape Lighting"
 date: 2026-03-24 19:18:44 -0400
 tags: [lighting, electrical, undercabinet, led, dimming, jekyll]
+categories: ["Home, Shop & DIY"]
+excerpt: "I wanted a clean, in-wall solution for 12V undercabinet LED tape lighting that would fit in a standard wall box, provide dimming, and cleanly power about 16 feet of tape light."
 ---
 
 ## Overview

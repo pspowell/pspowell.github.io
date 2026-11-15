@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "How to Build a Rebar Bottle Tree"
 date: 2025-10-19 12:43:49 -0400
 tags: [DIY, garden art, rebar, metalwork, bottle tree]
+categories: ["Home, Shop & DIY"]
+excerpt: "A bottle tree is a classic piece of Southern folk art — a sculpture made from glass bottles mounted on metal “branches.” This version uses simple ½″ rebar, creating a striking cobalt blue garden accent that’s durable…"
 ---
 
 A **bottle tree** is a classic piece of Southern folk art — a sculpture made from glass bottles mounted on metal “branches.” This version uses simple ½″ rebar, creating a striking cobalt blue garden accent that’s durable, inexpensive, and easy to build.

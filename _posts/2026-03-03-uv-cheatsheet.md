@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "UV Cheatsheet"
 date: 2026-03-03 11:35:22 -0500
 tags: [python, uv, virtualenv, packaging, windows]
+categories: ["Coding & Automation"]
+excerpt: "This cheatsheet is organized by what uv can replace (pyenv, venv, poetry, pip/pipx) and the most common commands."
 ---
 
 ## Download {#download}

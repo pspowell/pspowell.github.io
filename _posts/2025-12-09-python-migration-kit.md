@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Python Migration & Cleanup Kit for Windows"
 date: 2025-12-09 11:13:17 -0500
 tags: [python, windows, scripting, migration]
+categories: ["Coding & Automation"]
+excerpt: "Upgrading Python on Windows doesn’t have to mean starting from scratch. This post walks through a safe side-by-side upgrade, a full cleanup option, and provides a downloadable PowerShell kit you can drop into your…"
 ---
 
 Upgrading Python on Windows doesn’t have to mean starting from scratch.  

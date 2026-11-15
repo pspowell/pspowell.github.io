@@ -1,6 +1,5 @@
 ---
 date: 2026-03-01 14:02:34 -0500
-layout: post
 tags:
 - python
 - uv
@@ -8,6 +7,8 @@ tags:
 - automation
 - devops
 title: Why You Should Use uv on Windows (And How to Automate It)
+categories: ["Coding & Automation"]
+excerpt: "The diagram above shows how uv simplifies everything…"
 ---
 
 ## 🚀 Why uv Is the Future of Python on Windows {#why-uv}

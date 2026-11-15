@@ -1,12 +1,12 @@
 ---
-layout: post
 title: "Texas-Style Smoked Brisket Guide"
 date: 2025-10-18 15:14:11 -0400
 tags: [brisket, barbecue, smoker, beef, texas-bbq]
-categories: recipes
+categories: ["Kitchen & Recipes"]
+redirect_from:
+  - "/recipes/2025/10/18/Texas-Style-Smoked-Brisket-Guide.html"
+excerpt: "A complete, step-by-step walkthrough for perfectly tender, competition-level brisket — from ingredient sourcing to slicing."
 ---
-
-## 🥩 Texas-Style Smoked Brisket Guide
 
 A complete, step-by-step walkthrough for perfectly tender, competition-level brisket — from ingredient sourcing to slicing.
 

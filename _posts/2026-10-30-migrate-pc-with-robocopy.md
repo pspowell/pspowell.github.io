@@ -1,9 +1,10 @@
 ---
-layout: post
 title: "Moving to a new PC with robocopy (now that PC-to-PC Migration is gone)"
 date: 2026-10-30 05:14:29 -0400
 tags: [windows, robocopy, migration, backup, powershell]
 last_modified_at: 2026-10-30
+categories: ["Windows & PC Help"]
+excerpt: "Windows 11 had a short-lived PC-to-PC Migration feature in the Windows Backup app. It copied files and settings straight from the old PC to the new one over Wi-Fi or a network cable during setup. Microsoft removed it in…"
 ---
 ## Why this post {#why}
 

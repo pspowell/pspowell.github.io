@@ -1,11 +1,7 @@
 ---
-layout: post
 title: "Why Elderberry Elixir Works: Benefits of Elderberry, Ginger, Lemon, and Honey"
 date: 2026-06-07 21:35:38 -0400
 last_modified_at: 2026-06-07
-categories:
-  - Health
-  - Recipes
 tags:
   - elderberry
   - immune support
@@ -15,6 +11,9 @@ tags:
   - herbal remedies
 description: "An evidence-informed look at elderberry elixirs, the benefits of each ingredient, and traditional Amish-style recipes."
 excerpt: "Learn why elderberry, ginger, lemon, and honey are commonly combined into traditional immune-support elixirs, along with two classic recipes."
+categories: ["Health & Safety"]
+redirect_from:
+  - "/health/recipes/2026/06/08/why-elderberry-elixir-works.html"
 ---
 
 # Why Elderberry Elixir Has Such a Strong Reputation

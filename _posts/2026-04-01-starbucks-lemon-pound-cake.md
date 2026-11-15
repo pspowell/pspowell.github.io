@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Starbucks-Style Lemon Pound Cake (Classic & Bakery-Dense Versions)"
 date: 2026-04-03 11:38:54 -0400
 tags: [baking, desserts, lemon, pound-cake, copycat, recipes]
+categories: ["Kitchen & Recipes"]
+excerpt: "There are lemon cakes, and then there’s this lemon cake. Dense, rich, unapologetically moist, and loaded with real lemon flavor—not just sweetness with a hint of citrus. This is the kind of slice that feels substantial…"
 ---
 
 There are lemon cakes, and then there’s *this* lemon cake. Dense, rich, unapologetically moist, and loaded with real lemon flavor—not just sweetness with a hint of citrus. This is the kind of slice that feels substantial in your hand, with a tight crumb, a bright lemon aroma, and that signature thick glaze that cracks just slightly when you bite into it.

@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Google Apps Script: Complete Guide"
 date: 2025-11-04 08:00:31 -0500
 tags: [Google, Apps Script, Automation, Google Workspace, Scripting]
+categories: ["Coding & Automation"]
+excerpt: "Google Apps Script is a cloud‑based JavaScript platform from Google LLC that lets you automate, extend, and integrate Google Workspace apps (Sheets, Docs, Slides, Forms, Drive, Gmail, Calendar, etc.). Key points: - It…"
 ---
 
 # What is Google Apps Script (GAS)

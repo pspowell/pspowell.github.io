@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Chat Policy Block — Investment Account Handling"
 date: 2026-03-05 09:11:37 -0500
 tags: [finance, gnucash, accounting, investments, fidelity]
+categories: ["Coding & Automation"]
+excerpt: "Define consistent accounting policy for handling brokerage investment transactions in GnuCash, including…"
 ---
 
 ## Purpose {#purpose}

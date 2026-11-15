@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Complete Guide: Drupal 11 with Docker, DDEV, and Composer (Windows 11)"
 date: 2025-11-20 07:46:38 -0500
 tags: [drupal11, docker, ddev, composer, php, windows]
+categories: ["Coding & Automation"]
+excerpt: "Docker provides containers, which are lightweight, isolated environments for running applications."
 ---
 
 # 1. Docker and DDEV

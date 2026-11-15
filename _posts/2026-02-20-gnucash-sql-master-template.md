@@ -1,6 +1,5 @@
 ---
 date: 2026-02-20 15:40:22 -0500
-layout: post
 tags:
 - gnucash
 - sqlite
@@ -8,6 +7,8 @@ tags:
 - accounting
 - sql
 title: GnuCash SQLite Master SQL Template (Safe Bulk Editing Guide)
+categories: ["Coding & Automation"]
+excerpt: "A reusable, GnuCash-safe SQL workflow for DB Browser for SQLite."
 ---
 
 # GnuCash SQLite Master SQL Template {#top}

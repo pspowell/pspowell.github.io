@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Know Your Rights at a Traffic Stop (Including Your Phone)"
 date: 2026-10-22 10:34:56 -0400
 tags: [rights, traffic-stop, police, privacy, phone, ohio, fourth-amendment, fifth-amendment]
+categories: ["Health & Safety"]
+excerpt: "Lights in the mirror. You pull over, and within a few minutes the officer may ask you to step out, ask where you're headed, ask to look in the car, or ask to see your phone. Most people say yes to all of it. They assume…"
 ---
 
 Lights in the mirror. You pull over, and within a few minutes the officer may ask you to step out, ask where you're headed, ask to look in the car, or ask to see your phone. Most people say yes to all of it. They assume they have to, or that saying no will make things worse.

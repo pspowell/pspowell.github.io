@@ -1,20 +1,18 @@
 ---
-categories:
-- recipes
-- dressings
 date: 2026-06-09 10:14:15 -0400
 description: A simple homemade zesty Italian dressing recipe with
   vinegar, olive oil, and herbs.
-layout: post
 tags:
 - italian-dressing
 - salad
 - homemade
 - pantry
 title: Zesty Italian Dressing Recipe
+categories: ["Kitchen & Recipes"]
+redirect_from:
+  - "/recipes/dressings/2026/06/09/zesty-italian-dressing-recipe.html"
+excerpt: "A simple homemade zesty Italian dressing recipe with vinegar, olive oil, and herbs."
 ---
-
-# Zesty Italian Dressing Recipe
 
 This homemade Italian dressing is easy to make, keeps well in the
 refrigerator, and uses common pantry ingredients.

@@ -1,16 +1,16 @@
 ---
-layout: post
 title: "WinUtil Technical Analysis: GUI Framework & Development Tools"
 date: 2025-11-06 19:51:34 -0500
 author: "Preston Powell"
-categories: [PowerShell, WPF, GUI Development, Technical Analysis]
 tags: [powershell, wpf, xaml, gui, windows, development, chris-titus, winutil]
 description: "Deep dive analysis of Chris Titus Tech's WinUtil PowerShell application - exploring the innovative use of WPF and XAML in PowerShell for creating professional desktop applications"
 image: "/assets/images/winutil-analysis.png"
 featured: true
+categories: ["Coding & Automation"]
+redirect_from:
+  - "/powershell/wpf/gui development/technical analysis/2025/11/07/WinUtil_Technical_Analysis.html"
+excerpt: "Deep dive analysis of Chris Titus Tech's WinUtil PowerShell application - exploring the innovative use of WPF and XAML in PowerShell for creating professional desktop applications"
 ---
-
-# WinUtil Technical Analysis: GUI Framework & Development Tools
 
 > **In-depth Analysis of Chris Titus Tech's WinUtil PowerShell Application**  
 > 🔗 Repository: [ChrisTitusTech/winutil](https://github.com/ChrisTitusTech/winutil)  

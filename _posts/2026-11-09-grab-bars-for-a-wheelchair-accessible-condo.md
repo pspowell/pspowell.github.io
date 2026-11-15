@@ -1,9 +1,10 @@
 ---
-layout: post
 title: "Grab Bars for a Wheelchair-Accessible Condo: Where They Go and What to Buy"
 date: 2026-11-09 23:14:00 -0500
 last_modified_at: 2026-11-09
 tags: [accessibility, aging-in-place, grab-bars, bathroom, diy, home-modification]
+categories: ["Home, Shop & DIY"]
+excerpt: "When someone who uses a wheelchair full-time moves into a new place, grab bars aren't decoration. They are the anchor points for every transfer: chair to toilet, chair to tub bench, chair to bed. This post covers where…"
 ---
 
 When someone who uses a wheelchair full-time moves into a new place, grab bars aren't decoration. They are the anchor points for every **transfer**: chair to toilet, chair to tub bench, chair to bed. This post covers where to put them, what heights to use, how to mount them in condo walls, and specific products from Home Depot and Lowe's.

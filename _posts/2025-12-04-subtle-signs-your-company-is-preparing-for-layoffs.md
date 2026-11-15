@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Subtle Signs Your Company Is Preparing for Layoffs (From a Former HR Insider)"
 date: 2025-12-04 09:14:28 -0500
 tags: [career, layoffs, hr, employment, job-search]
+categories: ["Life & Leisure"]
+excerpt: "If you’ve ever felt blindsided by “restructuring,” there’s a good chance the warning signs were there — just hidden behind corporate buzzwords and vague town halls. After multiple rounds of layoffs (including being on…"
 ---
 
 Most layoffs don’t come out of nowhere.

@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "CIF Conformance Levels"
 date: 2025-12-22 12:35:05 -0500
 tags: [CIF, conformance, specification]
+categories: ["AI & Chat Tools"]
+excerpt: "CIF defines explicit conformance levels to allow partial or strict implementations."
 ---
 
 # CIF Conformance Levels {#cif-conformance-levels}

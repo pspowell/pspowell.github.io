@@ -1,8 +1,10 @@
 ---
-layout: post
 title:  "All I wanted was a blog!"
 date: 2023-11-15 12:07:29 -0500
-categories: rant
+categories: ["Life & Leisure"]
+redirect_from:
+  - "/rant/2023/11/15/all-i-wanted-was-a-blog.html"
+excerpt: "I Wanted to use Github Pages to host a static website, where I could just publish markdown documents and have a blog."
 ---
 I Wanted to use Github Pages to host a static website, where I could just publish markdown documents and have a blog.
 

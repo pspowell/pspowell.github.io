@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Investment Accounting and Fidelity Import Policy Block"
 date: 2026-03-05 09:11:37 -0500
 tags: [finance, gnucash, fidelity, imports, accounting]
+categories: ["Coding & Automation"]
+excerpt: "Define a consistent accounting policy and automated import classification system for handling brokerage transactions from Fidelity into GnuCash."
 ---
 
 ## Purpose {#purpose}

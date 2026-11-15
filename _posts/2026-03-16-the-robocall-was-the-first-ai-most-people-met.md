@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "The Robocall Was the First AI Most People Met"
 date: 2026-03-16 17:07:53 -0400
 tags: [ai, robocalls, conversational-ai, agentic-ai, autonomous-systems, technology-history]
+categories: ["AI & Chat Tools"]
+excerpt: "For many people, the first interaction they ever had with something resembling artificial intelligence did not happen on a computer."
 ---
 
 ## The Phone Rings

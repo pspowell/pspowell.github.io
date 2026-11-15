@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Euchre Strategy Guide: How to Play Better (Without Memorizing a Book)"
 date: 2025-12-26 12:50:24 -0500
 tags:
@@ -8,6 +7,8 @@ tags:
   - strategy
   - beginner
   - intermediate
+categories: ["Life & Leisure"]
+excerpt: "This is a practical Euchre strategy guide aimed at players who already know the rules and want to start winning more hands. The focus is on habits and decision rules you can apply immediately—especially in common…"
 ---
 
 This is a practical Euchre strategy guide aimed at players who already know the rules and want to start **winning more hands**. The focus is on habits and decision rules you can apply immediately—especially in common Midwest “10-point” games.

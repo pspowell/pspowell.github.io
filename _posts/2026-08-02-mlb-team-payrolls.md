@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "2026 MLB Team Payrolls, Standings, and Cost-Per-Win Rankings"
 date: 2026-08-02 22:21:18 -0400
 tags: [mlb, baseball, payroll, sports-finance]
+categories: ["Life & Leisure"]
+excerpt: "Full breakdown of the annual roster budget for all 30 Major League Baseball teams, per Spotrac's 2026 competitive balance tax tracker, plus current-season division standing/record and a cost-efficiency (ROIC) ranking…"
 ---
 
 ## 2026 MLB Team Payrolls

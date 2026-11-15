@@ -1,8 +1,8 @@
 ---
-layout: post
 title: "Windows Troubleshooting Keyboard Shortcuts"
 date: 2025-12-25 09:44:01 -0500
 tags: [windows, troubleshooting, keyboard-shortcuts, windows11]
+categories: ["Windows & PC Help"]
 ---
 
 ## Core Troubleshooting Shortcuts {#core-troubleshooting}

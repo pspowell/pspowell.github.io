@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Pinpointing with the Garrett ACE 400 and Its DD Coil"
 date: 2026-10-19 09:34:08 -0400
 tags: [metal-detecting, garrett-ace-400, pinpointing, dd-coil, practice]
+categories: ["Life & Leisure"]
+excerpt: "Pinpointing is mostly muscle memory. This guide covers general technique, the specifics of the ACE 400's stock DD coil, and a practice plan to build accuracy."
 ---
 
 Pinpointing is mostly muscle memory. This guide covers general technique, the specifics of the ACE 400's stock DD coil, and a practice plan to build accuracy.

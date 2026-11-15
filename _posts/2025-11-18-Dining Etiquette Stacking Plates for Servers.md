@@ -1,11 +1,11 @@
 ---
-layout: post
 title: "Dining Etiquette: Stacking Plates for Servers"
 date: 2025-11-16 08:54:55 -0500
-categories: etiquette dining
+categories: ["Life & Leisure"]
+redirect_from:
+  - "/etiquette/dining/2025/11/16/Dining-Etiquette-Stacking-Plates-for-Servers.html"
+excerpt: "When dining out, many guests want to help servers and bussers by stacking plates. While the gesture is kind, there are best practices to make sure it’s actually helpful."
 ---
-
-# 🍽️ Dining Etiquette: Stacking Plates for Servers
 
 When dining out, many guests want to help servers and bussers by stacking plates. While the gesture is kind, there are best practices to make sure it’s actually helpful.
 

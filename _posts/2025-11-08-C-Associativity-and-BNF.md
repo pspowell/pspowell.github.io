@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Understanding C Associativity and BNF Syntax Rules"
 date: 2025-11-08 11:53:58 -0500
 tags: [C, programming, BNF, associativity, grammar, syntax]
+categories: ["Coding & Automation"]
+excerpt: "In C (and many other programming languages), associativity determines how operators of the same precedence are grouped when a statement is parsed. In Kernighan & Ritchie’s grammar, associativity isn’t merely a rule of…"
 ---
 
 ## Overview

@@ -1,8 +1,10 @@
 ---
-layout: post
-title:  "**How to stop using OneDrive**"
+title:  "How to stop using OneDrive"
 date: 2025-03-20 11:49:17 -0400
-categories: tech
+categories: ["Windows & PC Help"]
+redirect_from:
+  - "/tech/2025/03/20/How-to-stop-using-OndDrive.html"
+excerpt: "It's a common issue to want to revert your system's folder locations after OneDrive has taken over. Here's a detailed, step-by-step guide to help you quit OneDrive, move your files, and restore your default folder…"
 ---
 
 

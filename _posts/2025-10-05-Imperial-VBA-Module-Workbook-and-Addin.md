@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Imperial VBA Module: Use as a Macro-Enabled Workbook or Excel Add-in"
 date: 2025-10-05 19:27:21 -0400
 tags: [excel, vba, add-in, macros, measurement, woodworking]
+categories: ["Coding & Automation"]
+excerpt: "This post shows two supported ways to use my Imperial VBA module in Microsoft Excel…"
 ---
 
 ## Overview

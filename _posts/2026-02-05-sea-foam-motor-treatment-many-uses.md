@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Sea Foam Motor Treatment: Many Uses (Fuel, Oil, Intake, Storage)"
 date: 2026-02-05 09:20:04 -0500
 tags:
@@ -9,6 +8,8 @@ tags:
   - fuel
   - oil
   - troubleshooting
+categories: ["Home, Shop & DIY"]
+excerpt: "Sea Foam (the motor treatment product) is a petroleum-based cleaner/stabilizer used in fuel systems, engine oil, and (for some methods) the intake/top-end to help dissolve varnish, gum, and carbon-related deposits."
 ---
 
 Sea Foam (the **motor treatment** product) is a petroleum-based cleaner/stabilizer used in **fuel systems**, **engine oil**, and (for some methods) the **intake/top-end** to help dissolve varnish, gum, and carbon-related deposits.

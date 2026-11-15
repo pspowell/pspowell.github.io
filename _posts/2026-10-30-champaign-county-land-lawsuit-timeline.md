@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Champaign County Sues Over the 94-Acre Land Deal in the Thor Data Center Area: Timeline"
 date: 2026-10-30 20:22:29 -0400
 tags: [urbana, champaign-county, data-centers, thor-equities, lawsuits, land-sales, local-government]
+categories: ["Local Interest"]
+excerpt: "On Wednesday, Oct. 28, 2026, Champaign County Prosecutor Kevin Talebi filed a civil complaint in Champaign County Common Pleas Court for the Champaign County Commissioners. The defendants are Urbana0624C LLC, the buyer…"
 ---
 
 On Wednesday, Oct. 28, 2026, Champaign County Prosecutor Kevin Talebi filed a civil complaint in Champaign County Common Pleas Court for the Champaign County Commissioners. The defendants are **Urbana0624C LLC**, the buyer under a 2024 agreement to purchase 94.11 acres of county-owned land, and **Talon Title Agency LLC**, the title company holding the buyer's deposits. The land lies inside the area Thor Equities has proposed for its Urbana Technology Hub data center campus, on Urbana's southwest side.
