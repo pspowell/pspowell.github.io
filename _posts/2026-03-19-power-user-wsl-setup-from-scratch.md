@@ -21,6 +21,63 @@ This guide is for the setup I actually recommend to power users: a clean Ubuntu-
 
 This is not a guide for forcing a full Linux desktop into WSL. That path is possible, but it is usually brittle and not worth the complexity. WSL shines when you use it as a powerful Linux layer on top of Windows, not as a replacement for Windows itself.
 
+## The automated option
+
+Nearly everything in this guide can be done by two scripts:
+
+| Script | Runs in | Does |
+|---|---|---|
+| [`setup-wsl.ps1`](/assets/scripts/setup-wsl.ps1) | Windows PowerShell | Installs WSL2 and Ubuntu, creates your Linux user (no first-launch prompt), runs the Linux script, runs `wsl --shutdown`, installs a Nerd Font and sets Windows Terminal defaults |
+| [`wsl-bootstrap.sh`](/assets/scripts/wsl-bootstrap.sh) | Ubuntu | Packages, directories, `/etc/wsl.conf`, aliases, Git, SSH key and config, `uv` and its tools, `nvm` and Node LTS, Vim/Neovim and tmux config, WSLg apps |
+
+Open **PowerShell as Administrator** and run:
+
+    cd $env:USERPROFILE\Downloads
+    Invoke-WebRequest https://pspowell.github.io/assets/scripts/setup-wsl.ps1 -OutFile setup-wsl.ps1
+    Invoke-WebRequest https://pspowell.github.io/assets/scripts/wsl-bootstrap.sh -OutFile wsl-bootstrap.sh
+    powershell -ExecutionPolicy Bypass -File .\setup-wsl.ps1 -GitName "Your Name" -GitEmail you@example.com
+
+If WSL wasn't installed yet, Windows may ask for a reboot partway through. Reboot and run the same last line again; it picks up where it left off.
+
+It only stops for input when it needs you:
+
+- a password for your new Linux user (used for `sudo`)
+- an optional passphrase for the SSH key
+- the GitHub sign-in, if you add `-GitHub`
+
+Options you can add to that last line:
+
+| Option | Effect |
+|---|---|
+| `-Zsh` | Make zsh your login shell (the aliases go into `~/.zshrc` too) |
+| `-GitHub` | Install the `gh` CLI, sign in through your browser, and upload your SSH key to GitHub |
+| `-NoNode` | Skip `nvm` and Node.js |
+| `-NoGui` | Skip the WSLg GUI apps |
+| `-NoSsh` | Skip the SSH key and `~/.ssh/config` |
+| `-NoPassphrase` | Create the SSH key without a passphrase |
+| `-Fresh` | **Delete** the existing Ubuntu distro and start over (asks you to confirm) |
+| `-UserName name` | Linux username (defaults to your Windows username in lowercase) |
+| `-SkipTerminal` | Leave Windows Terminal alone |
+| `-TerminalOnly` | Only do the font and Windows Terminal part |
+| `-CopyOnSelect $true` | Turn on copy-on-select in Windows Terminal (left unchanged unless you pass it) |
+
+Already have Ubuntu set up and only want the Linux side? Run this inside Ubuntu instead:
+
+    curl -fsSL https://pspowell.github.io/assets/scripts/wsl-bootstrap.sh -o ~/wsl-bootstrap.sh
+    bash ~/wsl-bootstrap.sh --git-name "Your Name" --git-email you@example.com
+
+It accepts the same choices as flags: `--zsh`, `--github`, `--no-node`, `--no-gui`, `--no-ssh` and `--no-passphrase`. Afterwards, run `wsl --shutdown` from PowerShell.
+
+Both scripts are safe to run again. Anything already done is skipped, and any dotfile they would replace is saved first as `<file>.bak-<date>`. The aliases go into `~/.bashrc` between `# >>> wsl-bootstrap >>>` markers, so a second run replaces that block rather than adding another. The new `/etc/wsl.conf` also sets your user as the default and keeps Ubuntu's `systemd = true` line if it was there.
+
+A few things stay manual:
+
+- **Adding your public key anywhere other than GitHub** (GitLab, your own servers). The script prints the key at the end.
+- **Windows Terminal profile.** If Windows Terminal hasn't been opened since Ubuntu was installed, it won't have an Ubuntu profile yet. Open it once, then run `.\setup-wsl.ps1 -TerminalOnly`.
+- **Personal taste:** acrylic, color schemes, Oh My Zsh. The scripts leave those to you.
+
+The rest of this guide covers the same steps by hand, which is useful if you'd rather see what each one does or need to fix one.
+
 ## What this setup is trying to achieve
 
 The goals are simple:
@@ -443,7 +500,7 @@ In practice, this mindset makes WSL much less stressful.
 
 ## A practical bootstrap sequence
 
-If I were rebuilding from scratch, the sequence would look like this:
+If I were rebuilding from scratch by hand, the sequence would look like this. (This is the short version of what [the scripts](#the-automated-option) do.)
 
 ### 1. Install Ubuntu
 
