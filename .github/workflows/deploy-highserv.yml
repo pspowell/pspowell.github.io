@@ -74,7 +74,7 @@ jobs:
           if [ "$LIVE" = "true" ] && [ "$MANUAL_DRY_RUN" != "true" ]; then DRY=""; fi
           echo "Mode: ${DRY:-LIVE UPLOAD}"
           rsync -az --delete --itemize-changes $DRY \
-            --exclude '.well-known' --exclude 'cgi-bin' --exclude 'scripts/' --exclude 'preston/' --exclude 'litespeed.conf' --exclude 'error_log' \
+            --exclude '.well-known' --exclude 'cgi-bin' --exclude '/scripts/' --exclude '/preston/' --exclude '/litespeed.conf' --exclude '/error_log' \
             -e "ssh -i ~/.ssh/highserv -p $PORT -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes" \
             _site/ "$USER@$HOST:public_html/"
           if [ -n "$DRY" ]; then
