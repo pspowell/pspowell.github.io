@@ -91,7 +91,7 @@ say "Installing core packages"
 PKGS=(build-essential git curl wget unzip zip ca-certificates gnupg
       software-properties-common htop btop tree jq ripgrep fd-find fzf
       neovim vim tmux python3 zsh x11-apps openssh-client)
-[ "$NO_GUI" = 1 ] || PKGS+=(xfce4-terminal thunar file-roller mousepad gedit)
+[ "$NO_GUI" = 1 ] || PKGS+=(xfce4-terminal thunar file-roller mousepad gedit gir1.2-peas-1.0)
 [ "$DO_GITHUB" = 1 ] && PKGS+=(gh)
 sudo DEBIAN_FRONTEND=noninteractive apt-get install "${APT_OPTS[@]}" "${PKGS[@]}"
 

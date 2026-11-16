@@ -427,13 +427,16 @@ Install a few useful apps:
       thunar \
       file-roller \
       mousepad \
-      gedit
+      gedit \
+      gir1.2-peas-1.0
 
 Then just run them:
 
     thunar
     xfce4-terminal
     mousepad
+
+`gir1.2-peas-1.0` is the plugin library gedit needs. Ubuntu's gedit package doesn't install it, and without it gedit opens but prints `Could not load Peas repository` warnings.
 
 This is the sweet spot. You get Linux GUI tools without needing a full desktop environment. Resist the temptation to install a complete desktop session unless you truly need one and are willing to own the complexity.
 
