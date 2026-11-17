@@ -1,7 +1,7 @@
 ---
 title: "Holes in the Proposed Thor Equities Settlement"
 date: 2026-10-30 20:22:29 -0400
-last_modified_at: 2026-10-29
+last_modified_at: 2026-11-17
 tags: [urbana, champaign-county, data-centers, thor-equities, settlement, cedar-bog, local-government]
 categories: ["Local Interest"]
 excerpt: "In late September 2026, court-ordered mediation produced a proposed settlement of Thor Equities' federal lawsuit against the City of Urbana over its data center moratorium and zoning repeal. The terms are in a…"
@@ -9,7 +9,7 @@ excerpt: "In late September 2026, court-ordered mediation produced a proposed se
 
 In late September 2026, court-ordered mediation produced a proposed settlement of Thor Equities' federal lawsuit against the City of Urbana over its data center moratorium and zoning repeal. The terms are in a Memorandum of Understanding (MOU). Mayor Bill Bean summarized it in an Oct. 4 open letter and called it "a good deal." After council received the MOU in executive session on Oct. 6 and declined to vote, opponents obtained the text, and the Urbana Daily Citizen reported its key terms, including one the Mayor's letter left out: the project could grow to **2 million square feet**, more than four times the original proposal. On Oct. 20, council voted 4–3 to table the settlement. It can return at council's Nov. 3 meeting, which falls on Election Day.
 
-*Updated Oct. 22, 2026, after the Oct. 20 vote to table.*
+*Updated Nov. 17, 2026: **Thor Equities has formally withdrawn the MOU**, hours before council was expected to take it up again, saying it mediated in good faith, got no response to repeated requests to meet with city leaders, and was told its presence at the Nov. 3 meeting was not needed. It says it will keep pursuing its lawsuits while staying open to a negotiated resolution. The signed MOU, filed in the federal case as [Doc. 34-1](https://storage.courtlistener.com/recap/gov.uscourts.ohsd.313292/gov.uscourts.ohsd.313292.34.1.pdf), set Oct. 7 as the target for council approval and has no withdrawal clause. No withdrawal notice had appeared on the federal docket as of Nov. 17. This post is kept as a record of the withdrawn deal and as a checklist for any new settlement. Earlier, on Nov. 3, voters approved a charter amendment banning data centers and council found its Oct. 20 tabling vote invalid. See the [timeline]({% post_url 2026-10-02-urbana-thor-data-center-timeline %}) for details. Earlier update Oct. 22, 2026, after the Oct. 20 vote to table.*
 
 *Related: [The Thor Equities Data Center in Urbana: Background and Timeline](/2026/10/02/urbana-thor-data-center-timeline.html) · [Champaign County Sues Over the 94-Acre Land Deal](/2026/10/30/champaign-county-land-lawsuit-timeline.html)*
 
@@ -225,3 +225,5 @@ This post looks at what the deal leaves out or leaves open: 23 gaps, each with t
 ## Sources
 
 - Court News Ohio, "Village Can Reject Data Center Construction Application After Moratorium Imposed" (Oct. 20, 2026), summarizing *State ex rel. Bristolville 25 Developer LLC v. Lordstown*, Slip Opinion No. 2026-Ohio-4073 — <https://www.courtnewsohio.gov/cases/2026/SCO/1020/251497.asp>
+- Peak of Ohio, "Thor Equities withdraws agreement with City of Urbana over proposed technology hub" (Nov. 17, 2026) — <https://www.peakofohio.com/local-news/thor-equities-withdraws-agreement-with-city-of-urbana-over-proposed-technology-hub/>
+- Signed MOU, "Terms of Proposed Settlement" (Sept. 25, 2026), filed as Doc. 34-1 in No. 3:26-cv-00196 (S.D. Ohio) — <https://storage.courtlistener.com/recap/gov.uscourts.ohsd.313292/gov.uscourts.ohsd.313292.34.1.pdf>
