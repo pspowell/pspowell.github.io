@@ -1,6 +1,6 @@
 ---
 title: "A Friends Venture, Starting With a Mistletoe Sweatshirt"
-date: 2026-11-20 08:45:00 -0500
+date: 2026-11-20 08:00:00 -0500
 categories: ["Life & Leisure"]
 tags: [small-business, side-venture, sweatshirts, screen-printing, holiday, ai]
 excerpt: "A small venture to bring friends together, pay for itself and maybe make a little money, using our combined skills plus AI. The first product is a holiday sweatshirt."
